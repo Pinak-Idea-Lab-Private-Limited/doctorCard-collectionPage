@@ -25,17 +25,6 @@ To run this application on your local machine, you'll need to have Node.js and n
 
    This command will download and install all the necessary packages and libraries required to run the application.
 
-## Usage
-
-After completing the installation steps, you can launch the application on your local machine:
-
-1. Start the development server:
-
-   ```bash
-   npm start
-   ```
-
-2. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to view the doctorCard-collectionPage application.
 
 ## Contributing
 
@@ -65,12 +54,3 @@ If you'd like to contribute to this project, follow these steps:
 
 6. Create a pull request on GitHub to merge your changes into the main repository.
 
-Please ensure that your contributions adhere to the project's coding standards and guidelines.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Thank you for checking out `doctorCard-collectionPage`! If you have any questions or feedback, please feel free to contact us or open an issue in the repository. Happy coding!
