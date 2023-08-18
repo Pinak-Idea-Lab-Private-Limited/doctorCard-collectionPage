@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Collection Page</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"
+    ></script>
+    <style>
+      .stars-outer::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 900;
+        color: #ccc;
+      }
+      .stars-inner::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 900;
+        color: #f8ce0b;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="flex px-0 md:px-4 mt-2 gap-3 flex-col md:flex-row max-w-[1536px] mx-auto"
+    >
+      <!-- Left Side Content -->
+      <div class="w-full md:w-[70%]">
+        <!-- Doctor Card -->
+        <div
+          class="doc-card bg-white md:rounded-lg md:shadow-2xl mb-8 p-5 border-b-[1px] border-b-[#F5485D] md:border-none"
+        >
+          <div class="flex gap-7">
+            <div class="img grow-0 hidden xsm:block">
+              <div class="relative">
+
+                <img src="./images/doctor.png" alt="" class="relative" />
+                <div class="absolute left-2 bg-[#59d32d] shadow-3xl text-white px-2 py-1 rounded-xl bottom-2  flex items-center gap-1 text-[12px] font-semibold">
+                  <i class="far fa-badge-check"></i> Medical Registration Verified
+                </div>
+              </div>
+              <div class="flex mt-4 lg:ml-12 md:ml-6 doc1">
+                <div class="stars-outer relative inline-block">
+                  <div
+                    class="stars-inner absolute top-0 left-0 whitespace-nowrap overflow-hidden w-0"
+                  ></div>
+                </div>
+                <span class="number-rating ml-2">(100)</span>
+              </div>
+            </div>
+            <div class="information grow flex flex-col">
+              <h1
+                class="text-black lg:text-[26px] xsm:text-lg xl:text-3xl text-2xl font-sans font-bold mb-2"
+              >
+                Dr. Brigadier R K Sharma
+              </h1>
+              <div class="relative xsm:hidden">
+
+                <img src="./images/doctor.png" alt="" class="w-full relative xsm:hidden" />
+                <div class="absolute left-2 bg-[#59d32d] shadow-3xl text-white px-2 py-1 rounded-xl bottom-2  flex items-center gap-1 text-[12px] font-semibold">
+                  <i class="far fa-badge-check"></i> Medical Registration Verified
+                </div>
+              </div>
+              <p class="flex items-center gap-2 mb-1 mt-2 xsm:mt-0 text-[15px]">
+                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), VSM
+              </p>
+              
+              <div class="flex items-center mt-4 text-[15px]">
+                <i class="far fa-pills"></i>
+                <span
+                  class="font-sans border-[1px] border-black border-solid rounded-md px-2 bg-gray-300 ml-3"
+                  >Surrogacy</span
+                >
+                <span
+                  class="font-sans border-[1px] border-black border-solid rounded-md px-2 bg-gray-300 ml-2"
+                  >IVF</span
+                >
+                <span
+                  class="font-sans border-[1px] border-black border-solid rounded-md px-2 bg-gray-300 ml-2"
+                  >IUI</span
+                >
+              </div>
+              <div class="flex flex-col lg:flex-row mt-5 w-full text-[15px]">
+                <div class=" flex flex-col w-full lg:w-1/2">
+                  <p class="flex items-center gap-3 order-2 xsm:order-none">
+                    <i class="far fa-stars"></i>28 Years Experience
+                  </p>
+                  <p
+                    class="flex items-center gap-3 mt-2 order-last xsm:order-none"
+                  >
+                    <i class="fal fa-baby"></i>10000 IVF Cycles
+                  </p>
+                  <p
+                    class="xsm:flex items-center gap-3 mt-2 hidden xsm:visible"
+                  >
+                    <i class="far fa-phone-alt"></i>+91-9814325187
+                  </p>
+                  <p
+                    class="mb-6 mt-5 xsm:hidden order-1 xsm:order-none text-center"
+                  >
+                    <a
+                      href="tel:+91-9814325187"
+                      class="bg-[#00acb1] uppercase rounded-lg p-1 px-8 text-lg font-semibold font-sans border-[#00acb1] border-2 text-white"
+                      ><i class="far fa-phone-alt"></i> Call Now!</a
+                    >
+                  </p>
+                </div>
+                <div
+                  class="mt-5 lg:mt-0 xsm:flex flex-col w-full max-w-[240px] lg:w-1/2 hidden xsm:visible"
+                >
+                  <p class="flex gap-6 items-center justify-between">
+                    <span class="flex gap-3 items-center"
+                      ><i class="far fa-map-marker-alt"></i>Janakpuri</span
+                    ><span class="flex gap-1 items-center font-semibold">₹ 1000</span>
+                  </p>
+                  <p class="flex gap-6 justify-between">
+                    <span class="flex gap-3 items-center"
+                      ><i class="far fa-map-marker-alt"></i>Noida</span
+                    ><span class="flex gap-1 items-center font-semibold">₹ 500</span>
+                  </p>
+                  <p class="mt-2">First Consultancy Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="desc flex flex-col justify-center mt-8"
+            x-data="{
+            openTab:1,
+          }"
+          >
+            <nav aria-label="Tabs">
+              <ul class="flex border-b border-gray-100">
+                <li class="flex-1" @click="openTab = 1">
+                  <a class="relative block p-2 md:p-4" href="#">
+                    <span
+                      x-show="openTab === 1"
+                      class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"
+                    ></span>
+
+                    <div class="flex items-center justify-center gap-4">
+                      <i class="fas fa-user"></i>
+                      <span class="text-sm font-medium text-gray-900 uppercase">
+                        About
+                      </span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="flex-1" @click="openTab = 2">
+                  <a class="relative block p-2 md:p-4" href="#">
+                    <span
+                      x-show="openTab === 2"
+                      class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"
+                    ></span>
+                    <div class="flex items-center justify-center gap-4">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="text-sm font-medium text-gray-900 uppercase">
+                        Location
+                      </span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="flex-1" @click="openTab = 3">
+                  <a class="relative block p-2 md:p-4" href="#">
+                    <span
+                      x-show="openTab === 3"
+                      class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"
+                    ></span>
+                    <div class="flex items-center justify-center gap-4">
+                      <i class="fas fa-clock"></i>
+                      <span class="text-sm font-medium text-gray-900 uppercase">
+                        Timings
+                      </span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="flex-1" @click="openTab = 4">
+                  <a class="relative block p-2 md:p-4" href="#">
+                    <span
+                      x-show="openTab === 4"
+                      class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"
+                    ></span>
+                    <div class="flex items-center justify-center gap-4">
+                      <i class="fas fa-dollar-sign"></i>
+                      <span class="text-sm font-medium text-gray-900 uppercase">
+                        Cost
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="">
+              <div x-show="openTab === 1">
+                <div class="mt-8 text-justify">
+                  Brigadier Dr. R K Sharma (VSM) is a Delhi-based IVF
+                  specialist, gynecologist, and obstetrician. He has been
+                  working since 1981. He is a reputed IVF specialist with more
+                  than 15,000 IVF cycles under his belt. Dr. RK Sharma is among
+                  the best IVF specialists in Delhi. His areas of specialization
+                  are infertility, endoscopy, obstetrics, and gynecology.
+                  Brigadier Dr. R K Sharma completed his MBBS from Pune
+                  University in 1981. He did his MD in Obstetrics & Gynecology
+                  from Pune University passing out in 1989. He trained in IVF at
+                  Bombay Hospital in 1995.
+                </div>
+                <div class="flex justify-center mt-6 items-center">
+                  <button
+                    class="bg-[#00acb1] uppercase rounded-lg p-1 px-8 text-lg font-semibold font-sans border-[#00acb1] border-2 hover:bg-[#76d6e1] text-white transition ease-out duration-500"
+                  >
+                    View More
+                  </button>
+                </div>
+              </div>
+              <div x-show="openTab === 2" class="mt-8">LOCATION TAB</div>
+              <div x-show="openTab === 3" class="mt-8">TIMINGS TAB</div>
+              <div x-show="openTab === 4" class="mt-8">COSTS TAB</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="doc-card bg-white md:rounded-lg md:shadow-2xl mb-8 p-3 border-b-[1px] border-b-[#F5485D] md:border-none"
+        >
+          <div class="flex gap-8">
+            <div class="img grow-0 hidden xsm:block">
+              <div class="relative">
+
+                <img src="./images/rita.png" alt="" class="relative" />
+                <div class="absolute left-2 bg-[#59d32d] shadow-3xl text-white px-2 py-1 rounded-xl bottom-2  flex items-center gap-1 text-[12px] font-semibold">
+                  <i class="far fa-badge-check"></i> Medical Registration Verified
+                </div>
+              </div>
+              <div class="flex mt-4 lg:ml-12 md:ml-6 doc1">
+                <div class="stars-outer relative inline-block">
+                  <div
+                    class="stars-inner absolute top-0 left-0 whitespace-nowrap overflow-hidden w-0"
+                  ></div>
+                </div>
+                <span class="number-rating ml-2">(100)</span>
+              </div>
+            </div>
+            <div class="information grow flex flex-col">
+              <h1
+                class="text-black lg:text-[26px] xsm:text-lg xl:text-3xl text-2xl font-sans font-bold mb-2"
+              >
+              Dr. Rita Bakshi
+              </h1>
+              
+              <div class="relative xsm:hidden">
+
+                <img src="./images/rita.png" alt="" class="w-full relative xsm:hidden" />
+                <div class="absolute left-2 bg-[#59d32d] shadow-3xl text-white px-2 py-1 rounded-xl bottom-2  flex items-center gap-1 text-[12px] font-semibold">
+                  <i class="far fa-badge-check"></i> Medical Registration Verified
+                </div>
+              </div>
+              <p class="flex items-center gap-2 mb-1 mt-2 xsm:mt-0">
+                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), DGO
+              </p>
+              <p class="flex items-center gap-3">
+                <i class="far fa-badge-check"></i> Medical Registration Verified
+              </p>
+              <div class="flex items-center mt-5">
+                <i class="far fa-pills"></i>
+                <span
+                  class="font-sans border-[1px] border-black border-solid rounded-md px-2 bg-gray-300 ml-3"
+                  >Surrogacy</span
+                >
+                <span
+                  class="font-sans border-[1px] border-black border-solid rounded-md px-2 bg-gray-300 ml-2"
+                  >IVF</span
+                >
+                <span
+                  class="font-sans border-[1px] border-black border-solid rounded-md px-2 bg-gray-300 ml-2"
+                  >IUI</span
+                >
+              </div>
+              <div class="flex flex-col lg:flex-row mt-5 w-full">
+                <div class="w-full flex flex-col xl:w-2/5">
+                  <p class="flex items-center gap-3 order-2 xsm:order-none">
+                    <i class="far fa-stars"></i> 40 Years Experience
+                  </p>
+                  <p
+                    class="flex items-center gap-3 mt-2 order-last xsm:order-none"
+                  >
+                    <i class="fal fa-baby"></i> 10000 IVF Cycles
+                  </p>
+                  <p
+                    class="xsm:flex items-center gap-3 mt-2 hidden xsm:visible"
+                  >
+                    <i class="far fa-phone-alt"></i>+91-9814325187
+                  </p>
+                  <p
+                    class="mb-6 mt-5 xsm:hidden order-1 xsm:order-none text-center"
+                  >
+                    <a
+                      href="tel:+91-9814325187"
+                      class="bg-[#00acb1] uppercase rounded-lg p-1 px-8 text-lg font-semibold font-sans border-[#00acb1] border-2 text-white"
+                      ><i class="far fa-phone-alt"></i> Call Now!</a
+                    >
+                  </p>
+                </div>
+                <div
+                  class="mt-5 lg:mt-0 xsm:flex flex-col w-full sm:w-3/4 xl:w-2/5 hidden xsm:visible"
+                >
+                  <p class="flex gap-6 justify-between">
+                    <span class="flex gap-3 items-center"
+                      ><i class="far fa-map-marker-alt"></i>Janakpuri</span
+                    ><span class="font-semibold">₹ 1000</span>
+                  </p>
+                  <p class="flex gap-6 justify-between">
+                    <span class="flex gap-3 items-center"
+                      ><i class="far fa-map-marker-alt"></i>Noida</span
+                    ><span class="font-semibold">₹ 500</span>
+                  </p>
+                  <p class="mt-2">First Consultancy Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="desc flex flex-col justify-center mt-8"
+            x-data="{
+            openTab:1,
+          }"
+          >
+            <nav aria-label="Tabs">
+              <ul class="flex border-b border-gray-100">
+                <li class="flex-1" @click="openTab = 1">
+                  <a class="relative block p-2 md:p-4" href="#">
+                    <span
+                      x-show="openTab === 1"
+                      class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"
+                    ></span>
+
+                    <div class="flex items-center justify-center gap-4">
+                      <i class="fas fa-user"></i>
+                      <span class="text-sm font-medium text-gray-900 uppercase">
+                        About
+                      </span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="flex-1" @click="openTab = 2">
+                  <a class="relative block p-2 md:p-4" href="#">
+                    <span
+                      x-show="openTab === 2"
+                      class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"
+                    ></span>
+                    <div class="flex items-center justify-center gap-4">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="text-sm font-medium text-gray-900 uppercase">
+                        Location
+                      </span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="flex-1" @click="openTab = 3">
+                  <a class="relative block p-2 md:p-4" href="#">
+                    <span
+                      x-show="openTab === 3"
+                      class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"
+                    ></span>
+                    <div class="flex items-center justify-center gap-4">
+                      <i class="fas fa-clock"></i>
+                      <span class="text-sm font-medium text-gray-900 uppercase">
+                        Timings
+                      </span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="flex-1" @click="openTab = 4">
+                  <a class="relative block p-2 md:p-4" href="#">
+                    <span
+                      x-show="openTab === 4"
+                      class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"
+                    ></span>
+                    <div class="flex items-center justify-center gap-4">
+                      <i class="fas fa-dollar-sign"></i>
+                      <span class="text-sm font-medium text-gray-900 uppercase">
+                        Cost
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="">
+              <div x-show="openTab === 1">
+                <div class="mt-8 text-justify">
+                  Dr. Rita Bakshi is a pioneer in the field of assisted reproductive technology (ART). She is a renowned IVF specialist. Dr. Rita Bakshi's areas of expertise are IVF, IUI, ICSI, and surrogacy. She also specializes in the treatment of recurrent miscarriages, endometriosis, and ovulatory disorders. With over 36 years of experience, Dr. Rita Bakshi is a pioneer in the field of infertility treatment. Dr. Rita Bakshi has over 4,000 successful IVF cycles to her credit. She also has performed many ICSI, IUI, surrogacy, surrogacy with OD, and frozen embryo transfers procedures. We have also included her in our list of top IVF doctors in Delhi.
+                </div>
+                <div class="flex justify-center mt-6 items-center">
+                  <button
+                    class="bg-[#00acb1] uppercase rounded-lg p-1 px-8 text-lg font-semibold font-sans border-[#00acb1] border-2 hover:bg-[#76d6e1] text-white transition ease-out duration-500"
+                  >
+                    View More
+                  </button>
+                </div>
+              </div>
+              <div x-show="openTab === 2" class="mt-8">LOCATION TAB</div>
+              <div x-show="openTab === 3" class="mt-8">TIMINGS TAB</div>
+              <div x-show="openTab === 4" class="mt-8">COSTS TAB</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Right Side Content -->
+      <div class="w-full md:w-[30%] border">
+        <h1 class="text-3xl text-center"></h1>
+      </div>
+    </div>
+
+    <script>
+      const ratings = { doc1: 3.6, doc2: 4.5 };
+      const starsTotal = 5;
+      document.addEventListener("DOMContentLoaded", getRatings);
+      function getRatings() {
+        for (let rating in ratings) {
+          const starPercentage = (ratings[rating] / starsTotal) * 100;
+
+          const starPercentageRounded = `${
+            Math.round(starPercentage / 10) * 10
+          }%`;
+
+          document.querySelector(`.${rating} .stars-inner`).style.width =
+            starPercentageRounded;
+          document.querySelector(
+            `.${rating} .number-rating`
+          ).innerHTML = `(${ratings[rating]})`;
+        }
+      }
+    </script>
+  </body>
+</html>
