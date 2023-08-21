@@ -700,6 +700,10 @@ video {
   min-width: 100%;
 }
 
+.min-w-\[180px\] {
+  min-width: 180px;
+}
+
 .max-w-\[1536px\] {
   max-width: 1536px;
 }
