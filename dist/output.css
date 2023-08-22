@@ -970,6 +970,10 @@ video {
   font-size: 0.93rem;
 }
 
+.text-\[1\.01rem\] {
+  font-size: 1.01rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
