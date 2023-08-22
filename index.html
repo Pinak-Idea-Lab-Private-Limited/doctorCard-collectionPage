@@ -29,9 +29,9 @@
 <body x-data="{
     openTab:1,
   }">
-  <div class="flex px-0 md:px-4 mt-2 gap-3 flex-col md:flex-row max-w-[1536px] mx-auto">
+  <div class="flex px-0 md:px-4 mt-2 gap-3 flex-col lg:flex-row max-w-[1536px] mx-auto">
     <!-- Left Side Content -->
-    <div class="w-full md:w-[70%]">
+    <div class="w-full lg:w-[70%]">
       <!-- Doctor Card -->
       <div
         class="doc-card bg-white md:rounded-lg md:shadow-2xl mb-8 p-5 border-b-[1px] border-b-[#F5485D] md:border-none">
@@ -39,10 +39,10 @@
           <div class="img grow-0 hidden xsm:block w-1/4">
             <img src="./images/doctor.png" alt="" class="min-w-[180px] " />
           </div>
-          <div class="w-3/4 max-h-[15rem] h-[15rem] relative">
+          <div class="w-3/4 max-h-[15rem] h-[15rem] relative mr-[15px]">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full" x-show="openTab === 1">
-              <h2 class="text-black lg:text-[26px] xsm:text-lg xl:text-3xl text-2xl font-sans font-bold mb-2">
+              <h2 class="info-h2">
                 Dr. Brigadier R K Sharma
               </h2>
               <div class=" xsm:hidden">
@@ -50,28 +50,29 @@
                 <img src="./images/doctor.png" alt="" class="w-full  xsm:hidden" />
 
               </div>
-              <p class="flex items-center gap-2 mt-2 xsm:mt-0 text-[15px]">
+              <p class="info-texts gap-2 mt-2 xsm:mt-0">
                 <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), VSM
               </p>
-              <p class="flex items-center gap-3 text-[15px] ">
+              <p class="info-texts ">
                 <i class="far fa-badge-check"></i> Medical Registration Verified
               </p>
 
-              <div class="flex mt-4 doc1">
+              <div class="flex mt-3 doc1">
                 <div class="stars-outer relative inline-block">
                   <div class="stars-inner absolute top-0 left-0 whitespace-nowrap overflow-hidden w-0"></div>
                 </div>
                 <span class="number-rating ml-2">(100)</span>
               </div>
-              <div class="flex flex-col lg:flex-row mt-5 w-full text-[15px]">
+
+              <div class="flex flex-col md:flex-row mt-3 w-full">
                 <div class=" flex flex-col w-full lg:w-1/2">
-                  <p class="flex items-center gap-3 order-2 xsm:order-none">
+                  <p class="info-texts order-2 xsm:order-none">
                     <i class="far fa-stars"></i>28 Years Experience
                   </p>
-                  <p class="flex items-center gap-4 order-last xsm:order-none">
+                  <p class="info-texts gap-4 order-last xsm:order-none">
                     <i class="fal fa-baby"></i>10000 IVF Cycles
                   </p>
-                  <p class="xsm:flex items-center gap-3 hidden xsm:visible">
+                  <p class="xsm:flex info-texts hidden xsm:visible">
                     <i class="far fa-phone-alt"></i>+91-9814325187
                   </p>
                   <p class="mb-6 mt-5 xsm:hidden order-1 xsm:order-none text-center">
@@ -80,18 +81,18 @@
                         class="far fa-phone-alt"></i> Call Now!</a>
                   </p>
                 </div>
-                <div class="mt-5 lg:mt-0 xsm:flex flex-col w-full max-w-[240px] lg:w-1/2 hidden xsm:visible">
+                <div class=" mt-0 xsm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden xsm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="flex gap-3 items-center"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
                       class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
                       1000</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="flex gap-3 items-center"><i class="far fa-map-marker-alt"></i>Noida</span><span
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Noida</span><span
                       class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
                       500</span>
                   </p>
-                  <p class="mt-2">First Consultancy Free</p>
+                  <p class="mt-2 info-texts">First Consultancy Free</p>
                 </div>
               </div>
             </div>
@@ -101,7 +102,7 @@
               <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
                 About | Dr. R K Sharma
               </h3>
-              <div class="overflow-auto max-h-48 text-justify">
+              <div class="overflow-auto max-h-48 text-justify text-[1rem] lg:text-[1.05rem] pr-3">
                 Brigadier Dr. R K Sharma (VSM) is a Delhi-based IVF
                 specialist, gynecologist, and obstetrician. He has been
                 working since 1981. He is a reputed IVF specialist with more
