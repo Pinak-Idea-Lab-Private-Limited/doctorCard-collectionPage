@@ -29,33 +29,31 @@
 <body class="bg-[#f2f2f2]" x-data="{
     openTab:1,
   }">
-  <div class="flex px-0 md:px-4 mt-2 gap-3 flex-col lg:flex-row max-w-[1536px] mx-auto">
+  <div class="flex px-0 lg:px-4 mt-2 gap-3 flex-col lg:flex-row max-w-[1536px] mx-auto">
     <!-- Left Side Content -->
     <div class="w-full lg:w-[70%]">
       <!-- Doctor Card -->
       <div
         class="doc-card bg-white lg:rounded-lg lg:shadow-2xl mb-8 p-5 lg:border-none">
-        <div class="flex gap-7 mb-5">
-          <div class="img grow-0 hidden xsm:block w-1/4">
-            <img src="./images/doctor.png" alt="" class="min-w-[180px] " />
+        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+            <img src="./images/doctor.png" alt="" class="min-w-[100px] w-full md:min-w-[180px] " />
+            
           </div>
-          <div class="w-3/4 max-h-[15rem] h-[15rem] relative mr-[15px]">
-            <!-- tab content 1 -->
-            <div class="information grow flex flex-col h-full" x-show="openTab === 1">
-              <h2 class="info-h2">
-                Dr. Brigadier R K Sharma
-              </h2>
-              <div class=" xsm:hidden">
+          <div class="w-full xs:w-[65%] sm:w-3/4 max-h-[15rem] h-[15rem] relative mr-[15px] pt-4 xs:pt-0">
+            <!-- tab content 1 --> 
+            <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
-                <img src="./images/doctor.png" alt="" class="w-full  xsm:hidden" />
-
-              </div>
-              <p class="info-texts gap-2 mt-2 xsm:mt-0">
-                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), VSM
-              </p>
-              <p class="info-texts ">
-                <i class="far fa-badge-check"></i> Medical Registration Verified
-              </p>
+                <h2 class="info-h2 ">
+                  Dr. Brigadier R K Sharma
+                </h2>
+                
+                <p class="info-texts gap-2 mt-2 xsm:mt-0">
+                  <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), VSM
+                </p>
+                <p class="info-texts ">
+                  <i class="far fa-badge-check"></i> Medical Registration Verified
+                </p>
 
               <div class="flex mt-3 doc1">
                 <div class="stars-outer relative inline-block">
@@ -66,22 +64,18 @@
 
               <div class="flex flex-col sm:flex-row mt-3 w-full">
                 <div class=" flex flex-col w-full lg:w-1/2">
-                  <p class="info-texts order-2 xsm:order-none">
+                  <p class="info-texts ">
                     <i class="far fa-stars"></i>28 Years Experience
                   </p>
-                  <p class="info-texts gap-4 order-last xsm:order-none">
+                  <p class="info-texts gap-4">
                     <i class="fal fa-baby"></i>10000 IVF Cycles
                   </p>
-                  <p class="xsm:flex info-texts hidden xsm:visible">
+                  <p class="info-texts">
                     <i class="far fa-phone-alt"></i>+91-9814325187
                   </p>
-                  <p class="mb-6 mt-5 xsm:hidden order-1 xsm:order-none text-center">
-                    <a href="tel:+91-9814325187"
-                      class="bg-[#00acb1] uppercase rounded-lg p-1 px-8 text-lg font-semibold font-sans border-[#00acb1] border-2 text-white"><i
-                        class="far fa-phone-alt"></i> Call Now!</a>
-                  </p>
+                
                 </div>
-                <div class=" mt-0 xsm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden xsm:visible">
+                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
                     <span class="info-texts"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
                       class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
@@ -138,14 +132,14 @@
 
         <!-- tab buttons -->
         <nav aria-label="Tabs">
-          <ul class="flex border-b border-gray-100">
+          <ul class="flex border-b border-gray-100 text-xs">
             <li class="flex-1" @click="openTab = 1">
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
 
-                <div class="flex items-center justify-center gap-4">
+                <div class="flex items-center justify-center gap-1 md:gap-4">
                   <i class="fas fa-user"></i>
-                  <span class="text-sm font-medium text-gray-900 uppercase">
+                  <span class=" font-medium text-gray-900 uppercase">
                     Info
                   </span>
                 </div>
@@ -155,9 +149,9 @@
             <li class="flex-1" @click="openTab = 2">
               <button class="relative block p-2 md:p-4 w-full" >
                 <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
-                <div class="flex items-center justify-center gap-4">
+                <div class="flex items-center justify-center gap-1 md:gap-4">
                   <i class="fas fa-map-marker-alt"></i>
-                  <span class="text-sm font-medium text-gray-900 uppercase">
+                  <span class=" font-medium text-gray-900 uppercase">
                     About
                   </span>
                 </div>
@@ -167,9 +161,9 @@
             <li class="flex-1" @click="openTab = 3">
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
-                <div class="flex items-center justify-center gap-4">
+                <div class="flex items-center justify-center gap-1 md:gap-4">
                   <i class="fas fa-clock"></i>
-                  <span class="text-sm font-medium text-gray-900 uppercase">
+                  <span class=" font-medium text-gray-900 uppercase">
                     Highlights
                   </span>
                 </div>
@@ -179,9 +173,9 @@
             <li class="flex-1" @click="openTab = 4">
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
-                <div class="flex items-center justify-center gap-4">
+                <div class="flex items-center justify-center gap-1 md:gap-4">
                   <i class="fas fa-dollar-sign"></i>
-                  <span class="text-sm font-medium text-gray-900 uppercase">
+                  <span class=" font-medium text-gray-900 uppercase">
                     Consult
                   </span>
                 </div>

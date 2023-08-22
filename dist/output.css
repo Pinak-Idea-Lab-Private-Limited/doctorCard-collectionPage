@@ -529,7 +529,7 @@ video {
   font-size: 0.95rem;
 }
 
-@media (min-width: 820px) {
+@media (min-width: 768px) {
   .info-texts {
     font-size: 1rem;
   }
@@ -544,11 +544,17 @@ video {
 .info-h2 {
   margin-bottom: 0.5rem;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .info-h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -695,20 +701,20 @@ video {
   width: 0px;
 }
 
-.w-1\/4 {
-  width: 25%;
+.w-\[35\%\] {
+  width: 35%;
 }
 
-.w-3\/4 {
-  width: 75%;
+.w-\[65\%\] {
+  width: 65%;
 }
 
 .w-full {
   width: 100%;
 }
 
-.min-w-\[180px\] {
-  min-width: 180px;
+.min-w-\[100px\] {
+  min-width: 100px;
 }
 
 .max-w-\[1536px\] {
@@ -747,6 +753,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
@@ -765,10 +775,6 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-7 {
-  gap: 1.75rem;
 }
 
 .gap-8 {
@@ -844,6 +850,11 @@ video {
   background-color: rgb(0 172 177 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#f2f2f2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+}
+
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -862,11 +873,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#f2f2f2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -905,12 +911,12 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
 .pr-3 {
   padding-right: 0.75rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -935,6 +941,10 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -953,30 +963,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[0\.95rem\] {
-  font-size: 0.95rem;
-}
-
-.text-\[1rem\] {
-  font-size: 1rem;
-}
-
-.text-\[1\.1rem\] {
-  font-size: 1.1rem;
-}
-
-.text-\[0\.92rem\] {
-  font-size: 0.92rem;
-}
-
-.text-\[0\.93rem\] {
-  font-size: 0.93rem;
-}
-
-.text-\[1\.01rem\] {
-  font-size: 1.01rem;
 }
 
 .font-bold {
@@ -1034,6 +1020,32 @@ video {
   --tw-bg-opacity: 0.9;
 }
 
+@media (min-width: 450px) {
+  .xs\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .xs\:flex {
+    display: flex;
+  }
+
+  .xs\:w-\[35\%\] {
+    width: 35%;
+  }
+
+  .xs\:w-\[65\%\] {
+    width: 65%;
+  }
+
+  .xs\:gap-4 {
+    gap: 1rem;
+  }
+
+  .xs\:pt-0 {
+    padding-top: 0px;
+  }
+}
+
 @media (min-width: 544px) {
   .xsm\:visible {
     visibility: visible;
@@ -1066,6 +1078,26 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:visible {
+    visibility: visible;
+  }
+
+  .sm\:order-none {
+    order: 0;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:w-1\/4 {
+    width: 25%;
+  }
+
   .sm\:w-3\/4 {
     width: 75%;
   }
@@ -1075,7 +1107,7 @@ video {
   }
 }
 
-@media (min-width: 820px) {
+@media (min-width: 768px) {
   .md\:ml-6 {
     margin-left: 1.5rem;
   }
@@ -1084,8 +1116,12 @@ video {
     width: 30%;
   }
 
-  .md\:flex-row {
-    flex-direction: row;
+  .md\:min-w-\[180px\] {
+    min-width: 180px;
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
   }
 
   .md\:rounded-lg {
@@ -1098,11 +1134,6 @@ video {
 
   .md\:p-4 {
     padding: 1rem;
-  }
-
-  .md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .md\:shadow-2xl {
@@ -1133,6 +1164,10 @@ video {
     flex-direction: row;
   }
 
+  .lg\:gap-7 {
+    gap: 1.75rem;
+  }
+
   .lg\:rounded-lg {
     border-radius: 0.5rem;
   }
@@ -1141,20 +1176,21 @@ video {
     border-style: none;
   }
 
-  .lg\:text-\[23px\] {
-    font-size: 23px;
-  }
-
-  .lg\:text-\[26px\] {
-    font-size: 26px;
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .lg\:text-\[1\.1rem\] {
     font-size: 1.1rem;
   }
 
-  .lg\:text-\[1\.05rem\] {
-    font-size: 1.05rem;
+  .lg\:text-\[23px\] {
+    font-size: 23px;
+  }
+
+  .lg\:text-\[26px\] {
+    font-size: 26px;
   }
 
   .lg\:shadow-2xl {

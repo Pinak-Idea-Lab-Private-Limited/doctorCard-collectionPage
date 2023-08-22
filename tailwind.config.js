@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       screens: {
         'xsm': '544px',
-        'md': '820px',
+        "xs":"450px"
       },
       boxShadow: {
         '3xl': '.1px .1px 15px .1px #000',

@@ -8,7 +8,7 @@
         @apply flex items-center gap-3 text-[0.95rem] md:text-[1rem] lg:text-[1.1rem];
     }
     .info-h2 {
-        @apply text-black lg:text-[1.7rem] text-2xl font-sans font-bold mb-2;
+        @apply text-black lg:text-[1.7rem] sm:text-2xl text-[1.2rem] font-sans font-bold mb-2;
     }
     
 }
