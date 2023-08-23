@@ -26,34 +26,33 @@
   </style>
 </head>
 
-<body class="bg-[#f2f2f2]" x-data="{
-    openTab:1,
-  }">
+<body class="bg-[#f2f2f2]">
   <div class="flex px-0 lg:px-4 mt-2 gap-3 flex-col lg:flex-row max-w-[1536px] mx-auto">
     <!-- Left Side Content -->
     <div class="w-full lg:w-[70%]">
-      <!-- Doctor Card -->
-      <div
-        class="doc-card bg-white lg:rounded-lg lg:shadow-2xl mb-8 p-5 lg:border-none">
+      <!-- Doctor Card 1 -->
+      <div class="doc-card bg-white lg:rounded-lg lg:shadow-lg mb-8 p-5 lg:border-none" x-data="{
+        openTab:1,
+      }">
         <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
           <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
             <img src="./images/doctor.png" alt="" class="min-w-[100px] w-full md:min-w-[180px] " />
-            
+
           </div>
           <div class="w-full xs:w-[65%] sm:w-3/4 max-h-[15rem] h-[15rem] relative mr-[15px] pt-4 xs:pt-0">
-            <!-- tab content 1 --> 
+            <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
-                <h2 class="info-h2 ">
-                  Dr. Brigadier R K Sharma
-                </h2>
-                
-                <p class="info-texts gap-2 mt-2 xsm:mt-0">
-                  <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), VSM
-                </p>
-                <p class="info-texts ">
-                  <i class="far fa-badge-check"></i> Medical Registration Verified
-                </p>
+              <h2 class="info-h2 ">
+                Dr. Brigadier R K Sharma
+              </h2>
+
+              <p class="info-texts gap-2 mt-2 xsm:mt-0">
+                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), VSM
+              </p>
+              <p class="info-texts ">
+                <i class="far fa-badge-check"></i> Medical Registration Verified
+              </p>
 
               <div class="flex mt-3 doc1">
                 <div class="stars-outer relative inline-block">
@@ -64,6 +63,10 @@
 
               <div class="flex flex-col sm:flex-row mt-3 w-full">
                 <div class=" flex flex-col w-full lg:w-1/2">
+                  <p class="info-texts gap-4">
+                    <i class="far fa-user-md"></i>
+                                        Working since 1981
+                  </p>
                   <p class="info-texts ">
                     <i class="far fa-stars"></i>28 Years Experience
                   </p>
@@ -73,24 +76,24 @@
                   <p class="info-texts">
                     <i class="far fa-phone-alt"></i>+91-9814325187
                   </p>
-                
+
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
-                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                      <i class="far fa-rupee-sign text-xs font-light"></i>
                       1000</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Noida</span><span
-                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
+                        class="far fa-rupee-sign text-xs font-light"></i>
                       500</span>
                   </p>
                   <p class="mt-2 info-texts">First Consultancy Free</p>
                 </div>
               </div>
             </div>
-                        <!-- tab content 2 -->
+            <!-- tab content 2 -->
 
             <div x-show="openTab === 2">
               <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
@@ -110,7 +113,7 @@
               </div>
 
             </div>
-                        <!-- tab content 3 -->
+            <!-- tab content 3 -->
 
             <div x-show="openTab === 3" class="">
               <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
@@ -118,7 +121,7 @@
               </h3>
               Highlights TAB
             </div>
-                        <!-- tab content 4 -->
+            <!-- tab content 4 -->
 
             <div x-show="openTab === 4" class="">
               <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
@@ -147,7 +150,7 @@
             </li>
 
             <li class="flex-1" @click="openTab = 2">
-              <button class="relative block p-2 md:p-4 w-full" >
+              <button class="relative block p-2 md:p-4 w-full">
                 <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
                   <i class="fas fa-map-marker-alt"></i>
@@ -185,161 +188,845 @@
         </nav>
 
       </div>
-      <!-- <div
-        class="doc-card bg-white md:rounded-lg md:shadow-2xl mb-8 p-3 border-b-[1px] border-b-[#F5485D] md:border-none">
-        <div class="flex gap-8">
-          <div class="img grow-0 hidden xsm:block">
 
-            <img src="./images/rita.png" alt="" class="relative" />
 
-            <div class="flex mt-4 lg:ml-12 md:ml-6 doc1">
-              <div class="stars-outer relative inline-block">
-                <div class="stars-inner absolute top-0 left-0 whitespace-nowrap overflow-hidden w-0"></div>
+      <!-- Doctor Card 2 -->
+      <div class="doc-card bg-white lg:rounded-lg lg:shadow-lg mb-8 p-5 lg:border-none" x-data="{
+        openTab:1,
+      }">
+        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+            <img src="https://www.pregawish.com/uploads/doctor/thumbnail/179/dr-rashmi-sharma.jpg" alt=""
+              class="min-w-[100px] w-full md:min-w-[180px] " />
+
+          </div>
+          <div class="w-full xs:w-[65%] sm:w-3/4 max-h-[15rem] h-[15rem] relative mr-[15px] pt-4 xs:pt-0">
+            <!-- tab content 1 -->
+            <div class="information grow flex flex-col h-full " x-show="openTab === 1">
+
+              <h2 class="info-h2 ">
+                Dr. Rashmi Sharma
+
+              </h2>
+
+              <p class="info-texts gap-2 mt-2 xsm:mt-0">
+                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), DNB
+              </p>
+              <p class="info-texts ">
+                <i class="far fa-badge-check"></i> Medical Registration Verified
+              </p>
+
+              <div class="flex mt-3 doc1">
+                <div class="stars-outer relative inline-block">
+                  <div class="stars-inner absolute top-0 left-0 whitespace-nowrap overflow-hidden w-0"></div>
+                </div>
+                <span class="number-rating ml-2">(100)</span>
               </div>
-              <span class="number-rating ml-2">(100)</span>
+
+              <div class="flex flex-col sm:flex-row mt-3 w-full">
+                <div class=" flex flex-col w-full lg:w-1/2">
+                  <p class="info-texts gap-4">
+                    <i class="far fa-user-md"></i>
+                                        Working since 1981
+                  </p>
+                  <p class="info-texts ">
+                    <i class="far fa-stars"></i>27 Years Experience
+                  </p>
+                  <p class="info-texts gap-4">
+                    <i class="fal fa-baby"></i>6000 IVF Cycles
+                  </p>
+                  <p class="info-texts">
+                    <i class="far fa-phone-alt"></i> +91-11-45991111
+                  </p>
+
+                </div>
+                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
+                  <p class="flex gap-6 items-center justify-between">
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                      <i class="far fa-rupee-sign text-xs font-light"></i>
+                      500</span>
+                  </p>
+                  <p class="flex gap-6 justify-between">
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
+                        class="far fa-rupee-sign text-xs font-light"></i>
+                      300</span>
+                  </p>
+                  <p class="mt-2 info-texts">First Consultancy Free</p>
+                </div>
+              </div>
+            </div>
+            <!-- tab content 2 -->
+
+            <div x-show="openTab === 2">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                About | Dr. Rashmi Sharma
+              </h3>
+              <div class="overflow-auto max-h-48 text-justify text-[1rem] lg:text-[1.1rem] pr-3">
+                Dr. Rashmi Sharma is Delhi based senior infertility specialist and gynecologist. She is practicing since
+                1996. Dr. Rashmi Sharma has over twenty four years experience as a medical practitioner. She has been
+                working as a specialist (Obstetrics and Gynecology) since twenty one years. She completed her MBBS from
+                Banaras Hindu University in 1996. She finished her MD (Obstetrics & Gynecology) from the same university
+                in 1999. She also holds a Diploma in OBGYN from National Board of Examination. Dr. Rashmi trained in IVF
+                at Kiel University, Germany. She is a member of National Academy of Medical Sciences and FICOG. She is
+                the director of Origyn Fertility & IVF and also a clinician (Sr. IVF Consultant) at the clinic. She
+                handles cases of IVF, IUI, and infertility consultation. The doctor has performed over 6000 IVF cycles
+                with excellent success rate (between 60% to 70%). She has years of experience at procedures like IUI,
+                IVF, ICSI, TESA, PESA, IMSI, Assisted Laser Hatching, Blastocyst culture, crypto preservation and
+                laparoscopic & hysteroscopic surgeries.
+              </div>
+
+            </div>
+            <!-- tab content 3 -->
+
+            <div x-show="openTab === 3" class="">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                Highlights | Dr. Rashmi Sharma
+              </h3>
+              Highlights TAB
+            </div>
+            <!-- tab content 4 -->
+
+            <div x-show="openTab === 4" class="">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                Where to consult Dr. Rashmi Sharma
+              </h3>
+              consult TAB
             </div>
           </div>
-          <div class="information grow flex flex-col">
-            <h1 class="text-black lg:text-[26px] xsm:text-lg xl:text-3xl text-2xl font-sans font-bold mb-2">
-              Dr. Rita Bakshi
-            </h1>
 
-            <div class="relative xsm:hidden">
-
-              <img src="./images/rita.png" alt="" class="w-full relative xsm:hidden" />
-
-            </div>
-            <p class="flex items-center gap-2 mt-2 xsm:mt-0">
-              <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), DGO
-            </p>
-            <p class="flex items-center gap-3">
-              <i class="far fa-badge-check"></i> Medical Registration Verified
-            </p>
-            <div class="flex items-center mt-5">
-              <i class="far fa-pills"></i>
-              <span
-                class="font-sans border-[1px] border-black border-solid rounded-md px-2 bg-gray-300 ml-3">Surrogacy</span>
-              <span class="font-sans border-[1px] border-black border-solid rounded-md px-2 bg-gray-300 ml-2">IVF</span>
-              <span class="font-sans border-[1px] border-black border-solid rounded-md px-2 bg-gray-300 ml-2">IUI</span>
-            </div>
-            <div class="flex flex-col lg:flex-row mt-5 w-full">
-              <div class="w-full flex flex-col xl:w-2/5">
-                <p class="flex items-center gap-3 order-2 xsm:order-none">
-                  <i class="far fa-stars"></i> 40 Years Experience
-                </p>
-                <p class="flex items-center gap-4 order-last xsm:order-none">
-                  <i class="fal fa-baby"></i> 10000 IVF Cycles
-                </p>
-                <p class="xsm:flex items-center gap-3 hidden xsm:visible">
-                  <i class="far fa-phone-alt"></i>+91-9814325187
-                </p>
-                <p class="mb-6 mt-5 xsm:hidden order-1 xsm:order-none text-center">
-                  <a href="tel:+91-9814325187"
-                    class="bg-[#00acb1] uppercase rounded-lg p-1 px-8 text-lg font-semibold font-sans border-[#00acb1] border-2 text-white"><i
-                      class="far fa-phone-alt"></i> Call Now!</a>
-                </p>
-              </div>
-              <div class="mt-5 lg:mt-0 xsm:flex flex-col w-full sm:w-3/4 xl:w-2/5 hidden xsm:visible">
-                <p class="flex gap-6 justify-between">
-                  <span class="flex gap-3 items-center"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span> <i
-                      class="far fa-rupee-sign text-xs font-light"></i>
-                    1000</span>
-                </p>
-                <p class="flex gap-6 justify-between">
-                  <span class="flex gap-3 items-center"><i class="far fa-map-marker-alt"></i>Noida</span><span>
-                    <i class="far fa-rupee-sign text-xs font-light"></i>
-                    500</span>
-                </p>
-                <p class="mt-2">First Consultancy Free</p>
-
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="desc flex flex-col justify-center mt-8" x-data="{
-            openTab:1,
-          }">
-          <nav aria-label="Tabs">
-            <ul class="flex border-b border-gray-100">
-              <li class="flex-1" @click="openTab = 1">
-                <a class="relative block p-2 md:p-4" href="#">
-                  <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
 
-                  <div class="flex items-center justify-center gap-4">
-                    <i class="fas fa-user"></i>
-                    <span class="text-sm font-medium text-gray-900 uppercase">
-                      About
-                    </span>
-                  </div>
-                </a>
-              </li>
+        <!-- tab buttons -->
+        <nav aria-label="Tabs">
+          <ul class="flex border-b border-gray-100 text-xs">
+            <li class="flex-1" @click="openTab = 1">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
 
-              <li class="flex-1" @click="openTab = 2">
-                <a class="relative block p-2 md:p-4" href="#">
-                  <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
-                  <div class="flex items-center justify-center gap-4">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="text-sm font-medium text-gray-900 uppercase">
-                      Location
-                    </span>
-                  </div>
-                </a>
-              </li>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-user"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Info
+                  </span>
+                </div>
+              </button>
+            </li>
 
-              <li class="flex-1" @click="openTab = 3">
-                <a class="relative block p-2 md:p-4" href="#">
-                  <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
-                  <div class="flex items-center justify-center gap-4">
-                    <i class="fas fa-clock"></i>
-                    <span class="text-sm font-medium text-gray-900 uppercase">
-                      Timings
-                    </span>
-                  </div>
-                </a>
-              </li>
+            <li class="flex-1" @click="openTab = 2">
+              <button class="relative block p-2 md:p-4 w-full">
+                <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    About
+                  </span>
+                </div>
+              </button>
+            </li>
 
-              <li class="flex-1" @click="openTab = 4">
-                <a class="relative block p-2 md:p-4" href="#">
-                  <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
-                  <div class="flex items-center justify-center gap-4">
-                    <i class="fas fa-dollar-sign"></i>
-                    <span class="text-sm font-medium text-gray-900 uppercase">
-                      Cost
-                    </span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="">
-            <div x-show="openTab === 1">
-              <div class="mt-8 text-justify">
-                Dr. Rita Bakshi is a pioneer in the field of assisted reproductive technology (ART). She is a renowned
-                IVF specialist. Dr. Rita Bakshi's areas of expertise are IVF, IUI, ICSI, and surrogacy. She also
-                specializes in the treatment of recurrent miscarriages, endometriosis, and ovulatory disorders. With
-                over 36 years of experience, Dr. Rita Bakshi is a pioneer in the field of infertility treatment. Dr.
-                Rita Bakshi has over 4,000 successful IVF cycles to her credit. She also has performed many ICSI, IUI,
-                surrogacy, surrogacy with OD, and frozen embryo transfers procedures. We have also included her in our
-                list of top IVF doctors in Delhi.
+            <li class="flex-1" @click="openTab = 3">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-clock"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Highlights
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 4">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Consult
+                  </span>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      <!-- Doctor Card 3 -->
+      <div class="doc-card bg-white lg:rounded-lg lg:shadow-lg mb-8 p-5 lg:border-none" x-data="{
+        openTab:1,
+      }">
+        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+            <img src="https://www.pregawish.com/uploads/doctor/thumbnail/541/dr-prerna-gupta-ivf-doctor-delhi.jpeg"
+              alt="" class="min-w-[100px] w-full md:min-w-[180px] " />
+
+          </div>
+          <div class="w-full xs:w-[65%] sm:w-3/4 max-h-[15rem] h-[15rem] relative mr-[15px] pt-4 xs:pt-0">
+            <!-- tab content 1 -->
+            <div class="information grow flex flex-col h-full " x-show="openTab === 1">
+
+              <h2 class="info-h2 ">
+                Dr. Prerna Gupta
+              </h2>
+
+              <p class="info-texts gap-2 mt-2 xsm:mt-0">
+                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), DNB, MNAMS, MRCOG
+
+
+              </p>
+              <p class="info-texts ">
+                <i class="far fa-badge-check"></i> Medical Registration Verified
+              </p>
+
+              <div class="flex mt-3 doc1">
+                <div class="stars-outer relative inline-block">
+                  <div class="stars-inner absolute top-0 left-0 whitespace-nowrap overflow-hidden w-0"></div>
+                </div>
+                <span class="number-rating ml-2">(100)</span>
               </div>
-              <div class="flex justify-center mt-6 items-center">
-                <button
-                  class="bg-gray-500  rounded-lg py-2 px-8 text-md font-semibold bordergray-500 border-2 hover:bg-opacity-90 text-white transition ease-out duration-500">
-                  View Full Profile
-                </button>
+
+              <div class="flex flex-col sm:flex-row mt-3 w-full">
+                <div class=" flex flex-col w-full lg:w-1/2">
+                  <p class="info-texts gap-4">
+                    <i class="far fa-user-md"></i>
+                                        Working since 1981
+                  </p>
+                  <p class="info-texts ">
+                    <i class="far fa-stars"></i>19 Years Experience
+                  </p>
+                  <p class="info-texts gap-4">
+                    <i class="fal fa-baby"></i>6000 IVF Cycles
+                  </p>
+                  <p class="info-texts">
+                    <i class="far fa-phone-alt"></i> +91-9910724959
+
+
+                  </p>
+
+                </div>
+                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
+                  <p class="flex gap-6 items-center justify-between">
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                      <i class="far fa-rupee-sign text-xs font-light"></i>
+                      1500</span>
+                  </p>
+                  <p class="flex gap-6 justify-between">
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
+                        class="far fa-rupee-sign text-xs font-light"></i>
+                      1000</span>
+                  </p>
+                  <p class="mt-2 info-texts">First Consultancy Free</p>
+                </div>
               </div>
             </div>
-            <div x-show="openTab === 2" class="mt-8">LOCATION TAB</div>
-            <div x-show="openTab === 3" class="mt-8">TIMINGS TAB</div>
-            <div x-show="openTab === 4" class="mt-8">COSTS TAB</div>
+            <!-- tab content 2 -->
+
+            <div x-show="openTab === 2">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                About | Dr. Prerna Gupta
+              </h3>
+              <div class="overflow-auto max-h-48 text-justify text-[1rem] lg:text-[1.1rem] pr-3">
+                Dr. Prerna Gupta is Senior Consultant (Obstetrics, Gynecology, & Infertility Specialist) in Delhi. She
+                practices in Hauz Khas area of South Delhi. Dr. Prerna Gupta completed her MBBS form All India Institute
+                of Medical Sciences (AIIMS) New Delhi in 2004. She completed her MD (Obstetrics & Gynecology) in 2007
+                from the same institute. She is a member of Royal College of Obstetricians and Gynecologists (UK). She
+                did a fellowship in Assisted Reproduction Techniques in 2012 from Royal College of Obstetricians and
+                Gynecologists. Dr. Prerna Gupta is one of the few infertility specialists in Delhi with an "ivy league"
+                education. She provides treatments and procedures like IVF, third party reproduction, fertility
+                cryptopreservation, ovulation induction, IUI, fertility enhancing services, male infertility, and IVF
+                failures. She also handles gynecological and obstetric cases.
+              </div>
+
+            </div>
+            <!-- tab content 3 -->
+
+            <div x-show="openTab === 3" class="">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                Highlights | Dr. Prerna Gupta
+
+              </h3>
+              Highlights TAB
+            </div>
+            <!-- tab content 4 -->
+
+            <div x-show="openTab === 4" class="">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                Where to consult Dr. Prerna Gupta
+
+              </h3>
+              consult TAB
+            </div>
           </div>
+
         </div>
-      </div> -->
+
+        <!-- tab buttons -->
+        <nav aria-label="Tabs">
+          <ul class="flex border-b border-gray-100 text-xs">
+            <li class="flex-1" @click="openTab = 1">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-user"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Info
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 2">
+              <button class="relative block p-2 md:p-4 w-full">
+                <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    About
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 3">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-clock"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Highlights
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 4">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Consult
+                  </span>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <!-- Doctor Card 4 -->
+      <div class="doc-card bg-white lg:rounded-lg lg:shadow-lg mb-8 p-5 lg:border-none" x-data="{
+        openTab:1,
+      }">
+        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+            <img src="https://www.pregawish.com/uploads/doctor/thumbnail/489/dr-nandita-p-palshetkar.jpeg" alt=""
+              class="min-w-[100px] w-full md:min-w-[180px] " />
+
+          </div>
+          <div class="w-full xs:w-[65%] sm:w-3/4 max-h-[15rem] h-[15rem] relative mr-[15px] pt-4 xs:pt-0">
+            <!-- tab content 1 -->
+            <div class="information grow flex flex-col h-full " x-show="openTab === 1">
+
+              <h2 class="info-h2 ">
+                Dr. Nandita Palshetkar
+              </h2>
+
+              <p class="info-texts gap-2 mt-2 xsm:mt-0">
+                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), FCPS
+              </p>
+              <p class="info-texts ">
+                <i class="far fa-badge-check"></i> Medical Registration Verified
+              </p>
+
+              <div class="flex mt-3 doc1">
+                <div class="stars-outer relative inline-block">
+                  <div class="stars-inner absolute top-0 left-0 whitespace-nowrap overflow-hidden w-0"></div>
+                </div>
+                <span class="number-rating ml-2">(100)</span>
+              </div>
+
+              <div class="flex flex-col sm:flex-row mt-3 w-full">
+                <div class="flex flex-col w-full lg:w-1/2">
+                 
+                  <p class="info-texts gap-4">
+                    <i class="far fa-user-md"></i>
+                      Working since 1981
+                  </p>
+                  <p class="info-texts ">
+                    <i class="far fa-stars"></i>37 Years Experience
+                  </p>
+                  <p class="info-texts gap-4">
+                    <i class="fal fa-baby"></i>8000 IVF Cycles
+                  </p>
+                  <p class="info-texts">
+                    <i class="far fa-phone-alt"></i>   +91-8433732400
+
+
+
+                </div>
+                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
+                  <p class="flex gap-6 items-center justify-between">
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                      <i class="far fa-rupee-sign text-xs font-light"></i>
+                      2000</span>
+                  </p>
+                  <p class="flex gap-6 justify-between">
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
+                        class="far fa-rupee-sign text-xs font-light"></i>
+                      500</span>
+                  </p>
+                  <p class="mt-2 info-texts">First Consultancy Free</p>
+                </div>
+              </div>
+            </div>
+            <!-- tab content 2 -->
+
+            <div x-show="openTab === 2">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                About | Dr. Nandita Palshetkar
+
+              </h3>
+              <div class="overflow-auto max-h-48 text-justify text-[1rem] lg:text-[1.1rem] pr-3">
+                Dr. Nandita P Palshetkar is an Obstetrician and Gynecologist. She is based in Mumbai. The doctor
+                practices at Babies and Us Fertility IVF Centre. She did her MBBS from Grant Medical College and Sir JJ
+                Hospital, Mumbai in 1985. She did her MS in Obstetrics and Gynecology from University of Mumbai, Mumbai,
+                in 1993. She was awarded FCPS from College of Physicians and surgeons Mumbai in 1993. Dr. Nandita P
+                Palshetkar is a pioneer in the field of assisted reproductive technology. She introduced techniques like
+                assisted laser hatching, IMSI, embryoscopy, and egg banking to India. She is the founder of Bloom IVF.
+                Bloom IVF has 12 centers in India. She is the The Federation of Obstetric & Gynaecological Societies of
+                India. She has also served as the president of the Mumbai Obstetrics and Gynaecology Society. She was
+                the Vice President of Federation of Obstetrics and Gynaecology India in 2011.
+              </div>
+
+            </div>
+            <!-- tab content 3 -->
+
+            <div x-show="openTab === 3" class="">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                Highlights | Dr. Nandita Palshetkar
+
+              </h3>
+              Highlights TAB
+            </div>
+            <!-- tab content 4 -->
+
+            <div x-show="openTab === 4" class="">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                Where to consult Dr. Nandita Palshetkar
+
+              </h3>
+              consult TAB
+            </div>
+          </div>
+
+        </div>
+
+        <!-- tab buttons -->
+        <nav aria-label="Tabs">
+          <ul class="flex border-b border-gray-100 text-xs">
+            <li class="flex-1" @click="openTab = 1">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-user"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Info
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 2">
+              <button class="relative block p-2 md:p-4 w-full">
+                <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    About
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 3">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-clock"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Highlights
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 4">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Consult
+                  </span>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      <!-- Doctor Card 5 -->
+      <div class="doc-card bg-white lg:rounded-lg lg:shadow-lg mb-8 p-5 lg:border-none" x-data="{
+        openTab:1,
+      }">
+        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+            <img src="https://www.pregawish.com/uploads/doctor/thumbnail/459/dr-s-mayadevi-kurup.jpg" alt=""
+              class="min-w-[100px] w-full md:min-w-[180px] " />
+
+          </div>
+          <div class="w-full xs:w-[65%] sm:w-3/4 max-h-[15rem] h-[15rem] relative mr-[15px] pt-4 xs:pt-0">
+            <!-- tab content 1 -->
+            <div class="information grow flex flex-col h-full " x-show="openTab === 1">
+
+              <h2 class="info-h2 ">
+                Dr. S Mayadevi Kurup
+
+              </h2>
+
+              <p class="info-texts gap-2 mt-2 xsm:mt-0">
+                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), DNB (Obs & Gyn), DGO, MRCOG (UK)
+
+
+              </p>
+              <p class="info-texts ">
+                <i class="far fa-badge-check"></i> Medical Registration Verified
+              </p>
+
+              <div class="flex mt-3 doc1">
+                <div class="stars-outer relative inline-block">
+                  <div class="stars-inner absolute top-0 left-0 whitespace-nowrap overflow-hidden w-0"></div>
+                </div>
+                <span class="number-rating ml-2">(100)</span>
+              </div>
+
+              <div class="flex flex-col sm:flex-row mt-3 w-full">
+                <div class=" flex flex-col w-full lg:w-1/2">
+                  <p class="info-texts gap-4">
+                    <i class="far fa-user-md"></i>
+                                        Working since 1981
+                  </p>
+                  <p class="info-texts ">
+                    <i class="far fa-stars"></i>27 Years Experience
+                  </p>
+                  <p class="info-texts gap-4">
+                    <i class="fal fa-baby"></i>6000 IVF Cycles
+                  </p>
+                  <p class="info-texts">
+                    <i class="far fa-phone-alt"></i> +914846699999
+
+
+                  </p>
+
+                </div>
+                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
+                  <p class="flex gap-6 items-center justify-between">
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                      <i class="far fa-rupee-sign text-xs font-light"></i>
+                      500</span>
+                  </p>
+                  <p class="flex gap-6 justify-between">
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
+                        class="far fa-rupee-sign text-xs font-light"></i>
+                      300</span>
+                  </p>
+                  <p class="mt-2 info-texts">First Consultancy Free</p>
+                </div>
+              </div>
+            </div>
+            <!-- tab content 2 -->
+
+            <div x-show="openTab === 2">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                About | Dr. S Mayadevi Kurup
+
+              </h3>
+              <div class="overflow-auto max-h-48 text-justify text-[1rem] lg:text-[1.1rem] pr-3">
+                Dr. S. Mayadevi Kurup is an obstetrician and gynecologist. She has been working since 1996. She
+                completed her MBBS from Government Medical College, Thiruvananthapuram. She did her MD in obstetrics and
+                gynecology from the same college. She is a senior consultant (Obstetrics and Gynecology) at Aster
+                Medcity Hospital, Kochi.
+
+                Dr. S. Mayadevi Kurup is the first doctor in Kerala to perform robotic surgery. Her areas of
+                specialization are general gynaecology, high risk obstetrics, maternal medicine, critical care in
+                obstetrics, and gyne-oncology. She has been working as a senior consultant (Obstetrician and
+                Gynecologist) at the Centre of Excellence in Women's Health, Aster Medcity since 2014. She has also
+                worked as an obstetrician and gynecologist in the United Kingdom for almost twenty years. She has the
+                distinction of being the first gynecologist in Kerala to perform robotic surgery. She is trained in the
+                field of complex robotic gynecological surgery. Dr. S. Mayadevi Kurup is also experienced at managing
+                complex and high-risk pregnancies.
+              </div>
+
+            </div>
+            <!-- tab content 3 -->
+
+            <div x-show="openTab === 3" class="">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                Highlights | Dr. S Mayadevi Kurup
+
+              </h3>
+              Highlights TAB
+            </div>
+            <!-- tab content 4 -->
+
+            <div x-show="openTab === 4" class="">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                Where to consult Dr. S Mayadevi Kurup
+
+              </h3>
+              consult TAB
+            </div>
+          </div>
+
+        </div>
+
+        <!-- tab buttons -->
+        <nav aria-label="Tabs">
+          <ul class="flex border-b border-gray-100 text-xs">
+            <li class="flex-1" @click="openTab = 1">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-user"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Info
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 2">
+              <button class="relative block p-2 md:p-4 w-full">
+                <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    About
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 3">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-clock"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Highlights
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 4">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Consult
+                  </span>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      <!-- Doctor Card 6 -->
+      <div class="doc-card bg-white lg:rounded-lg lg:shadow-lg mb-8 p-5 lg:border-none" x-data="{
+        openTab:1,
+      }">
+        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+            <img src="https://www.pregawish.com/uploads/doctor/thumbnail/1280/dr.sharath-p-devdas.jpg" alt=""
+              class="min-w-[100px] w-full md:min-w-[180px] " />
+
+          </div>
+          <div class="w-full xs:w-[65%] sm:w-3/4 max-h-[15rem] h-[15rem] relative mr-[15px] pt-4 xs:pt-0">
+            <!-- tab content 1 -->
+            <div class="information grow flex flex-col h-full " x-show="openTab === 1">
+
+              <h2 class="info-h2 ">
+                Dr. Sharath P Devdas
+              </h2>
+
+              <p class="info-texts gap-2 mt-2 xsm:mt-0">
+                <i class="far fa-graduation-cap"></i> MBBS, MS (Obs & Gyn)
+
+
+
+
+              </p>
+              <p class="info-texts ">
+                <i class="far fa-badge-check"></i> Medical Registration Verified
+              </p>
+
+              <div class="flex mt-3 doc1">
+                <div class="stars-outer relative inline-block">
+                  <div class="stars-inner absolute top-0 left-0 whitespace-nowrap overflow-hidden w-0"></div>
+                </div>
+                <span class="number-rating ml-2">(100)</span>
+              </div>
+
+              <div class="flex flex-col sm:flex-row mt-3 w-full">
+                <div class=" flex flex-col w-full lg:w-1/2">
+                  <p class="info-texts gap-4">
+                    <i class="far fa-user-md"></i>
+                                        Working since 1981
+                  </p>
+                  <p class="info-texts ">
+                    <i class="far fa-stars"></i>12 Years Experience
+                  </p>
+                  <p class="info-texts gap-4">
+                    <i class="fal fa-baby"></i>6000 IVF Cycles
+                  </p>
+                  <p class="info-texts">
+                    <i class="far fa-phone-alt"></i> +91 4942605000
+
+
+                  </p>
+
+                </div>
+                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
+                  <p class="flex gap-6 items-center justify-between">
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                      <i class="far fa-rupee-sign text-xs font-light"></i>
+                      500</span>
+                  </p>
+                  <p class="flex gap-6 justify-between">
+                    <span class="info-texts"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
+                        class="far fa-rupee-sign text-xs font-light"></i>
+                      0</span>
+                  </p>
+                  <p class="mt-2 info-texts">First Consultancy Free</p>
+                </div>
+              </div>
+            </div>
+            <!-- tab content 2 -->
+
+            <div x-show="openTab === 2">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                About | Dr. Sharath P Devdas
+
+              </h3>
+              <div class="overflow-auto max-h-48 text-justify text-[1rem] lg:text-[1.1rem] pr-3">
+                Dr. Sharath P Devdas is a Delhi-based IVF specialist, gynecologist, and obstetrician. He has
+                been working since 1981. He is a reputed IVF specialist with more than 15,000 IVF cycles under his belt.
+                Dr. Sharath P Devdas is among the best IVF specialists in Delhi. His areas of specialization are
+                infertility,
+                endoscopy, obstetrics, and gynecology. Brigadier Dr. R K Sharma completed his MBBS from Pune University
+                in 1981. He did his MD in Obstetrics & Gynecology from Pune University passing out in 1989. He trained
+                in IVF at Bombay Hospital in 1995.
+              </div>
+
+            </div>
+            <!-- tab content 3 -->
+
+            <div x-show="openTab === 3" class="">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                Highlights | Dr. Sharath P Devdas
+
+
+              </h3>
+              Highlights TAB
+            </div>
+            <!-- tab content 4 -->
+
+            <div x-show="openTab === 4" class="">
+              <h3 class="text-black lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2">
+                Where to consult Dr. Sharath P Devdas
+
+
+              </h3>
+              consult TAB
+            </div>
+          </div>
+
+        </div>
+
+        <!-- tab buttons -->
+        <nav aria-label="Tabs">
+          <ul class="flex border-b border-gray-100 text-xs">
+            <li class="flex-1" @click="openTab = 1">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-user"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Info
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 2">
+              <button class="relative block p-2 md:p-4 w-full">
+                <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    About
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 3">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-clock"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Highlights
+                  </span>
+                </div>
+              </button>
+            </li>
+
+            <li class="flex-1" @click="openTab = 4">
+              <button class="relative block p-2 md:p-4 w-full" href="#">
+                <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
+                <div class="flex items-center justify-center gap-1 md:gap-4">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span class=" font-medium text-gray-900 uppercase">
+                    Consult
+                  </span>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
 
     </div>
 
     <!-- Right Side Content -->
-    <div class="w-full md:w-[30%] border">
+    <div class="w-full md:w-[30%] border border-gray-400">
       <h1 class="text-3xl text-center"></h1>
     </div>
   </div>
