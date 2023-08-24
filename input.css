@@ -6,7 +6,7 @@
 @layer components {
     .info-texts {
         @apply flex items-center gap-3;
-        font-size: calc(16px + 2 * ((100vw - 300 * 1px) / (2920 - 300)));
+        font-size: calc(16px + 2 * ((100vw - 300) / (2920 - 300)));
     }
 
     .info-h2 {
