@@ -6,13 +6,15 @@
 @layer components {
     .info-texts {
         @apply flex items-center gap-3;
-        font-size: calc(16px + 2 * ((100vw - 300) / (2920 - 300)));
     }
-
+    
     .info-h2 {
-        @apply text-black lg: text-[1.7rem] sm:text-2xl text-[1.2rem] font-sans font-bold mb-2;
+        @apply text-black lg:text-[1.7rem] sm:text-2xl text-[1.2rem] font-sans font-bold mb-2;
     }
+    
+    .fz-scale{
+        font-size: calc(16px + 2 * ((100vw - 300*1px) / (2920 - 300)));
 
-
+    }
 
 }
