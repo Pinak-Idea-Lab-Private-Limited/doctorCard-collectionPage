@@ -23,12 +23,49 @@
       font-weight: 900;
       color: #f8ce0b;
     }
-
-    
   </style>
 </head>
 
 <body class="bg-[#f2f2f2]">
+  <!-- About section display modal  -->
+  <div id="dc-modal" class="relative z-10 hidden " aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+    <div class="fixed inset-0 z-10 overflow-y-auto">
+      <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+
+        <div
+          class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl">
+          <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+            <div class="sm:flex sm:items-start">
+
+              <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                <h3 id="modalTitle" class="text-black text-left lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2" id="modal-title">About | Dr ashish magadum
+                </h3>
+                <div class="mt-2">
+                  <p id="modalContent" class=" text-justify text-gray-700 fz-scale">
+                    modalContact.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+            <button type="button"
+              class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+              onclick="showAndHideModal('hide')"
+              >Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- doctors cards -->
   <div class="flex px-0 lg:px-4 mt-2 gap-3 flex-col lg:flex-row max-w-[1536px] mx-auto">
     <!-- Left Side Content -->
     <div class="w-full lg:w-[70%]">
@@ -82,13 +119,14 @@
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
+                      class="gap-1">
                       <i class="far fa-rupee-sign text-xs font-light"></i>
                       1000</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
-                        class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
+                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
                       500</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -113,6 +151,7 @@
                 from Pune University passing out in 1989. He trained in IVF at
                 Bombay Hospital in 1995.
               </div>
+              <div id="aboutTab-rmBtn-0" class="hidden"  onclick="showAndHideModal('show',0)">Read more</div>
 
             </div>
             <!-- tab content 3 -->
@@ -244,13 +283,14 @@
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
+                      class="gap-1">
                       <i class="far fa-rupee-sign text-xs font-light"></i>
                       500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
-                        class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
+                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
                       300</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -276,6 +316,7 @@
                 IVF, ICSI, TESA, PESA, IMSI, Assisted Laser Hatching, Blastocyst culture, crypto preservation and
                 laparoscopic & hysteroscopic surgeries.
               </div>
+              <div id="aboutTab-rmBtn-1" class="hidden"  onclick="showAndHideModal('show',1)">Read more</div>
 
             </div>
             <!-- tab content 3 -->
@@ -410,13 +451,14 @@
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
+                      class="gap-1">
                       <i class="far fa-rupee-sign text-xs font-light"></i>
                       1500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
-                        class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
+                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
                       1000</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -440,6 +482,7 @@
                 cryptopreservation, ovulation induction, IUI, fertility enhancing services, male infertility, and IVF
                 failures. She also handles gynecological and obstetric cases.
               </div>
+              <div id="aboutTab-rmBtn-2" class="hidden"  onclick="showAndHideModal('show',2)">Read more</div>
 
             </div>
             <!-- tab content 3 -->
@@ -573,13 +616,14 @@
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
+                      class="gap-1">
                       <i class="far fa-rupee-sign text-xs font-light"></i>
                       2000</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
-                        class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
+                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
                       500</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -604,6 +648,7 @@
                 India. She has also served as the president of the Mumbai Obstetrics and Gynaecology Society. She was
                 the Vice President of Federation of Obstetrics and Gynaecology India in 2011.
               </div>
+              <div id="aboutTab-rmBtn-3" class="hidden"  onclick="showAndHideModal('show',3)">Read more</div>
 
             </div>
             <!-- tab content 3 -->
@@ -741,13 +786,14 @@
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
+                      class="gap-1">
                       <i class="far fa-rupee-sign text-xs font-light"></i>
                       500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
-                        class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
+                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
                       300</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -776,6 +822,7 @@
                 field of complex robotic gynecological surgery. Dr. S. Mayadevi Kurup is also experienced at managing
                 complex and high-risk pregnancies.
               </div>
+              <div id="aboutTab-rmBtn-4" class="hidden"  onclick="showAndHideModal('show',4)">Read more</div>
 
             </div>
             <!-- tab content 3 -->
@@ -914,13 +961,14 @@
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span class="gap-1">
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
+                      class="gap-1">
                       <i class="far fa-rupee-sign text-xs font-light"></i>
                       500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span class="gap-1"> <i
-                        class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
+                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
                       0</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -943,6 +991,7 @@
                 in 1981. He did his MD in Obstetrics & Gynecology from Pune University passing out in 1989. He trained
                 in IVF at Bombay Hospital in 1995.
               </div>
+              <div id="aboutTab-rmBtn-5" class="hidden"  onclick="showAndHideModal('show',5)">Read more</div>
 
             </div>
             <!-- tab content 3 -->

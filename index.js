@@ -28,14 +28,41 @@ function getRatings() {
 
 
 
-// ABOUT content overflowing functionality
+// ABOUT content - add three dots when overflowing
 const aboutTabContentAll = document.querySelectorAll(".aboutTab-content");
 aboutTabContentAll.forEach((each,index)=>{
+  let rmBtn = document.querySelector("#aboutTab-rmBtn-" + index); //rmBtn: read more btn
+
   if(each.scrollHeight> each.clientHeight){
     let computedStyle = window.getComputedStyle(each);
     let lineHeight = computedStyle.lineHeight.replace("px",'');
     let lines = Math.floor(each.clientHeight/(lineHeight));
     
-    each.style.cssText = `display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: ${lines};`
+    each.style.cssText = `display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: ${lines};`;
+    rmBtn.classList.remove("hidden");
   }
-})
+});
+
+
+const showAndHideModal = (state,index)=>{
+  let dcModal = document.querySelector("#dc-modal");
+  let modalTitle = document.querySelector("#modalTitle");
+  let modalContent = document.querySelector("#modalContent");
+
+  
+  if(state === "show"){
+    let rmBtn = document.querySelector("#aboutTab-rmBtn-" + index); //rmBtn: read more btn
+    let aboutDivContent = rmBtn.previousElementSibling;
+    let h3Content = aboutDivContent.previousElementSibling;
+
+    dcModal.classList.remove("hidden");
+
+    modalTitle.innerHTML = h3Content.innerHTML;
+    modalContent.innerHTML = aboutDivContent.innerHTML;
+
+  }else{
+    dcModal.classList.add("hidden");
+
+  }
+  console.log('run')
+}

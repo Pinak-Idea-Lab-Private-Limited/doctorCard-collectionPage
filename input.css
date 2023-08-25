@@ -14,7 +14,10 @@
     
     .fz-scale{
         font-size: calc(16px + 2 * ((100vw - 300*1px) / (2920 - 300)));
-
+    }
+    #aboutTab-rmBtn-0, #aboutTab-rmBtn-1, #aboutTab-rmBtn-2, #aboutTab-rmBtn-3, #aboutTab-rmBtn-4, #aboutTab-rmBtn-5{
+        cursor: pointer;
+        text-decoration: underline;
     }
 
 }
