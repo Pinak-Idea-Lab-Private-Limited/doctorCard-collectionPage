@@ -64,5 +64,15 @@ const showAndHideModal = (state,index)=>{
     dcModal.classList.add("hidden");
 
   }
-  console.log('run')
 }
+
+// close the modal on click of ESC button
+let dcModal = document.querySelector("#dc-modal");
+document.addEventListener('keydown',e=>{
+if(!dcModal.classList.contains("hidden")){
+
+  if(e.key==="Escape"){
+    showAndHideModal("hide");
+  }
+}
+})
