@@ -9,21 +9,7 @@
   <link rel="stylesheet" href="./css/all.min.css" />
   <link rel="stylesheet" href="./css/fontawesome.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
-  <style>
-    .stars-outer::before {
-      content: "\f005 \f005 \f005 \f005 \f005";
-      font-family: "Font Awesome 5 Pro";
-      font-weight: 900;
-      color: #ccc;
-    }
-
-    .stars-inner::before {
-      content: "\f005 \f005 \f005 \f005 \f005";
-      font-family: "Font Awesome 5 Pro";
-      font-weight: 900;
-      color: #f8ce0b;
-    }
-  </style>
+  <link rel="stylesheet" href="./icons.css" />
 </head>
 
 <body class="bg-[#f2f2f2]">
@@ -41,7 +27,9 @@
             <div class="sm:flex sm:items-start">
 
               <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                <h3 id="modalTitle" class="text-black text-left lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2" id="modal-title">About | Dr ashish magadum
+                <h3 id="modalTitle"
+                  class="text-black text-left lg:text-[23px] xsm:text-md xl:text-2xl text-xl font-sans font-bold mb-2"
+                  id="modal-title">About | Dr ashish magadum
                 </h3>
                 <div class="mt-2">
                   <p id="modalContent" class="pr-3 text-justify text-gray-700 fz-scale max-h-[60vh] overflow-auto">
@@ -54,8 +42,7 @@
           <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
             <button type="button"
               class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
-              onclick="showAndHideModal('hide')"
-              >Close</button>
+              onclick="showAndHideModal('hide')">Close</button>
           </div>
         </div>
       </div>
@@ -87,10 +74,10 @@
               </h2>
 
               <p class="info-texts fz-scale font-clamp gap-2 mt-2 xsm:mt-0">
-                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), VSM
+                <i class="fa-graduation"></i> MBBS, MD (Obs & Gyn), VSM
               </p>
               <p class="info-texts fz-mrv">
-                <i class="far fa-badge-check"></i> Medical Registration Verified
+                <i class="fa-badge"></i> Medical Registration Verified
               </p>
 
               <div class="flex my-3 doc1">
@@ -102,28 +89,27 @@
 
               <div class="flex flex-col sm:flex-row  w-full">
                 <div class=" flex flex-col w-full lg:w-1/2">
-                 
+
                   <p class="info-texts fz-scale ">
-                    <i class="far fa-stars"></i>28 Years Experience
-                  </p>
-                  <p class="info-texts fz-scale gap-4">
-                    <i class="fal fa-baby"></i>10000 IVF Cycles
+                    <i class="fa-experience"></i>28 Years Experience
                   </p>
                   <p class="info-texts fz-scale">
-                    <i class="far fa-phone-alt"></i>+91-9814325187
+                    <i class="fa-baby"></i>10000 IVF Cycles
+                  </p>
+                  <p class="info-texts fz-scale">
+                    <i class="fa-phone"></i>+91-9814325187
                   </p>
 
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
-                      class="gap-1">
-                      <i class="far fa-rupee-sign text-xs font-light"></i>
-                      1000</span>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Janakpuri</span><span class="gap-1">
+                      <i class="fa-rupee"></i>
+                                            1000</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
-                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Noida</span><span class="gap-1"> 
+                      <i class="fa-rupee"></i>
                       500</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -148,7 +134,7 @@
                 from Pune University passing out in 1989. He trained in IVF at
                 Bombay Hospital in 1995.
               </div>
-              <div id="aboutTab-rmBtn-0" class="hidden"  onclick="showAndHideModal('show',0)">Read more</div>
+              <div id="aboutTab-rmBtn-0" class="hidden" onclick="showAndHideModal('show',0)">Read more</div>
 
             </div>
             <!-- tab content 3 -->
@@ -179,7 +165,7 @@
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
 
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-user"></i>
+                  <i class="fa-info"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Info
                   </span>
@@ -191,7 +177,7 @@
               <button class="relative block p-2 md:p-4 w-full">
                 <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fa-about"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     About
                   </span>
@@ -203,7 +189,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-clock"></i>
+                  <i class="fa-highlights"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Highlights
                   </span>
@@ -215,7 +201,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-dollar-sign"></i>
+                  <i class="fa-consult"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Consult
                   </span>
@@ -248,10 +234,10 @@
               </h2>
 
               <p class="info-texts fz-scale gap-2 mt-2 xsm:mt-0">
-                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), DNB
+                <i class="fa-graduation"></i> MBBS, MD (Obs & Gyn), DNB
               </p>
               <p class="info-texts fz-mrv">
-                <i class="far fa-badge-check"></i> Medical Registration Verified
+                <i class="fa-badge"></i> Medical Registration Verified
               </p>
 
               <div class="flex my-3 doc2">
@@ -263,28 +249,27 @@
 
               <div class="flex flex-col sm:flex-row  w-full">
                 <div class=" flex flex-col w-full lg:w-1/2">
-                  
+
                   <p class="info-texts fz-scale ">
-                    <i class="far fa-stars"></i>27 Years Experience
-                  </p>
-                  <p class="info-texts fz-scale gap-4">
-                    <i class="fal fa-baby"></i>6000 IVF Cycles
+                    <i class="fa-experience"></i>27 Years Experience
                   </p>
                   <p class="info-texts fz-scale">
-                    <i class="far fa-phone-alt"></i> +91-11-45991111
+                    <i class="fa-baby"></i>6000 IVF Cycles
+                  </p>
+                  <p class="info-texts fz-scale">
+                    <i class="fa-phone"></i> +91-11-45991111
                   </p>
 
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
-                      class="gap-1">
-                      <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Janakpuri</span><span class="gap-1">
+                      <i class="fa-rupee text-xs font-light"></i>
                       500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
-                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Noida</span><span class="gap-1"> <i
+                        class="fa-rupee text-xs font-light"></i>
                       300</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -310,7 +295,7 @@
                 IVF, ICSI, TESA, PESA, IMSI, Assisted Laser Hatching, Blastocyst culture, crypto preservation and
                 laparoscopic & hysteroscopic surgeries.
               </div>
-              <div id="aboutTab-rmBtn-1" class="hidden"  onclick="showAndHideModal('show',1)">Read more</div>
+              <div id="aboutTab-rmBtn-1" class="hidden" onclick="showAndHideModal('show',1)">Read more</div>
 
             </div>
             <!-- tab content 3 -->
@@ -341,7 +326,7 @@
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
 
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-user"></i>
+                  <i class="fa-info"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Info
                   </span>
@@ -353,7 +338,7 @@
               <button class="relative block p-2 md:p-4 w-full">
                 <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fa-about"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     About
                   </span>
@@ -365,7 +350,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-clock"></i>
+                  <i class="fa-highlights"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Highlights
                   </span>
@@ -377,7 +362,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-dollar-sign"></i>
+                  <i class="fa-consult"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Consult
                   </span>
@@ -409,12 +394,12 @@
               </h2>
 
               <p class="info-texts fz-scale gap-2 mt-2 xsm:mt-0">
-                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), DNB, MNAMS, MRCOG
+                <i class="fa-graduation"></i> MBBS, MD (Obs & Gyn), DNB, MNAMS, MRCOG
 
 
               </p>
               <p class="info-texts fz-mrv">
-                <i class="far fa-badge-check"></i> Medical Registration Verified
+                <i class="fa-badge"></i> Medical Registration Verified
               </p>
 
               <div class="flex my-3 doc3">
@@ -426,15 +411,15 @@
 
               <div class="flex flex-col sm:flex-row  w-full">
                 <div class=" flex flex-col w-full lg:w-1/2">
-                  
+
                   <p class="info-texts fz-scale ">
-                    <i class="far fa-stars"></i>19 Years Experience
-                  </p>
-                  <p class="info-texts fz-scale gap-4">
-                    <i class="fal fa-baby"></i>6000 IVF Cycles
+                    <i class="fa-experience"></i>19 Years Experience
                   </p>
                   <p class="info-texts fz-scale">
-                    <i class="far fa-phone-alt"></i> +91-9910724959
+                    <i class="fa-baby"></i>6000 IVF Cycles
+                  </p>
+                  <p class="info-texts fz-scale">
+                    <i class="fa-phone"></i> +91-9910724959
 
 
                   </p>
@@ -442,14 +427,13 @@
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
-                      class="gap-1">
-                      <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Janakpuri</span><span class="gap-1">
+                      <i class="fa-rupee text-xs font-light"></i>
                       1500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
-                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Noida</span><span class="gap-1"> <i
+                        class="fa-rupee text-xs font-light"></i>
                       1000</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -473,7 +457,7 @@
                 cryptopreservation, ovulation induction, IUI, fertility enhancing services, male infertility, and IVF
                 failures. She also handles gynecological and obstetric cases.
               </div>
-              <div id="aboutTab-rmBtn-2" class="hidden"  onclick="showAndHideModal('show',2)">Read more</div>
+              <div id="aboutTab-rmBtn-2" class="hidden" onclick="showAndHideModal('show',2)">Read more</div>
 
             </div>
             <!-- tab content 3 -->
@@ -506,7 +490,7 @@
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
 
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-user"></i>
+                  <i class="fa-info"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Info
                   </span>
@@ -518,7 +502,7 @@
               <button class="relative block p-2 md:p-4 w-full">
                 <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fa-about"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     About
                   </span>
@@ -530,7 +514,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-clock"></i>
+                  <i class="fa-highlights"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Highlights
                   </span>
@@ -542,7 +526,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-dollar-sign"></i>
+                  <i class="fa-consult"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Consult
                   </span>
@@ -573,10 +557,10 @@
               </h2>
 
               <p class="info-texts fz-scale gap-2 mt-2 xsm:mt-0">
-                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), FCPS
+                <i class="fa-graduation"></i> MBBS, MD (Obs & Gyn), FCPS
               </p>
               <p class="info-texts fz-mrv">
-                <i class="far fa-badge-check"></i> Medical Registration Verified
+                <i class="fa-badge"></i> Medical Registration Verified
               </p>
 
               <div class="flex my-3 doc4">
@@ -589,29 +573,28 @@
               <div class="flex flex-col sm:flex-row  w-full">
                 <div class="flex flex-col w-full lg:w-1/2">
 
-                  
+
                   <p class="info-texts fz-scale ">
-                    <i class="far fa-stars"></i>37 Years Experience
-                  </p>
-                  <p class="info-texts fz-scale gap-4">
-                    <i class="fal fa-baby"></i>8000 IVF Cycles
+                    <i class="fa-experience"></i>37 Years Experience
                   </p>
                   <p class="info-texts fz-scale">
-                    <i class="far fa-phone-alt"></i> +91-8433732400
+                    <i class="fa-baby"></i>8000 IVF Cycles
+                  </p>
+                  <p class="info-texts fz-scale">
+                    <i class="fa-phone"></i> +91-8433732400
 
 
 
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
-                      class="gap-1">
-                      <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Janakpuri</span><span class="gap-1">
+                      <i class="fa-rupee text-xs font-light"></i>
                       2000</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
-                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Noida</span><span class="gap-1"> <i
+                        class="fa-rupee text-xs font-light"></i>
                       500</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -636,7 +619,7 @@
                 India. She has also served as the president of the Mumbai Obstetrics and Gynaecology Society. She was
                 the Vice President of Federation of Obstetrics and Gynaecology India in 2011.
               </div>
-              <div id="aboutTab-rmBtn-3" class="hidden"  onclick="showAndHideModal('show',3)">Read more</div>
+              <div id="aboutTab-rmBtn-3" class="hidden" onclick="showAndHideModal('show',3)">Read more</div>
 
             </div>
             <!-- tab content 3 -->
@@ -669,7 +652,7 @@
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
 
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-user"></i>
+                  <i class="fa-info"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Info
                   </span>
@@ -681,7 +664,7 @@
               <button class="relative block p-2 md:p-4 w-full">
                 <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fa-about"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     About
                   </span>
@@ -693,7 +676,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-clock"></i>
+                  <i class="fa-highlights"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Highlights
                   </span>
@@ -705,7 +688,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-dollar-sign"></i>
+                  <i class="fa-consult"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Consult
                   </span>
@@ -738,12 +721,12 @@
               </h2>
 
               <p class="info-texts fz-scale gap-2 mt-2 xsm:mt-0">
-                <i class="far fa-graduation-cap"></i> MBBS, MD (Obs & Gyn), DNB (Obs & Gyn), DGO, MRCOG (UK)
+                <i class="fa-graduation"></i> MBBS, MD (Obs & Gyn), DNB (Obs & Gyn), DGO, MRCOG (UK)
 
 
               </p>
               <p class="info-texts fz-mrv">
-                <i class="far fa-badge-check"></i> Medical Registration Verified
+                <i class="fa-badge"></i> Medical Registration Verified
               </p>
 
               <div class="flex my-3 doc5">
@@ -755,15 +738,15 @@
 
               <div class="flex flex-col sm:flex-row  w-full">
                 <div class=" flex flex-col w-full lg:w-1/2">
-                  
+
                   <p class="info-texts fz-scale ">
-                    <i class="far fa-stars"></i>27 Years Experience
-                  </p>
-                  <p class="info-texts fz-scale gap-4">
-                    <i class="fal fa-baby"></i>6000 IVF Cycles
+                    <i class="fa-experience"></i>27 Years Experience
                   </p>
                   <p class="info-texts fz-scale">
-                    <i class="far fa-phone-alt"></i> +914846699999
+                    <i class="fa-baby"></i>6000 IVF Cycles
+                  </p>
+                  <p class="info-texts fz-scale">
+                    <i class="fa-phone"></i> +914846699999
 
 
                   </p>
@@ -771,14 +754,13 @@
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
-                      class="gap-1">
-                      <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Janakpuri</span><span class="gap-1">
+                      <i class="fa-rupee text-xs font-light"></i>
                       500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
-                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Noida</span><span class="gap-1"> <i
+                        class="fa-rupee text-xs font-light"></i>
                       300</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -807,7 +789,7 @@
                 field of complex robotic gynecological surgery. Dr. S. Mayadevi Kurup is also experienced at managing
                 complex and high-risk pregnancies.
               </div>
-              <div id="aboutTab-rmBtn-4" class="hidden"  onclick="showAndHideModal('show',4)">Read more</div>
+              <div id="aboutTab-rmBtn-4" class="hidden" onclick="showAndHideModal('show',4)">Read more</div>
 
             </div>
             <!-- tab content 3 -->
@@ -840,7 +822,7 @@
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
 
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-user"></i>
+                  <i class="fa-info"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Info
                   </span>
@@ -852,7 +834,7 @@
               <button class="relative block p-2 md:p-4 w-full">
                 <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fa-about"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     About
                   </span>
@@ -864,7 +846,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-clock"></i>
+                  <i class="fa-highlights"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Highlights
                   </span>
@@ -876,7 +858,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-dollar-sign"></i>
+                  <i class="fa-consult"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Consult
                   </span>
@@ -908,14 +890,14 @@
               </h2>
 
               <p class="info-texts fz-scale gap-2 mt-2 xsm:mt-0">
-                <i class="far fa-graduation-cap"></i> MBBS, MS (Obs & Gyn)
+                <i class="fa-graduation"></i> MBBS, MS (Obs & Gyn)
 
 
 
 
               </p>
               <p class="info-texts fz-mrv">
-                <i class="far fa-badge-check"></i> Medical Registration Verified
+                <i class="fa-badge"></i> Medical Registration Verified
               </p>
 
               <div class="flex my-3 doc6">
@@ -927,18 +909,15 @@
 
               <div class="flex flex-col sm:flex-row  w-full">
                 <div class=" flex flex-col w-full lg:w-1/2">
-                  <p class="info-texts fz-scale gap-4">
-                    <i class="far fa-user-md"></i>
-                    Working Since 2000
-                  </p>
+
                   <p class="info-texts fz-scale ">
-                    <i class="far fa-stars"></i>12 Years Experience
-                  </p>
-                  <p class="info-texts fz-scale gap-4">
-                    <i class="fal fa-baby"></i>6000 IVF Cycles
+                    <i class="fa-experience"></i>12 Years Experience
                   </p>
                   <p class="info-texts fz-scale">
-                    <i class="far fa-phone-alt"></i> +91 4942605000
+                    <i class="fa-baby"></i>6000 IVF Cycles
+                  </p>
+                  <p class="info-texts fz-scale">
+                    <i class="fa-phone"></i> +91 4942605000
 
 
                   </p>
@@ -946,14 +925,13 @@
                 </div>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
                   <p class="flex gap-6 items-center justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Janakpuri</span><span
-                      class="gap-1">
-                      <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Janakpuri</span><span class="gap-1">
+                      <i class="fa-rupee text-xs font-light"></i>
                       500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
-                    <span class="info-texts fz-scale"><i class="far fa-map-marker-alt"></i>Noida</span><span
-                      class="gap-1"> <i class="far fa-rupee-sign text-xs font-light"></i>
+                    <span class="info-texts fz-scale"><i class="fa-location"></i>Noida</span><span class="gap-1"> <i
+                        class="fa-rupee text-xs font-light"></i>
                       0</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -976,7 +954,7 @@
                 in 1981. He did his MD in Obstetrics & Gynecology from Pune University passing out in 1989. He trained
                 in IVF at Bombay Hospital in 1995.
               </div>
-              <div id="aboutTab-rmBtn-5" class="hidden"  onclick="showAndHideModal('show',5)">Read more</div>
+              <div id="aboutTab-rmBtn-5" class="hidden" onclick="showAndHideModal('show',5)">Read more</div>
 
             </div>
             <!-- tab content 3 -->
@@ -1011,7 +989,7 @@
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
 
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-user"></i>
+                  <i class="fa-info"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Info
                   </span>
@@ -1023,7 +1001,7 @@
               <button class="relative block p-2 md:p-4 w-full">
                 <span x-show="openTab === 2" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fa-about"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     About
                   </span>
@@ -1035,7 +1013,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 3" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-clock"></i>
+                  <i class="fa-highlights"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Highlights
                   </span>
@@ -1047,7 +1025,7 @@
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 4" class="absolute inset-x-0 -bottom-px h-px w-full bg-pink-600"></span>
                 <div class="flex items-center justify-center gap-1 md:gap-4">
-                  <i class="fas fa-dollar-sign"></i>
+                  <i class="fa-consult"></i>
                   <span class=" font-medium text-gray-900 uppercase">
                     Consult
                   </span>

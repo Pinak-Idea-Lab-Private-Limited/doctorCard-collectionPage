@@ -1,0 +1,242 @@
+.stars-outer::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: #ccc;
+}
+
+.stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: #f8ce0b;
+}
+
+
+
+/* font icons fontawesome 6.4 version */
+@font-face {
+    font-family: "duotone";
+
+    src: url(./webfonts/fa-duotone-900.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "regular";
+
+    src: url(./webfonts/fa-regular-400.woff2) format("woff2");
+}
+
+/* rupee icons */
+.fa-rupee {
+    font-family: "regular";
+    font-style: normal;
+    font-size: 13px;
+}
+
+.fa-rupee::before {
+    content: "\e1bc";
+}
+
+/* experience icons */
+.fa-experience {
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 16px;
+}
+
+.fa-experience::before {
+    position: absolute;
+    top: 0;
+    content: "\f0f0"
+}
+
+.fa-experience::after {
+    content: "\f0f0\f0f0";
+    opacity: 0.4;
+}
+
+/* no of ivf cycles icon */
+.fa-baby {
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 16px;
+}
+
+.fa-baby::before {
+    position: absolute;
+    top: 0;
+    content: "\f77c"
+}
+
+.fa-baby::after {
+    content: "\f77c\f77c";
+    opacity: 0.4;
+}
+
+/* phone icon */
+.fa-phone {
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 16px;
+}
+
+.fa-phone::before {
+    position: absolute;
+    top: 0;
+    content: "\f095"
+}
+
+.fa-phone::after {
+    content: "\f095\f095";
+    opacity: 0.4;
+}
+
+/* location icon */
+.fa-location {
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 16px;
+}
+
+.fa-location::before {
+    position: absolute;
+    top: 0;
+    content: "\f3c5"
+}
+
+.fa-location::after {
+    content: "\f3c5\f3c5";
+    opacity: 0.4;
+}
+
+/* badge icon */
+.fa-badge {
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 16px;
+}
+
+.fa-badge::before {
+    position: absolute;
+    top: 0;
+    content: "\f336"
+}
+
+.fa-badge::after {
+    content: "\f336\f336";
+    opacity: 0.4;
+}
+
+/* graduation cap icon */
+.fa-graduation {
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 16px;
+}
+
+.fa-graduation::before {
+    position: absolute;
+    top: 0;
+    content: "\f19d"
+}
+
+.fa-graduation::after {
+    content: "\f19d\f19d";
+    opacity: 0.4;
+}
+
+
+
+/* info icon */
+.fa-info {
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 14px;
+}
+
+.fa-info::before {
+    position: absolute;
+    top: 0;
+    content: "\f05a"
+}
+
+.fa-info::after {
+    content: "\f05a\f05a";
+    opacity: 0.4;
+}
+
+/* about icon */
+.fa-about {
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 14px;
+}
+
+.fa-about::before {
+    position: absolute;
+    top: 0;
+    content: "\f007"
+}
+
+.fa-about::after {
+    content: "\f007\f007";
+    opacity: 0.4;
+}
+
+/* highlights icon */
+.fa-highlights {
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 14px;
+}
+
+.fa-highlights::before {
+    position: absolute;
+    top: 0;
+    content: "\e1af"
+}
+
+.fa-highlights::after {
+    content: "\e1af\e1af";
+    opacity: 0.4;
+}
+
+/* consult icon */
+.fa-consult {
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 14px;
+}
+
+.fa-consult::before {
+    position: absolute;
+    top: 0;
+    content: "\f0f1"
+}
+
+.fa-consult::after {
+    content: "\f0f1\f0f1";
+    opacity: 0.4;
+}
+
