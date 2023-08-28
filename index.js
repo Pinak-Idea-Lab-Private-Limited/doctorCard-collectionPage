@@ -1,28 +1,62 @@
 
 // rating functionality
 
+// tailwind text color class
+const colors = {
+  "1" : "text-green-100",
+  "1.5" : "text-green-200",
+  "2" : "text-green-300",
+  "2.5" : "text-green-400",
+  "3" : "text-green-500",
+  "3.5" : "text-green-600",
+  "4" : "text-green-700",
+  "4.5" : "text-green-800",
+  "5" : "text-green-900",
+}
+
+
 const ratings = {
-  doc1: 3.6,
+  doc1: 3.5,
   doc2: 4.5,
-  doc3: 2.6,
+  doc3: 2.5,
   doc4: 1.5,
-  doc5: 3.6,
+  doc5: 3.5,
   doc6: 4.5
 };
+
+// generate stars according to the rating
+function renderStarRating(rating, ratingCard) {
+  const starContainer = document.querySelector(`.${ratingCard} .rating .stars`);
+  starContainer.innerHTML = '';
+
+
+  for (let i = 1; i <= 5; i++) {
+      const star = document.createElement('i');
+
+
+      if (rating >= i) {
+          // star with fill color
+          star.classList.add('fa-star', colors[rating]);
+      } else if (i === Math.ceil(rating)) {
+        // half fill color star
+          star.classList.add('fa-star-half-stroke',colors[rating]);
+      } else {
+        // star without fill color
+          star.classList.add('fa-star2','text-gray-400');
+      }
+
+      starContainer.appendChild(star);
+  }
+}
+
 const starsTotal = 5;
 document.addEventListener("DOMContentLoaded", getRatings);
 function getRatings() {
   for (let rating in ratings) {
-    const starPercentage = (ratings[rating] / starsTotal) * 100;
-
-    const starPercentageRounded = `${Math.round(starPercentage / 10) * 10
-      }%`;
-
-    document.querySelector(`.${rating} .stars-inner`).style.width =
-      starPercentageRounded;
     document.querySelector(
       `.${rating} .number-rating`
     ).innerHTML = `(${ratings[rating]})`;
+    renderStarRating(ratings[rating], rating)
   }
 }
 

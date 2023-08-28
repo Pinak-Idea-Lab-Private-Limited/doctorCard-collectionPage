@@ -1,16 +1,4 @@
-.stars-outer::before {
-    content: "\f005 \f005 \f005 \f005 \f005";
-    font-family: "Font Awesome 5 Pro";
-    font-weight: 900;
-    color: #ccc;
-}
 
-.stars-inner::before {
-    content: "\f005 \f005 \f005 \f005 \f005";
-    font-family: "Font Awesome 5 Pro";
-    font-weight: 900;
-    color: #f8ce0b;
-}
 
 
 
@@ -37,6 +25,51 @@
 .fa-rupee::before {
     content: "\e1bc";
 }
+
+/* without fill color star */
+.fa-star2 {
+    font-family: "regular";
+    font-style: normal;
+    font-size: 16px;
+}
+
+.fa-star2::before {
+    content: "\f005";
+}
+
+/* half fill color star */
+.fa-star-half-stroke {
+    font-family: "regular";
+    font-style: normal;
+    font-size: 16px;
+    color: #1e3050;
+}
+
+.fa-star-half-stroke::before {
+    content: "\f5c0";
+}
+
+/* with fill color star */
+.fa-star {
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 16px;
+}
+
+.fa-star::before {
+    position: absolute;
+    top: 0;
+    content: "\f005"
+}
+
+.fa-star::after {
+    content: "\f005\f005";
+    opacity: 1;
+}
+
+
 
 /* experience icons */
 .fa-experience {
