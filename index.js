@@ -70,8 +70,7 @@ aboutTabContentAll.forEach((each, index) => {
     let computedStyle = window.getComputedStyle(each);
     let lineHeight = computedStyle.lineHeight.replace("px", "");
     let lines = Math.floor(each.clientHeight / lineHeight);
-
-    each.style.cssText = `display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: ${lines};`;
+    each.style.height = lines*lineHeight + "px";
     rmBtn.classList.remove("hidden");
   }
 });

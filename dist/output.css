@@ -603,7 +603,17 @@ video {
 
 #aboutTab-rmBtn-0, #aboutTab-rmBtn-1, #aboutTab-rmBtn-2, #aboutTab-rmBtn-3, #aboutTab-rmBtn-4, #aboutTab-rmBtn-5{
   cursor: pointer;
-  text-decoration: underline;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  --tw-text-opacity: 1;
+  color: rgb(242 242 242 / var(--tw-text-opacity));
+  font-size: 13px;
+  font-weight: semibold;
 }
 
 /* about tab content, highlights tab content and consult tab content */
@@ -705,8 +715,8 @@ video {
   display: none;
 }
 
-.h-\[15rem\] {
-  height: 15rem;
+.h-\[18rem\] {
+  height: 18rem;
 }
 
 .h-full {
@@ -717,20 +727,12 @@ video {
   height: 1px;
 }
 
-.h-\[18rem\] {
-  height: 18rem;
-}
-
-.max-h-\[15rem\] {
-  max-height: 15rem;
+.max-h-\[18rem\] {
+  max-height: 18rem;
 }
 
 .max-h-\[60vh\] {
   max-height: 60vh;
-}
-
-.max-h-\[18rem\] {
-  max-height: 18rem;
 }
 
 .min-h-full {
@@ -1082,16 +1084,8 @@ video {
     display: none;
   }
 
-  .xs\:h-\[18rem\] {
-    height: 18rem;
-  }
-
   .xs\:h-\[15rem\] {
     height: 15rem;
-  }
-
-  .xs\:max-h-\[18rem\] {
-    max-height: 18rem;
   }
 
   .xs\:max-h-\[15rem\] {

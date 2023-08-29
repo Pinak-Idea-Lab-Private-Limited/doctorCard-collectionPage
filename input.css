@@ -24,7 +24,9 @@
     }
     #aboutTab-rmBtn-0, #aboutTab-rmBtn-1, #aboutTab-rmBtn-2, #aboutTab-rmBtn-3, #aboutTab-rmBtn-4, #aboutTab-rmBtn-5{
         cursor: pointer;
-        text-decoration: underline;
+        @apply rounded-full bg-blue-400 text-[#f2f2f2] px-2 py-0.5;
+        font-size: 13px;
+        font-weight: semibold;
     }
 
 
