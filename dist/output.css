@@ -620,12 +620,18 @@ video {
 
 .aboutTab-content, .hightlightTab-content, .consultTab-content{
   font-size: calc(16px + 2 * ((100vw - 300*1px) / (2920 - 300)));
-  max-height: 12rem;
+  max-height: 13rem;
   overflow: hidden;
   padding-right: 0.75rem;
   text-align: justify;
   --tw-text-opacity: 1;
   color: rgb(28 25 23 / var(--tw-text-opacity));
+}
+
+@media (min-width: 450px) {
+  .aboutTab-content, .hightlightTab-content, .consultTab-content {
+    max-height: 12rem;
+  }
 }
 
 .fixed {
