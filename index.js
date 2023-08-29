@@ -1,51 +1,52 @@
-
 // rating functionality
 
-// tailwind text color class
-const colors = {
-  "1" : "text-green-100",
-  "1.5" : "text-green-200",
-  "2" : "text-green-300",
-  "2.5" : "text-green-400",
-  "3" : "text-green-500",
-  "3.5" : "text-green-600",
-  "4" : "text-green-700",
-  "4.5" : "text-green-800",
-  "5" : "text-green-900",
-}
-
-
 const ratings = {
-  doc1: 3.5,
-  doc2: 4.5,
+  doc1: 3.1,
+  doc2: 4.7,
   doc3: 2.5,
-  doc4: 1.5,
-  doc5: 3.5,
-  doc6: 4.5
+  doc4: 1.9,
+  doc5: 4.2,
+  doc6: 3.8,
 };
 
 // generate stars according to the rating
 function renderStarRating(rating, ratingCard) {
   const starContainer = document.querySelector(`.${ratingCard} .rating .stars`);
-  starContainer.innerHTML = '';
+  starContainer.innerHTML = "";
 
+  const colorPercentage = Math.round((rating % 1) * 100).toString();
+  // const colorPercentage = '50%'
+  const grayPercentage = (100 - Number(colorPercentage)).toString();
+  // const grayPercentage = '50%'
+
+  console.log(rating, colorPercentage, grayPercentage);
+  // star.style.background = `linear-gradient(to right, ${color} ${colorPercentage}, #A8A29E ${grayPercentage})`
+
+  let color = "";
+  if (rating >= 4) color = "#052E16";
+  else if (rating >= 3) color = "#14532D";
+  else if (rating >= 2) color = "#166534";
+  else if (rating >= 1) color = "#15803D";
+  else color = "#A8A29E";
 
   for (let i = 1; i <= 5; i++) {
-      const star = document.createElement('i');
+    const star = document.createElement("i");
 
+    if (rating >= i) {
+      // star with fill color
+      star.classList.add("fa-star", "star-box");
+      star.style.background = `${color}`;
+    } else if (i === Math.ceil(rating)) {
+      // half fill color star
+      star.classList.add("fa-star", "star-box");
+      star.style.backgroundImage = `linear-gradient(to right, ${color} 0%, ${color} ${colorPercentage}%, #A8A29E ${grayPercentage}%), #A8A29E 100%`;
+    } else {
+      // star without fill color
+      star.classList.add("fa-star", "star-box");
+      star.style.background = `#A8A29E`;
+    }
 
-      if (rating >= i) {
-          // star with fill color
-          star.classList.add('fa-star', colors[rating]);
-      } else if (i === Math.ceil(rating)) {
-        // half fill color star
-          star.classList.add('fa-star-half-stroke',colors[rating]);
-      } else {
-        // star without fill color
-          star.classList.add('fa-star2','text-gray-400');
-      }
-
-      starContainer.appendChild(star);
+    starContainer.appendChild(star);
   }
 }
 
@@ -56,35 +57,31 @@ function getRatings() {
     document.querySelector(
       `.${rating} .number-rating`
     ).innerHTML = `(${ratings[rating]})`;
-    renderStarRating(ratings[rating], rating)
+    renderStarRating(ratings[rating], rating);
   }
 }
 
-
-
 // ABOUT content - add three dots when overflowing
 const aboutTabContentAll = document.querySelectorAll(".aboutTab-content");
-aboutTabContentAll.forEach((each,index)=>{
+aboutTabContentAll.forEach((each, index) => {
   let rmBtn = document.querySelector("#aboutTab-rmBtn-" + index); //rmBtn: read more btn
 
-  if(each.scrollHeight> each.clientHeight){
+  if (each.scrollHeight > each.clientHeight) {
     let computedStyle = window.getComputedStyle(each);
-    let lineHeight = computedStyle.lineHeight.replace("px",'');
-    let lines = Math.floor(each.clientHeight/(lineHeight));
-    
+    let lineHeight = computedStyle.lineHeight.replace("px", "");
+    let lines = Math.floor(each.clientHeight / lineHeight);
+
     each.style.cssText = `display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: ${lines};`;
     rmBtn.classList.remove("hidden");
   }
 });
 
-
-const showAndHideModal = (state,index)=>{
+const showAndHideModal = (state, index) => {
   let dcModal = document.querySelector("#dc-modal");
   let modalTitle = document.querySelector("#modalTitle");
   let modalContent = document.querySelector("#modalContent");
 
-  
-  if(state === "show"){
+  if (state === "show") {
     let rmBtn = document.querySelector("#aboutTab-rmBtn-" + index); //rmBtn: read more btn
     let aboutDivContent = rmBtn.previousElementSibling;
     let h3Content = aboutDivContent.previousElementSibling;
@@ -93,20 +90,17 @@ const showAndHideModal = (state,index)=>{
 
     modalTitle.innerHTML = h3Content.innerHTML;
     modalContent.innerHTML = aboutDivContent.innerHTML;
-
-  }else{
+  } else {
     dcModal.classList.add("hidden");
-
   }
-}
+};
 
 // close the modal on click of ESC button
 let dcModal = document.querySelector("#dc-modal");
-document.addEventListener('keydown',e=>{
-if(!dcModal.classList.contains("hidden")){
-
-  if(e.key==="Escape"){
-    showAndHideModal("hide");
+document.addEventListener("keydown", (e) => {
+  if (!dcModal.classList.contains("hidden")) {
+    if (e.key === "Escape") {
+      showAndHideModal("hide");
+    }
   }
-}
-})
+});

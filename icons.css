@@ -26,11 +26,20 @@
     content: "\e1bc";
 }
 
+
+/* Star box */
+.star-box {
+    padding: 3px;
+    margin-right: 3px;
+    border-radius: 5px;
+}
+
 /* without fill color star */
 .fa-star2 {
     font-family: "regular";
     font-style: normal;
     font-size: 16px;
+    color: #ffffff;
 }
 
 .fa-star2::before {
@@ -42,7 +51,7 @@
     font-family: "regular";
     font-style: normal;
     font-size: 16px;
-    color: #1e3050;
+    color: #ffffff;
 }
 
 .fa-star-half-stroke::before {
@@ -54,7 +63,7 @@
     position: relative;
     font-family: "duotone";
     font-style: normal;
-    color: #1e3050;
+    color: #ffffff;
     font-size: 16px;
 }
 
