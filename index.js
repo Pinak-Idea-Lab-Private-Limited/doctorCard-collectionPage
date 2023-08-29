@@ -39,7 +39,7 @@ function renderStarRating(rating, ratingCard) {
     } else if (i === Math.ceil(rating)) {
       // half fill color star
       star.classList.add("fa-star", "star-box");
-      star.style.backgroundImage = `linear-gradient(to right, ${color} 0%, ${color} ${colorPercentage}%, #A8A29E ${grayPercentage}%), #A8A29E 100%`;
+      star.style.backgroundImage = `linear-gradient(to right, ${color} 0%, ${color} ${colorPercentage}%, #A8A29E ${grayPercentage}%)`;
     } else {
       // star without fill color
       star.classList.add("fa-star", "star-box");
