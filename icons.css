@@ -34,29 +34,6 @@
     border-radius: 5px;
 }
 
-/* without fill color star */
-.fa-star2 {
-    font-family: "regular";
-    font-style: normal;
-    font-size: 16px;
-    color: #ffffff;
-}
-
-.fa-star2::before {
-    content: "\f005";
-}
-
-/* half fill color star */
-.fa-star-half-stroke {
-    font-family: "regular";
-    font-style: normal;
-    font-size: 16px;
-    color: #ffffff;
-}
-
-.fa-star-half-stroke::before {
-    content: "\f5c0";
-}
 
 /* with fill color star */
 .fa-star {
