@@ -50,7 +50,8 @@
   </div>
 
   <!-- ratings icon modal -->
-  <div id="ratingInfo-modal" class="relative z-10 hidden " aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div id="ratingInfo-modal" class="relative z-10 hidden " aria-labelledby="modal-title" role="dialog"
+    aria-modal="true">
 
     <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
@@ -59,15 +60,25 @@
 
         <div
           class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-          <div class="bg-white px-3 py-3 sm:p-6 sm:pb-4">
+          <div class="bg-white px-3 py-3 sm:p-3 sm:pb-3">
             <div class="sm:flex sm:items-start">
 
               <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                
+
                 <div class="mt-2">
-                  <p id="ratings-modalContent" class="pr-3 text-justify text-gray-700 fz-scale overflow-auto">
-                    This score is an aggregation of ratings for this doctor on Pregawish.com &  trusted platforms on the Internet.                  </p>
+                  <p id="ratings-modalContent" class="pr-3 flex text-gray-700 fz-scale overflow-auto">
+                    <span class="pt-1">
+                      
+                      <i class="inline mr-0 fa-rating-info px-1 bg-[#1e3050db] before:text-[#fff] after:text-[#fff]"></i>
+                    </span>
+                  <span>
+                    This score is an aggregation of ratings for this doctor on Pregawish.com & trusted platforms on the
+                    Internet.
+                  </span>
+
+                  </p>
                 </div>
+
               </div>
             </div>
           </div>
@@ -96,7 +107,8 @@
             <img src="./images/doctor.png" alt="" class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
-          <div class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+          <div
+            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -111,11 +123,12 @@
                 <i class="fa-badge "></i> Medical Registration Verified
               </p>
 
-               <div class="flex my-3 items-center doc1">
+              <div class="flex my-3 items-center doc1">
                 <div class="rating">
                   <div class="stars"></div>
                 </div>
-                 <span class="number-rating ml-2">(100)</span><i class="fa-rating-info" onclick="ratingModalToggle('show')"></i>
+                <span class="number-rating ml-2">(100)</span>
+                <i class="fa-rating-info" onclick="ratingModalToggle('show')"></i>
               </div>
 
               <div class="flex flex-col sm:flex-row  w-full">
@@ -132,9 +145,10 @@
                   </p>
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
+                <button
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
                   Call Now
-                </button>               
+                </button>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
 
                   <p class="flex gap-6 items-center justify-between">
@@ -255,7 +269,8 @@
               class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
-          <div class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+          <div
+            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -271,12 +286,13 @@
                 <i class="fa-badge"></i> Medical Registration Verified
               </p>
 
-               <div class="flex my-3 items-center doc2">
+              <div class="flex my-3 items-center doc2">
                 <div class="rating">
                   <div class="stars"></div>
                 </div>
-                 <span class="number-rating ml-2">(100)</span><i class="fa-rating-info" onclick="ratingModalToggle('show')"></i>
-                 
+                <span class="number-rating ml-2">(100)</span><i class="fa-rating-info"
+                  onclick="ratingModalToggle('show')"></i>
+
               </div>
 
               <div class="flex flex-col sm:flex-row  w-full">
@@ -293,9 +309,10 @@
                   </p>
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
+                <button
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
                   Call Now
-                </button>                
+                </button>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
 
                   <p class="flex gap-6 items-center justify-between">
@@ -421,7 +438,8 @@
               alt="" class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
-          <div class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+          <div
+            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -438,11 +456,12 @@
                 <i class="fa-badge"></i> Medical Registration Verified
               </p>
 
-               <div class="flex my-3 items-center doc3">
+              <div class="flex my-3 items-center doc3">
                 <div class="rating">
                   <div class="stars"></div>
                 </div>
-                 <span class="number-rating ml-2">(100)</span><i class="fa-rating-info" onclick="ratingModalToggle('show')"></i>
+                <span class="number-rating ml-2">(100)</span><i class="fa-rating-info"
+                  onclick="ratingModalToggle('show')"></i>
               </div>
 
               <div class="flex flex-col sm:flex-row  w-full">
@@ -461,9 +480,11 @@
                   </p>
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
+                <button
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
                   Call Now
-                </button>                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
+                </button>
+                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
 
                   <p class="flex gap-6 items-center justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Delhi</span><span class="gap-1">
@@ -592,7 +613,8 @@
               class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
-          <div class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+          <div
+            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -607,11 +629,12 @@
                 <i class="fa-badge"></i> Medical Registration Verified
               </p>
 
-               <div class="flex my-3 items-center doc4">
+              <div class="flex my-3 items-center doc4">
                 <div class="rating">
                   <div class="stars"></div>
                 </div>
-                 <span class="number-rating ml-2">(100)</span><i class="fa-rating-info" onclick="ratingModalToggle('show')"></i>
+                <span class="number-rating ml-2">(100)</span><i class="fa-rating-info"
+                  onclick="ratingModalToggle('show')"></i>
               </div>
 
               <div class="flex flex-col sm:flex-row  w-full">
@@ -630,9 +653,11 @@
 
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
+                <button
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
                   Call Now
-                </button>                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
+                </button>
+                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
 
                   <p class="flex gap-6 items-center justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Janakpuri</span><span class="gap-1">
@@ -753,7 +778,8 @@
               class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
-          <div class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+          <div
+            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -771,11 +797,12 @@
                 <i class="fa-badge"></i> Medical Registration Verified
               </p>
 
-               <div class="flex my-3 items-center doc5">
+              <div class="flex my-3 items-center doc5">
                 <div class="rating">
                   <div class="stars"></div>
                 </div>
-                 <span class="number-rating ml-2">(100)</span><i class="fa-rating-info" onclick="ratingModalToggle('show')"></i>
+                <span class="number-rating ml-2">(100)</span><i class="fa-rating-info"
+                  onclick="ratingModalToggle('show')"></i>
               </div>
 
               <div class="flex flex-col sm:flex-row  w-full">
@@ -794,9 +821,11 @@
                   </p>
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
+                <button
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
                   Call Now
-                </button>                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
+                </button>
+                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
 
                   <p class="flex gap-6 items-center justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Dharwad</span><span class="gap-1">
@@ -925,7 +954,8 @@
               class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
-          <div class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+          <div
+            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -944,11 +974,12 @@
                 <i class="fa-badge"></i> Medical Registration Verified
               </p>
 
-               <div class="flex my-3 items-center doc6">
+              <div class="flex my-3 items-center doc6">
                 <div class="rating">
                   <div class="stars"></div>
                 </div>
-                 <span class="number-rating ml-2">(100)</span><i class="fa-rating-info" onclick="ratingModalToggle('show')"></i>
+                <span class="number-rating ml-2">(100)</span><i class="fa-rating-info"
+                  onclick="ratingModalToggle('show')"></i>
               </div>
 
               <div class="flex flex-col sm:flex-row  w-full">
@@ -967,9 +998,11 @@
                   </p>
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
+                <button
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-full xs:hidden">
                   Call Now
-                </button>                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
+                </button>
+                <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
 
                   <p class="flex gap-6 items-center justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Hubbali</span><span class="gap-1">
