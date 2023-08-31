@@ -103,3 +103,16 @@ document.addEventListener("keydown", (e) => {
     }
   }
 });
+
+// rating modal show and hide
+const ratingModalToggle = (state) => {
+  let rModal = document.querySelector("#ratingInfo-modal");
+
+
+  if (state === "show") {
+    rModal.classList.remove("hidden");
+
+  } else {
+    rModal.classList.add("hidden");
+  }
+};
