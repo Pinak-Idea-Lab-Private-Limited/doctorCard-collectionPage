@@ -4,6 +4,7 @@
 
 
 @layer components {
+ 
     .info-texts {
         @apply flex items-center gap-3 text-stone-900;
     }
@@ -29,7 +30,7 @@
         font-weight: semibold;
     }
 
-
+ 
     /* about tab content, highlights tab content and consult tab content */
     .aboutTab-content, .hightlightTab-content, .consultTab-content{
         @apply  fz-scale max-h-52 xs:max-h-48 text-justify pr-3 overflow-hidden text-stone-900;

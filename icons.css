@@ -259,3 +259,35 @@
     opacity: 0.4;
 }
 
+/* rating info icon */
+.fa-rating-info{
+    position: relative;
+    font-family: "duotone";
+    font-style: normal;
+    color: #1e3050;
+    font-size: 12px;
+    margin: 0 10px;
+    border-radius: 50%;
+    height: 20px ;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.fa-rating-info::before {
+    position: absolute;
+    top: 0;
+    content: "\f129"
+}
+
+.fa-rating-info::after {
+    content: "\f129\f129";
+    opacity: 0.4;
+}
+.fa-rating-info:hover{
+    background-color: #1e3050db;
+}
+ .fa-rating-info:hover::before,.fa-rating-info:hover::after{
+    color: #fff;
+}
