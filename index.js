@@ -6,7 +6,7 @@ const ratings = {
   doc3: 2.5,
   doc4: 1.9,
   doc5: 4.2,
-  doc6: 3.8,
+  doc6: 0.6,
 };
 
 // generate stars according to the rating
@@ -15,19 +15,14 @@ function renderStarRating(rating, ratingCard) {
   starContainer.innerHTML = "";
 
   const colorPercentage = Math.round((rating % 1) * 100).toString();
-  // const colorPercentage = '50%'
   const grayPercentage = (100 - Number(colorPercentage)).toString();
-  // const grayPercentage = '50%'
-
-  console.log(rating, colorPercentage, grayPercentage);
-  // star.style.background = `linear-gradient(to right, ${color} ${colorPercentage}, #A8A29E ${grayPercentage})`
 
   let color = "";
-  if (rating >= 4) color = "#052E16";
-  else if (rating >= 3) color = "#14532D";
-  else if (rating >= 2) color = "#166534";
-  else if (rating >= 1) color = "#15803D";
-  else color = "#A8A29E";
+  if (rating >= 4) color = "#14532D";
+  else if (rating >= 3) color = "#166534";
+  else if (rating >= 2) color = "#15803D";
+  else if (rating >= 1) color = "#16A34A";
+  else color = "#78716C";
 
   for (let i = 1; i <= 5; i++) {
     const star = document.createElement("i");
@@ -39,11 +34,11 @@ function renderStarRating(rating, ratingCard) {
     } else if (i === Math.ceil(rating)) {
       // half fill color star
       star.classList.add("fa-star", "star-box");
-      star.style.backgroundImage = `linear-gradient(to right, ${color} 0% ${colorPercentage}%, #A8A29E ${grayPercentage}% 100%)`;
+      star.style.backgroundImage = `linear-gradient(to right, ${color} 0% ${colorPercentage}%, #78716C ${grayPercentage}% 100%)`;
     } else {
       // star without fill color
       star.classList.add("fa-star", "star-box");
-      star.style.background = `#A8A29E`;
+      star.style.background = `#78716C`;
     }
 
     starContainer.appendChild(star);
