@@ -36,5 +36,8 @@
         @apply  fz-scale max-h-52 xs:max-h-48 text-justify pr-3 overflow-hidden text-stone-900;
     }
 
+    .rm-shadow{
+        background-image:  linear-gradient(90deg,rgba(255, 255, 255, 0),#fff 16%);
+    }
     
 }

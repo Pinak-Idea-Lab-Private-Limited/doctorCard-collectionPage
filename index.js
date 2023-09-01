@@ -77,13 +77,14 @@ const showAndHideModal = (state, index) => {
 
   if (state === "show") {
     let rmBtn = document.querySelector("#aboutTab-rmBtn-" + index); //rmBtn: read more btn
-    let aboutDivContent = rmBtn.previousElementSibling;
+    let shadowDiv = rmBtn.parentElement;
+    let aboutDivContent = shadowDiv.parentElement;
     let h3Content = aboutDivContent.previousElementSibling;
 
     dcModal.classList.remove("hidden");
 
     modalTitle.innerHTML = h3Content.innerHTML;
-    modalContent.innerHTML = aboutDivContent.innerHTML;
+    modalContent.innerHTML = aboutDivContent.textContent;
   } else {
     dcModal.classList.add("hidden");
   }
