@@ -681,7 +681,7 @@ video {
 }
 
 .rm-shadow{
-  background-image:  linear-gradient(90deg,rgba(255, 255, 255, 0),#fff 16%);
+  background-image:  linear-gradient(90deg,rgba(255, 255, 255, 0),#fff 20%);
 }
 
 .fixed {
@@ -814,6 +814,10 @@ video {
 
 .w-\[55\%\] {
   width: 55%;
+}
+
+.w-\[65\%\] {
+  width: 65%;
 }
 
 .w-full {
@@ -1053,6 +1057,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
 .pl-14 {
   padding-left: 3.5rem;
 }
@@ -1071,10 +1079,6 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
 }
 
 .text-left {
@@ -1376,10 +1380,6 @@ video {
 
   .md\:p-4 {
     padding: 1rem;
-  }
-
-  .md\:pl-14 {
-    padding-left: 3.5rem;
   }
 }
 
