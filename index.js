@@ -84,7 +84,7 @@ const showAndHideModal = (state, index) => {
     dcModal.classList.remove("hidden");
 
     modalTitle.innerHTML = h3Content.innerHTML;
-    modalContent.innerHTML = aboutDivContent.textContent;
+    modalContent.innerHTML = (aboutDivContent.textContent).replace("Read More","");
   } else {
     dcModal.classList.add("hidden");
   }
