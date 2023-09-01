@@ -1073,6 +1073,10 @@ video {
   padding-top: 1.25rem;
 }
 
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1348,6 +1352,10 @@ video {
     padding-bottom: 1rem;
   }
 
+  .sm\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
   .sm\:text-left {
     text-align: left;
   }
@@ -1368,6 +1376,10 @@ video {
 
   .md\:p-4 {
     padding: 1rem;
+  }
+
+  .md\:pl-14 {
+    padding-left: 3.5rem;
   }
 }
 
