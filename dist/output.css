@@ -1364,6 +1364,14 @@ input:checked + .toggle-bg {
   width: 100%;
 }
 
+.w-\[75\%\] {
+  width: 75%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -2225,6 +2233,10 @@ input:checked + .toggle-bg {
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-\[55\%\] {
+    width: 55%;
   }
 
   .sm\:max-w-3xl {
