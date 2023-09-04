@@ -1091,6 +1091,7 @@ input:checked + .toggle-bg {
 
 #aboutTab-rmBtn-0, #aboutTab-rmBtn-1, #aboutTab-rmBtn-2, #aboutTab-rmBtn-3, #aboutTab-rmBtn-4, #aboutTab-rmBtn-5{
   cursor: pointer;
+  margin-right: 0.75rem;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(118 169 250 / var(--tw-bg-opacity));
@@ -1102,6 +1103,7 @@ input:checked + .toggle-bg {
   color: rgb(242 242 242 / var(--tw-text-opacity));
   font-size: 13px;
   font-weight: semibold;
+  float: right;
 }
 
 /* about tab content, highlights tab content and consult tab content */
@@ -1123,7 +1125,7 @@ input:checked + .toggle-bg {
 }
 
 .rm-shadow{
-  background-image:  linear-gradient(90deg,rgba(255, 255, 255, 0),#fff 20%);
+  background-image:  linear-gradient(90deg,rgba(255, 255, 255, 0),#fff 75%);
 }
 
 .visible {
@@ -1171,20 +1173,12 @@ input:checked + .toggle-bg {
   bottom: 0px;
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
 .bottom-\[60px\] {
   bottom: 60px;
 }
 
 .left-0 {
   left: 0px;
-}
-
-.left-1\/2 {
-  left: 50%;
 }
 
 .right-0 {
@@ -1302,10 +1296,6 @@ input:checked + .toggle-bg {
   display: none;
 }
 
-.h-3 {
-  height: 0.75rem;
-}
-
 .h-4 {
   height: 1rem;
 }
@@ -1348,10 +1338,6 @@ input:checked + .toggle-bg {
 
 .w-1\/2 {
   width: 50%;
-}
-
-.w-3 {
-  width: 0.75rem;
 }
 
 .w-4 {
@@ -1408,11 +1394,6 @@ input:checked + .toggle-bg {
 
 .grow-0 {
   flex-grow: 0;
-}
-
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-translate-x-full {
@@ -1533,12 +1514,6 @@ input:checked + .toggle-bg {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -1774,10 +1749,6 @@ input:checked + .toggle-bg {
 
 .pb-4 {
   padding-bottom: 1rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
 }
 
 .pr-3 {
@@ -2303,10 +2274,6 @@ input:checked + .toggle-bg {
 
   .sm\:pb-4 {
     padding-bottom: 1rem;
-  }
-
-  .sm\:pl-14 {
-    padding-left: 3.5rem;
   }
 
   .sm\:text-left {

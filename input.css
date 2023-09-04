@@ -25,9 +25,10 @@
     }
     #aboutTab-rmBtn-0, #aboutTab-rmBtn-1, #aboutTab-rmBtn-2, #aboutTab-rmBtn-3, #aboutTab-rmBtn-4, #aboutTab-rmBtn-5{
         cursor: pointer;
-        @apply rounded-full bg-blue-400 text-[#f2f2f2] px-2 py-0.5;
+        @apply rounded-full bg-blue-400 text-[#f2f2f2] px-2 py-0.5 mr-3;
         font-size: 13px;
         font-weight: semibold;
+        float: right;
     }
 
  
@@ -37,7 +38,7 @@
     }
 
     .rm-shadow{
-        background-image:  linear-gradient(90deg,rgba(255, 255, 255, 0),#fff 20%);
+        background-image:  linear-gradient(90deg,rgba(255, 255, 255, 0),#fff 75%);
     }
     
 }
