@@ -5,7 +5,7 @@ const ratings = {
   doc2: 4.7,
   doc3: 2.5,
   doc4: 1.9,
-  doc5: 4.2,
+  doc5: 0,
   doc6: 0.6,
 };
 
@@ -22,6 +22,7 @@ function renderStarRating(rating, ratingCard) {
   else if (rating >= 3) color = "#166534";
   else if (rating >= 2) color = "#15803D";
   else if (rating >= 1) color = "#16A34A";
+  else if (rating > 0) color = "#22C55E";
   else color = "#78716C";
 
   for (let i = 1; i <= 5; i++) {
@@ -51,7 +52,7 @@ function getRatings() {
   for (let rating in ratings) {
     document.querySelector(
       `.${rating} .number-rating`
-    ).innerHTML = `(${ratings[rating]})`;
+    ).innerHTML = `${ratings[rating]}`;
     renderStarRating(ratings[rating], rating);
   }
 }
