@@ -1193,6 +1193,18 @@ input:checked + .toggle-bg {
   top: 25%;
 }
 
+.top-\[35\%\] {
+  top: 35%;
+}
+
+.top-\[30\%\] {
+  top: 30%;
+}
+
+.top-\[40\%\] {
+  top: 40%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1751,6 +1763,11 @@ input:checked + .toggle-bg {
   padding-bottom: 0.75rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1773,6 +1790,30 @@ input:checked + .toggle-bg {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .text-left {
@@ -1835,6 +1876,10 @@ input:checked + .toggle-bg {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
@@ -2198,6 +2243,10 @@ input:checked + .toggle-bg {
     visibility: visible;
   }
 
+  .sm\:top-\[30\%\] {
+    top: 30%;
+  }
+
   .sm\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -2211,8 +2260,16 @@ input:checked + .toggle-bg {
     margin-top: 0px;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:w-1\/4 {
@@ -2282,6 +2339,10 @@ input:checked + .toggle-bg {
 
   .sm\:pb-4 {
     padding-bottom: 1rem;
+  }
+
+  .sm\:pl-4 {
+    padding-left: 1rem;
   }
 
   .sm\:text-left {
