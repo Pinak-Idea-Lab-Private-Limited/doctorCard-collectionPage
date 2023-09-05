@@ -1111,7 +1111,6 @@ input:checked + .toggle-bg {
 .aboutTab-content, .hightlightTab-content, .consultTab-content{
   font-size: calc(16px + 2 * ((100vw - 300*1px) / (2920 - 300)));
   max-height: 13rem;
-  overflow: hidden;
   padding-right: 0.75rem;
   text-align: justify;
   --tw-text-opacity: 1;
@@ -1169,6 +1168,14 @@ input:checked + .toggle-bg {
   bottom: -1px;
 }
 
+.-left-\[12px\] {
+  left: -12px;
+}
+
+.-right-\[12px\] {
+  right: -12px;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -1189,20 +1196,8 @@ input:checked + .toggle-bg {
   top: 0px;
 }
 
-.top-1\/4 {
-  top: 25%;
-}
-
 .top-\[35\%\] {
   top: 35%;
-}
-
-.top-\[30\%\] {
-  top: 30%;
-}
-
-.top-\[40\%\] {
-  top: 40%;
 }
 
 .z-10 {
@@ -1260,6 +1255,10 @@ input:checked + .toggle-bg {
   margin-left: 0.5rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mr-\[15px\] {
   margin-right: 15px;
 }
@@ -1274,10 +1273,6 @@ input:checked + .toggle-bg {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .block {
@@ -1360,20 +1355,12 @@ input:checked + .toggle-bg {
   width: 1rem;
 }
 
-.w-6 {
-  width: 1.5rem;
-}
-
 .w-64 {
   width: 16rem;
 }
 
 .w-\[100\%\] {
   width: 100%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
 }
 
 .w-full {
@@ -1394,10 +1381,6 @@ input:checked + .toggle-bg {
 
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.flex-auto {
-  flex: 1 1 auto;
 }
 
 .flex-shrink {
@@ -1553,10 +1536,6 @@ input:checked + .toggle-bg {
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .rounded-lg {
@@ -1763,17 +1742,28 @@ input:checked + .toggle-bg {
   padding-bottom: 0.75rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .pb-4 {
   padding-bottom: 1rem;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
+}
+
 .pr-3 {
   padding-right: 0.75rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
 }
 
 .pt-1 {
@@ -1792,28 +1782,8 @@ input:checked + .toggle-bg {
   padding-top: 1.25rem;
 }
 
-.pr-7 {
-  padding-right: 1.75rem;
-}
-
 .pl-4 {
   padding-left: 1rem;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
-}
-
-.pl-7 {
-  padding-left: 1.75rem;
 }
 
 .text-left {
@@ -1874,12 +1844,12 @@ input:checked + .toggle-bg {
   font-weight: 500;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
