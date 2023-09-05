@@ -2246,6 +2246,10 @@ input:checked + .toggle-bg {
     margin-top: 0px;
   }
 
+  .sm\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .sm\:block {
     display: block;
   }
