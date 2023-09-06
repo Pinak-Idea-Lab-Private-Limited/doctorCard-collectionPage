@@ -1964,6 +1964,10 @@ input:checked + .toggle-bg {
   line-height: 2rem;
 }
 
+.leading-5 {
+  line-height: 1.25rem;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }
