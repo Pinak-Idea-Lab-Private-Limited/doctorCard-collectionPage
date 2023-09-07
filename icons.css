@@ -337,3 +337,26 @@
     color: #fff;
 
 }
+
+
+
+
+/* footer icons */
+
+
+.fa-s-bullhorn,.fa-s-phone, .fa-s-envelope {
+    font-family: "solid";
+    font-style:normal;
+  }
+
+  .fa-s-bullhorn::before {
+    content: "\f0a1";
+  }
+
+  .fa-s-phone::before{
+    content: "\f095";
+  }
+
+  .fa-s-envelope::before{
+    content: "\f0e0";
+  }
