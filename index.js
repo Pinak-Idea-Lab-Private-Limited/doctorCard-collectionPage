@@ -123,3 +123,26 @@ document.addEventListener("keydown", (e) => {
     }
   }
 });
+
+// top content display modal 
+const infoModalToggle = (state) => {
+  let infoModal = document.querySelector("#info-modal");
+
+
+  if (state === "show") {
+    infoModal.classList.remove("hidden");
+
+  } else {
+    infoModal.classList.add("hidden");
+  }
+};
+
+// close the top content info modal on click of ESC button
+let infoModal = document.querySelector("#info-modal");
+document.addEventListener("keydown", (e) => {
+  if (!infoModal.classList.contains("hidden")) {
+    if (e.key === "Escape") {
+      infoModal.classList.add("hidden");
+    }
+  }
+});

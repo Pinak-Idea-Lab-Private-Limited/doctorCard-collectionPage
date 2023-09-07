@@ -23,6 +23,14 @@
     .fz-mrv{
         font-size: calc(14px + 2 * ((100vw - 300*1px) / (2920 - 300)));
     }
+    #rmBtn-0{
+        cursor: pointer;
+        @apply rounded-full bg-blue-400 text-[#f2f2f2] px-2 py-0.5;
+        font-size: 13px;
+        font-weight: semibold;
+        float: right;
+    }
+    
     #aboutTab-rmBtn-0, #aboutTab-rmBtn-1, #aboutTab-rmBtn-2, #aboutTab-rmBtn-3, #aboutTab-rmBtn-4, #aboutTab-rmBtn-5{
         cursor: pointer;
         @apply rounded-full bg-blue-400 text-[#f2f2f2] px-2 py-0.5 mr-3;
