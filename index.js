@@ -91,7 +91,7 @@ const showAndHideModal = (state, index) => {
   }
 };
 
-// close the modal on click of ESC button
+// close the about modal on click of ESC button
 let dcModal = document.querySelector("#dc-modal");
 document.addEventListener("keydown", (e) => {
   if (!dcModal.classList.contains("hidden")) {
@@ -113,3 +113,13 @@ const ratingModalToggle = (state) => {
     rModal.classList.add("hidden");
   }
 };
+
+// close the rating modal on click of ESC button
+let rModal = document.querySelector("#ratingInfo-modal");
+document.addEventListener("keydown", (e) => {
+  if (!rModal.classList.contains("hidden")) {
+    if (e.key === "Escape") {
+      rModal.classList.add("hidden");
+    }
+  }
+});
