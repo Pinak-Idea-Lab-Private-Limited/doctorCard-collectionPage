@@ -152,12 +152,15 @@
   <div class="relative isolate z-50 shadow-sm" x-data="{openNav:0}">
     <div class="bg-white py-3">
       <div class=" flex mx-auto px-6 gap-5 lg:px-8">
-        <button type="button"  class="inline-flex items-center gap-x-1 px-3 py-2 hover:bg-gray-100 rounded-lg text-base font-semibold leading-6 text-gray-900"
+        <button type="button"
+          class="inline-flex items-center gap-x-1 px-3 py-2 hover:bg-gray-100 rounded-lg text-base font-semibold leading-6 text-gray-900"
           aria-expanded="false">
           Home
-          
+
         </button>
-        <button type="button" @click="openNav===1?openNav = 0:openNav = 1" :class="openNav===1? 'bg-gray-100':'bg-white'" class="px-3 py-2 hover:bg-gray-100 rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
+        <button type="button" @click="openNav===1?openNav = 0:openNav = 1"
+          :class="openNav===1? 'bg-gray-100':'bg-white'"
+          class="px-3 py-2 hover:bg-gray-100 rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
           aria-expanded="false">
           Cities
           <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -167,7 +170,9 @@
           </svg>
         </button>
 
-        <button type="button" @click="openNav===2?openNav = 0:openNav = 2" :class="openNav===2? 'bg-gray-100':'bg-white'" class="px-3 py-2 hover:bg-gray-100 rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
+        <button type="button" @click="openNav===2?openNav = 0:openNav = 2"
+          :class="openNav===2? 'bg-gray-100':'bg-white'"
+          class="px-3 py-2 hover:bg-gray-100 rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
           aria-expanded="false">
           Resources
           <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -179,107 +184,73 @@
       </div>
     </div>
 
-    
+
     <div class="absolute inset-x-0 top-0 -z-10 bg-white pt-16 shadow-lg ring-1 ring-gray-900/5">
       <!-- flyout 1 -->
-      <div x-show="openNav === 1" @click.outside="openNav===1 ? openNav = 0:null" class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-10 px-6 py-10 lg:grid-cols-2 lg:px-8">
-        <div class="grid grid-cols-2 gap-x-6 sm:gap-x-8">
-          
-          <div>
-            <h3 class="text-sm font-medium leading-6 text-gray-500">Resources</h3>
-            <div class="mt-6 flow-root">
-              <div class="-my-2">
-                <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
-                  <svg class="h-6 w-6 flex-none text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-                  </svg>
-                  Community
-                </a>
-                <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
-                  <svg class="h-6 w-6 flex-none text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
-                  </svg>
-                  Partners
-                </a>
-                <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
-                  <svg class="h-6 w-6 flex-none text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                  </svg>
-                  Guides
-                </a>
-                <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
-                  <svg class="h-6 w-6 flex-none text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round"
-                      d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
-                  </svg>
-                  Webinars
-                </a>
-              </div>
+      <div x-show="openNav === 1" @click.outside="openNav===1 ? openNav = 0:null"
+        class="mx-auto grid  grid-cols-1 gap-x-8 gap-y-10 px-6 py-10 lg:grid-cols-2 lg:px-8">
+        
+        <ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+          <li class="relative">
+            <div
+              class="group aspect-h-5 aspect-w-5 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              <img
+                src="https://media.gettyimages.com/id/1096026706/photo/the-rashtrapati-bhavan-during-sunset-time-india.jpg?s=612x612&w=0&k=20&c=3tq_3qpK1bTQQRpW2aHyuCYn5p8gTfQB4YeURb0q_z4="
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75">
+              <button type="button" class="absolute inset-0 focus:outline-none">
+                <span class="sr-only">View details for IMG_4985.HEIC</span>
+              </button>
             </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-1 gap-10 sm:gap-8 lg:grid-cols-2">
-          <h3 class="sr-only">Recent posts</h3>
-          <article
-            class="relative isolate flex max-w-2xl flex-col gap-x-8 gap-y-6 sm:flex-row sm:items-start lg:flex-col lg:items-stretch">
-            <div class="relative flex-none">
-              <img class="aspect-[2/1] w-full rounded-lg bg-gray-100 object-cover sm:aspect-[16/9] sm:h-32 lg:h-auto"
-                src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
-                alt="">
-              <div class="absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10"></div>
+            <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Delhi</p>
+            
+          </li>
+          <li class="relative">
+            <div
+              class="group aspect-h-5 aspect-w-5 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              <img
+                src="https://media.gettyimages.com/id/160438757/photo/chhatrapati-shivaji-terminus-train-station-mumbai.jpg?s=612x612&w=0&k=20&c=k6Ae3kHF_SUCLou5uLkhc5-lkD4HzNY9g8ZS9LGoIZ0="
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75">
+              <button type="button" class="absolute inset-0 focus:outline-none">
+                <span class="sr-only">View details for IMG_4985.HEIC</span>
+              </button>
             </div>
-            <div>
-              <div class="flex items-center gap-x-4">
-                <time datetime="2023-03-16" class="text-sm leading-6 text-gray-600">Mar 16, 2023</time>
-                <a href="#"
-                  class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 text-xs font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
-              </div>
-              <h4 class="mt-2 text-sm font-semibold leading-6 text-gray-900">
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  Boost your conversion rate
-                </a>
-              </h4>
-              <p class="mt-2 text-sm leading-6 text-gray-600">Et et dolore officia quis nostrud esse aute cillum irure
-                do esse. Eiusmod ad deserunt cupidatat est magna Lorem.</p>
+            <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Mumbai</p>
+            
+          </li>
+          <li class="relative">
+            <div
+              class="group aspect-h-7 aspect-w-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              <img
+                src="https://media.gettyimages.com/id/1330322647/photo/a-fine-evening-at-vidhana-soudha-bengaluru.jpg?s=612x612&w=0&k=20&c=Ykc4w6yEct4p03N4L7BBHhEzpxpo1_76simiAumKbwo="
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75">
+              <button type="button" class="absolute inset-0 focus:outline-none">
+                <span class="sr-only">View details for IMG_4985.HEIC</span>
+              </button>
             </div>
-          </article>
-          <article
-            class="relative isolate flex max-w-2xl flex-col gap-x-8 gap-y-6 sm:flex-row sm:items-start lg:flex-col lg:items-stretch">
-            <div class="relative flex-none">
-              <img class="aspect-[2/1] w-full rounded-lg bg-gray-100 object-cover sm:aspect-[16/9] sm:h-32 lg:h-auto"
-                src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
-                alt="">
-              <div class="absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10"></div>
+            <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Bangalore</p>
+          </li>
+          <li class="relative">
+            <div
+              class="group aspect-h-7 aspect-w-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              <img
+                src="https://media.gettyimages.com/id/142605497/photo/charminar.jpg?s=612x612&w=0&k=20&c=-8sXKXCtzR_G82SBWLGa43CnQhyDKKwIJUAk2m1okKY="
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75">
+              <button type="button" class="absolute inset-0 focus:outline-none">
+                <span class="sr-only">View details for IMG_4985.HEIC</span>
+              </button>
             </div>
-            <div>
-              <div class="flex items-center gap-x-4">
-                <time datetime="2023-03-10" class="text-sm leading-6 text-gray-600">Mar 10, 2023</time>
-                <a href="#"
-                  class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 text-xs font-medium text-gray-600 hover:bg-gray-100">Sales</a>
-              </div>
-              <h4 class="mt-2 text-sm font-semibold leading-6 text-gray-900">
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  How to use search engine optimization to drive sales
-                </a>
-              </h4>
-              <p class="mt-2 text-sm leading-6 text-gray-600">Optio cum necessitatibus dolor voluptatum provident
-                commodi et.</p>
-            </div>
-          </article>
-        </div>
+            <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Hyderabad</p>
+            
+          </li>
+
+          <!-- More files... -->
+        </ul>
+
       </div>
 
-       <!-- flyout 2 -->
-       <div x-show="openNav === 2" @click.outside="openNav===2 ? openNav = 0: null" class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-10 px-6 py-10 lg:grid-cols-2 lg:px-8">
+      <!-- flyout 2 -->
+      <div x-show="openNav === 2" @click.outside="openNav===2 ? openNav = 0: null"
+        class="mx-auto grid  grid-cols-1 gap-x-8 gap-y-10 px-6 py-10 lg:grid-cols-2 lg:px-8">
         <div class="grid grid-cols-2 gap-x-6 sm:gap-x-8">
           <div>
             <h3 class="text-sm font-medium leading-6 text-gray-500">Engagement 2</h3>
@@ -428,7 +399,7 @@
 
 
   <!-- doctors cards -->
-  <div class="flex px-0 lg:px-4 mt-2 gap-3 flex-col lg:flex-row max-w-[1536px] mx-auto">
+  <div class="flex px-0 lg:px-4 mt-4 gap-3 flex-col lg:flex-row max-w-[1536px] mx-auto">
     <!-- Left Side Content -->
     <div class="w-full lg:w-[70%]">
 
