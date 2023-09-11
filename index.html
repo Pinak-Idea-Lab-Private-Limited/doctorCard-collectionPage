@@ -109,7 +109,7 @@
               <div class="mt-3 sm:ml-4 sm:mt-0 sm:text-left">
 
                 <div class="mt-2">
-                  <p id="ratings-modalContent" class="pr-3 text-gray-700 fz-scale overflow-auto">
+                  <p id="ratings-modalContent" class="pr-3 text-gray-700 fz-scale  max-h-[60vh] overflow-auto">
 
                     <span class="text-left">
                       In the bustling metropolis of Delhi, a city known for its rich history and vibrant culture, there
@@ -377,10 +377,10 @@
       
       <!-- flyout 2 -->
       <div x-show="openNav === 2" @click.outside="openNav===2 ? openNav = 0: null"
-      class="mx-auto grid  grid-cols-1 gap-x-8 gap-y-10 px-6 py-10 lg:grid-cols-2 lg:px-8">
+      class="mx-auto grid max-h-[80vh] overflow-auto grid-cols-1 gap-x-8 gap-y-10 px-6 py-5 lg:grid-cols-2 lg:px-8">
       <div class="grid grid-cols-2 gap-x-6 sm:gap-x-8">
           <div>
-            <h3 class="text-sm font-medium leading-6 text-gray-500">Engagement 2</h3>
+            <h3 class="text-sm font-medium leading-6 text-gray-500">Engagement</h3>
             <div class="mt-6 flow-root">
               <div class="-my-2">
                 <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
@@ -466,12 +466,12 @@
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-1 gap-10 sm:gap-8 lg:grid-cols-2">
+        <div class="grid grid-cols-1 gap-1  sm:gap-8 lg:grid-cols-2">
           <h3 class="sr-only">Recent posts</h3>
           <article
-            class="relative isolate flex max-w-2xl flex-col gap-x-8 gap-y-6 sm:flex-row sm:items-start lg:flex-col lg:items-stretch">
+            class="relative isolate flex max-w-2xl  gap-x-8 gap-y-6 flex-row items-start lg:flex-col lg:items-stretch">
             <div class="relative flex-none">
-              <img class="aspect-[2/1] w-full rounded-lg bg-gray-100 object-cover sm:aspect-[16/9] sm:h-32 lg:h-auto"
+              <img class="rounded-lg bg-gray-100 object-cover aspect-1 h-24 sm:aspect-[16/9] sm:h-32 lg:h-auto"
                 src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
                 alt="">
               <div class="absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10"></div>
@@ -488,14 +488,16 @@
                   Boost your conversion rate
                 </a>
               </h4>
-              <p class="mt-2 text-sm leading-6 text-gray-600">Et et dolore officia quis nostrud esse aute cillum irure
+              <p class="mt-2 text-sm leading-6 text-gray-600 hidden sm:block">Et et dolore officia quis nostrud esse aute cillum irure
                 do esse. Eiusmod ad deserunt cupidatat est magna Lorem.</p>
             </div>
           </article>
-          <article
-            class="relative isolate flex max-w-2xl flex-col gap-x-8 gap-y-6 sm:flex-row sm:items-start lg:flex-col lg:items-stretch">
+          <p class="mt-2 block sm:hidden text-sm leading-6 text-gray-600">Et et dolore officia quis nostrud esse aute cillum irure
+            do esse. Eiusmod ad deserunt cupidatat est magna Lorem.</p>
+            <article
+            class="relative isolate flex max-w-2xl pt-3  gap-x-8 gap-y-6 flex-row items-start lg:flex-col lg:items-stretch">
             <div class="relative flex-none">
-              <img class="aspect-[2/1] w-full rounded-lg bg-gray-100 object-cover sm:aspect-[16/9] sm:h-32 lg:h-auto"
+              <img class="rounded-lg bg-gray-100 object-cover aspect-1 h-24 sm:aspect-[16/9] sm:h-32 lg:h-auto"
                 src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
                 alt="">
               <div class="absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10"></div>
@@ -512,10 +514,12 @@
                   How to use search engine optimization to drive sales
                 </a>
               </h4>
-              <p class="mt-2 text-sm leading-6 text-gray-600">Optio cum necessitatibus dolor voluptatum provident
+              <p class="mt-2 text-sm leading-6 hidden sm:block text-gray-600">Optio cum necessitatibus dolor voluptatum provident
                 commodi et.</p>
             </div>
           </article>
+          <p class="mt-2 text-sm leading-6 text-gray-600 block sm:hidden">Optio cum necessitatibus dolor voluptatum provident
+            commodi et.</p>
         </div>
       </div>
       <div class=" absolute bottom-0 w-full cities-shadow h-30">.</div>
