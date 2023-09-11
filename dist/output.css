@@ -1160,7 +1160,7 @@ input:checked + .toggle-bg {
 }
 
 .cities-shadow{
-  background-image:  linear-gradient(180deg,rgba(255, 255, 255, 0.3),#f2f2f2 75%);
+  background-image:  linear-gradient(180deg,rgba(255, 255, 255, 0),#f2f2f2 75%);
 }
 
 .sr-only {
