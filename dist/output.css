@@ -1505,6 +1505,10 @@ input:checked + .toggle-bg {
   height: 6rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .max-h-\[18rem\] {
   max-height: 18rem;
 }
