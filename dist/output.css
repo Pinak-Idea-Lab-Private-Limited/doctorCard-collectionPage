@@ -1026,22 +1026,6 @@ input:checked + .toggle-bg {
   --tw-aspect-h: 7;
 }
 
-.aspect-w-10 {
-  position: relative;
-  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
-  --tw-aspect-w: 10;
-}
-
-.aspect-w-10 > * {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 .aspect-w-7 {
   position: relative;
   padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
@@ -1049,26 +1033,6 @@ input:checked + .toggle-bg {
 }
 
 .aspect-w-7 > * {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.aspect-h-5 {
-  --tw-aspect-h: 5;
-}
-
-.aspect-w-5 {
-  position: relative;
-  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
-  --tw-aspect-w: 5;
-}
-
-.aspect-w-5 > * {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1493,6 +1457,14 @@ input:checked + .toggle-bg {
   aspect-ratio: 2/1;
 }
 
+.aspect-1 {
+  aspect-ratio: 1;
+}
+
+.aspect-2 {
+  aspect-ratio: 2;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -1579,6 +1551,10 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .min-w-0 {
@@ -1709,6 +1685,10 @@ input:checked + .toggle-bg {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
 }
 
 .grid-cols-1 {
@@ -2013,6 +1993,11 @@ input:checked + .toggle-bg {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(227 160 8 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffffff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -2835,6 +2820,10 @@ input:checked + .toggle-bg {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -3055,6 +3044,10 @@ input:checked + .toggle-bg {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:flex-row {

@@ -14,7 +14,7 @@
 
 <body class="bg-[#f2f2f2]">
   <!-- About section display modal  -->
-  <div id="dc-modal" class="relative z-30 hidden " aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div id="dc-modal" class="relative z-40 hidden " aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
     <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
@@ -50,7 +50,7 @@
   </div>
 
   <!-- ratings icon modal -->
-  <div id="ratingInfo-modal" class="relative z-30 hidden " aria-labelledby="modal-title" role="dialog"
+  <div id="ratingInfo-modal" class="relative z-40 hidden " aria-labelledby="modal-title" role="dialog"
     aria-modal="true">
 
     <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
@@ -94,7 +94,7 @@
   </div>
 
   <!-- top heading content info display modal -->
-  <div id="info-modal" class="relative z-30 hidden " aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div id="info-modal" class="relative z-40 hidden " aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
     <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
@@ -149,7 +149,7 @@
 
 
   <!-- navbar -->
-  <div class="relative isolate z-50 shadow-sm" x-data="{openNav:0}">
+  <div class="relative isolate z-30 shadow-sm" x-data="{openNav:0}">
     <div class="bg-white py-3">
       <div class=" flex mx-auto px-6 gap-5 lg:px-8">
         <button type="button"
@@ -188,15 +188,15 @@
     <div class="absolute inset-x-0 top-0 -z-10 bg-white pt-16 shadow-lg ring-1 ring-gray-900/5">
       <!-- flyout 1 -->
       <div x-show="openNav === 1" @click.outside="openNav===1 ? openNav = 0:null"
-        class="mx-auto grid  grid-cols-1 gap-x-8 gap-y-10 px-6 py-10 lg:grid-cols-2 lg:px-8">
+        class="mx-auto gap-x-8 gap-y-10 px-6 py-10  lg:px-8">
         
-        <ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
-          <li class="relative">
+        <ul role="list" class="flex gap-x-4 gap-y-8 flex-wrap xl:gap-x-8">
+          <li class="relative w-[100px]">
             <div
-              class="group aspect-h-7 aspect-w-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
                 src="https://media.gettyimages.com/id/1096026706/photo/the-rashtrapati-bhavan-during-sunset-time-india.jpg?s=612x612&w=0&k=20&c=3tq_3qpK1bTQQRpW2aHyuCYn5p8gTfQB4YeURb0q_z4="
-                alt="" class="pointer-events-none object-cover group-hover:opacity-75">
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
               <button type="button" class="absolute inset-0 focus:outline-none">
                 <span class="sr-only">View details for IMG_4985.HEIC</span>
               </button>
@@ -204,12 +204,12 @@
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Delhi</p>
             
           </li>
-          <li class="relative">
+          <li class="relative w-[100px]">
             <div
-              class="group aspect-h-7 aspect-w-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
                 src="https://media.gettyimages.com/id/160438757/photo/chhatrapati-shivaji-terminus-train-station-mumbai.jpg?s=612x612&w=0&k=20&c=k6Ae3kHF_SUCLou5uLkhc5-lkD4HzNY9g8ZS9LGoIZ0="
-                alt="" class="pointer-events-none object-cover group-hover:opacity-75">
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
               <button type="button" class="absolute inset-0 focus:outline-none">
                 <span class="sr-only">View details for IMG_4985.HEIC</span>
               </button>
@@ -217,24 +217,75 @@
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Mumbai</p>
             
           </li>
-          <li class="relative">
+          <li class="relative w-[100px]">
             <div
-              class="group aspect-h-7 aspect-w-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
                 src="https://media.gettyimages.com/id/1330322647/photo/a-fine-evening-at-vidhana-soudha-bengaluru.jpg?s=612x612&w=0&k=20&c=Ykc4w6yEct4p03N4L7BBHhEzpxpo1_76simiAumKbwo="
-                alt="" class="pointer-events-none object-cover group-hover:opacity-75">
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
               <button type="button" class="absolute inset-0 focus:outline-none">
                 <span class="sr-only">View details for IMG_4985.HEIC</span>
               </button>
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Bangalore</p>
           </li>
-          <li class="relative">
+          <li class="relative w-[100px]">
             <div
-              class="group aspect-h-7 aspect-w-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
                 src="https://media.gettyimages.com/id/142605497/photo/charminar.jpg?s=612x612&w=0&k=20&c=-8sXKXCtzR_G82SBWLGa43CnQhyDKKwIJUAk2m1okKY="
-                alt="" class="pointer-events-none object-cover group-hover:opacity-75">
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
+              <button type="button" class="absolute inset-0 focus:outline-none">
+                <span class="sr-only">View details for IMG_4985.HEIC</span>
+              </button>
+            </div>
+            <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Hyderabad</p>
+            
+          </li>
+          <li class="relative w-[100px]">
+            <div
+              class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              <img
+                src="https://media.gettyimages.com/id/1096026706/photo/the-rashtrapati-bhavan-during-sunset-time-india.jpg?s=612x612&w=0&k=20&c=3tq_3qpK1bTQQRpW2aHyuCYn5p8gTfQB4YeURb0q_z4="
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
+              <button type="button" class="absolute inset-0 focus:outline-none">
+                <span class="sr-only">View details for IMG_4985.HEIC</span>
+              </button>
+            </div>
+            <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Delhi</p>
+            
+          </li>
+          <li class="relative w-[100px]">
+            <div
+              class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              <img
+                src="https://media.gettyimages.com/id/160438757/photo/chhatrapati-shivaji-terminus-train-station-mumbai.jpg?s=612x612&w=0&k=20&c=k6Ae3kHF_SUCLou5uLkhc5-lkD4HzNY9g8ZS9LGoIZ0="
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
+              <button type="button" class="absolute inset-0 focus:outline-none">
+                <span class="sr-only">View details for IMG_4985.HEIC</span>
+              </button>
+            </div>
+            <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Mumbai</p>
+            
+          </li>
+          <li class="relative w-[100px]">
+            <div
+              class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              <img
+                src="https://media.gettyimages.com/id/1330322647/photo/a-fine-evening-at-vidhana-soudha-bengaluru.jpg?s=612x612&w=0&k=20&c=Ykc4w6yEct4p03N4L7BBHhEzpxpo1_76simiAumKbwo="
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
+              <button type="button" class="absolute inset-0 focus:outline-none">
+                <span class="sr-only">View details for IMG_4985.HEIC</span>
+              </button>
+            </div>
+            <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Bangalore</p>
+          </li>
+          <li class="relative w-[100px]">
+            <div
+              class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              <img
+                src="https://media.gettyimages.com/id/142605497/photo/charminar.jpg?s=612x612&w=0&k=20&c=-8sXKXCtzR_G82SBWLGa43CnQhyDKKwIJUAk2m1okKY="
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
               <button type="button" class="absolute inset-0 focus:outline-none">
                 <span class="sr-only">View details for IMG_4985.HEIC</span>
               </button>
@@ -2638,7 +2689,7 @@
   </div>
 
   <!-- footer section -->
-  <div class="px-5 md:px-20 pt-10 bg-[#F6EDFC]">
+  <div class="px-5 md:px-20 pt-10 bg-[#f2f2f2]">
 
 
 
@@ -2649,8 +2700,7 @@
           <div class="w-full pe-4 sm:w-2/3 lg:w-3/12">
             <div class="mb-10 w-full">
               <a href="/" class="mb-8 inline-block max-w-[160px]">
-                <!-- <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg" alt="logo"
-                class="max-w-full" /> -->
+                
                 <h1 class="text-3xl font-extrabold	tracking-[1px] text-gray-800">PregaWish</h1>
 
               </a>
