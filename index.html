@@ -149,8 +149,8 @@
 
 
   <!-- navbar -->
-  <div class="bg-white relative isolate z-30 " x-data="{openNav:0}">
-    <div class=" py-3 max-w-[1536px] mx-auto">
+  <div class=" relative isolate z-30 " x-data="{openNav:0}">
+    <div class="bg-color py-3 max-w-[1536px] mx-auto">
       <div class=" flex mx-auto px-6 gap-5 lg:px-4">
         <button type="button"
           class="inline-flex items-center gap-x-1 px-3 py-2 hover:bg-gray-100 rounded-lg text-base font-semibold leading-6 text-gray-900"
@@ -159,7 +159,7 @@
 
         </button>
         <button type="button" @click="openNav===1?openNav = 0:openNav = 1"
-          :class="openNav===1? 'bg-gray-100':'bg-white'"
+          :class="openNav===1? 'bg-gray-100':'bg-color'"
           class="px-3 py-2 hover:bg-gray-100 rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
           aria-expanded="false">
           Cities
@@ -171,7 +171,7 @@
         </button>
 
         <button type="button" @click="openNav===2?openNav = 0:openNav = 2"
-          :class="openNav===2? 'bg-gray-100':'bg-white'"
+          :class="openNav===2? 'bg-gray-100':'bg-color'"
           class="px-3 py-2 hover:bg-gray-100 rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
           aria-expanded="false">
           Resources
@@ -185,7 +185,7 @@
     </div>
 
 
-    <div class="absolute inset-x-0 top-0 -z-10  bg-white pt-16 ring-1 ring-gray-900/5">
+    <div class="absolute inset-x-0 top-0 -z-10  bg-color pt-16 ring-1 ring-gray-900/5">
       <!-- flyout 1 -->
       <div x-show="openNav === 1" @click.outside="openNav===1 ? openNav = 0:null"
         class="relative max-h-[80vh] max-w-[1536px] overflow-auto flex justify-center  mx-auto  gap-x-8 gap-y-10 px-6 py-10  lg:px-8">
@@ -526,7 +526,7 @@
             commodi et.</p>
         </div>
       </div>
-      <div x-show="openNav !== 0" class=" absolute bottom-0 w-full cities-shadow h-30">.</div>
+      <!-- <div x-show="openNav !== 0" class=" absolute bottom-0 w-full cities-shadow h-30">.</div> -->
 
     </div>
   </div>
