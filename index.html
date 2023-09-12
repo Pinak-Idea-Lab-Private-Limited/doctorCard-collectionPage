@@ -149,9 +149,9 @@
 
 
   <!-- navbar -->
-  <div class="relative isolate z-30 shadow-sm" x-data="{openNav:0}">
-    <div class="bg-white py-3">
-      <div class=" flex mx-auto px-6 gap-5 lg:px-8">
+  <div class="bg-white relative isolate z-30 " x-data="{openNav:0}">
+    <div class=" py-3 max-w-[1536px] mx-auto">
+      <div class=" flex mx-auto px-6 gap-5 lg:px-4">
         <button type="button"
           class="inline-flex items-center gap-x-1 px-3 py-2 hover:bg-gray-100 rounded-lg text-base font-semibold leading-6 text-gray-900"
           aria-expanded="false">
@@ -188,8 +188,8 @@
     <div class="absolute inset-x-0 top-0 -z-10  bg-white pt-16 ring-1 ring-gray-900/5">
       <!-- flyout 1 -->
       <div x-show="openNav === 1" @click.outside="openNav===1 ? openNav = 0:null"
-        class="relative max-h-[80vh] overflow-auto flex justify-center  mx-auto  gap-x-8 gap-y-10 px-6 py-10  lg:px-8">
-        
+        class="relative max-h-[80vh] max-w-[1536px] overflow-auto flex justify-center  mx-auto  gap-x-8 gap-y-10 px-6 py-10  lg:px-8">
+
         <ul role="list" class="flex h-full gap-x-4 gap-y-8 flex-wrap xl:gap-x-8">
           <li class="relative w-[100px]">
             <div
@@ -202,7 +202,7 @@
               </button>
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Delhi</p>
-            
+
           </li>
           <li class="relative w-[100px]">
             <div
@@ -215,7 +215,7 @@
               </button>
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Mumbai</p>
-            
+
           </li>
           <li class="relative w-[100px]">
             <div
@@ -240,41 +240,41 @@
               </button>
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Hyderabad</p>
-            
+
           </li>
           <li class="relative w-[100px]">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBacAd-mDlLDZMMem-SDj7t8Nnn4fyg5r1A&usqp=CAU"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBacAd-mDlLDZMMem-SDj7t8Nnn4fyg5r1A&usqp=CAU"
                 alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
               <button type="button" class="absolute inset-0 focus:outline-none">
                 <span class="sr-only">View details for IMG_4985.HEIC</span>
               </button>
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Kolkata</p>
-            
+
           </li>
           <li class="relative w-[100px]">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo7rnvqtgvJMrVb6FNB3uy3YmKqu3071eISg&usqp=CAU"
-              alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo7rnvqtgvJMrVb6FNB3uy3YmKqu3071eISg&usqp=CAU"
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
               <button type="button" class="absolute inset-0 focus:outline-none">
                 <span class="sr-only">View details for IMG_4985.HEIC</span>
               </button>
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Chennai</p>
-            
+
           </li>
           <li class="relative w-[100px]">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
 
               <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ8ZPdh3WUUJ5IU2XWf-fkTGNHxDcKyIp2jg&usqp=CAU"
-              alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ8ZPdh3WUUJ5IU2XWf-fkTGNHxDcKyIp2jg&usqp=CAU"
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
               <button type="button" class="absolute inset-0 focus:outline-none">
                 <span class="sr-only">View details for IMG_4985.HEIC</span>
               </button>
@@ -292,33 +292,33 @@
               </button>
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Greater Noida</p>
-            
+
           </li>
           <li class="relative w-[100px]">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ87iLD34g2VJB4xDzAnboppeydTITofGdrtQ&usqp=CAU"
-              alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
               <button type="button" class="absolute inset-0 focus:outline-none">
                 <span class="sr-only">View details for IMG_4985.HEIC</span>
               </button>
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Jaipur</p>
-            
+
           </li>
           <li class="relative w-[100px]">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZv0htqEr5JiMSHXA5ElZXDGbfa5HHnA_tXA&usqp=CAU"
-              alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZv0htqEr5JiMSHXA5ElZXDGbfa5HHnA_tXA&usqp=CAU"
+                alt="" class="pointer-events-none object-cover group-hover:opacity-75 aspect-1">
               <button type="button" class="absolute inset-0 focus:outline-none">
                 <span class="sr-only">View details for IMG_4985.HEIC</span>
               </button>
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Pune</p>
-            
+
           </li>
           <li class="relative w-[100px]">
             <div
@@ -343,7 +343,7 @@
               </button>
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Chandigarh</p>
-            
+
           </li>
           <li class="relative w-[100px]">
             <div
@@ -368,17 +368,17 @@
               </button>
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">All Cities</p>
-            
+
           </li>
           <!-- More files... -->
         </ul>
-        
+
       </div>
-      
+
       <!-- flyout 2 -->
       <div x-show="openNav === 2" @click.outside="openNav===2 ? openNav = 0: null"
-      class="mx-auto grid max-h-[80vh] overflow-auto grid-cols-1 gap-x-8 gap-y-6 px-6 py-3 lg:grid-cols-2 lg:px-8">
-      <div class="grid grid-cols-2 gap-x-6 sm:gap-x-8">
+        class="mx-auto grid max-h-[80vh] max-w-[1536px] overflow-auto grid-cols-1 gap-x-8 gap-y-6 px-6 py-3 lg:grid-cols-2 lg:px-8">
+        <div class="grid grid-cols-2 gap-x-6 sm:gap-x-8">
           <div>
             <h3 class="text-sm font-medium leading-6 text-gray-500">Engagement</h3>
             <div class="mt-6 flow-root">
@@ -480,7 +480,7 @@
               <div class="flex items-center gap-x-4">
                 <time datetime="2023-03-16" class="text-sm leading-6 text-gray-600">Mar 16, 2023</time>
                 <a href="#"
-                  class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 text-xs font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                  class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
               </div>
               <h4 class="mt-2 text-sm font-semibold leading-6 text-gray-900">
                 <a href="#">
@@ -488,14 +488,16 @@
                   Boost your conversion rate
                 </a>
               </h4>
-              <p class="mt-2 text-sm leading-6 text-gray-600 hidden sm:block">Et et dolore officia quis nostrud esse aute cillum irure
+              <p class="mt-2 text-sm leading-6 text-gray-600 hidden sm:block">Et et dolore officia quis nostrud esse
+                aute cillum irure
                 do esse. Eiusmod ad deserunt cupidatat est magna Lorem.</p>
             </div>
           </article>
-          <p class="mt-2 block sm:hidden text-sm leading-6 text-gray-600">Et et dolore officia quis nostrud esse aute cillum irure
+          <p class="mt-2 block sm:hidden text-sm leading-6 text-gray-600">Et et dolore officia quis nostrud esse aute
+            cillum irure
             do esse. Eiusmod ad deserunt cupidatat est magna Lorem.</p>
-            <article
-            class="relative isolate flex max-w-2xl pt-3  gap-x-8 gap-y-6 flex-row items-start lg:flex-col lg:items-stretch">
+          <article
+            class="relative isolate flex max-w-2xl pt-3 sm:pt-0  gap-x-8 gap-y-6 flex-row items-start lg:flex-col lg:items-stretch">
             <div class="relative flex-none">
               <img class="rounded-lg bg-gray-100 object-cover aspect-1 h-20 sm:aspect-[16/9] sm:h-32 lg:h-auto"
                 src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
@@ -506,7 +508,7 @@
               <div class="flex items-center gap-x-4">
                 <time datetime="2023-03-10" class="text-sm leading-6 text-gray-600">Mar 10, 2023</time>
                 <a href="#"
-                  class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 text-xs font-medium text-gray-600 hover:bg-gray-100">Sales</a>
+                  class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-100">Sales</a>
               </div>
               <h4 class="mt-2 text-sm font-semibold leading-6 text-gray-900">
                 <a href="#">
@@ -514,15 +516,17 @@
                   How to use search engine optimization to drive sales
                 </a>
               </h4>
-              <p class="mt-2 text-sm leading-6 hidden sm:block text-gray-600">Optio cum necessitatibus dolor voluptatum provident
+              <p class="mt-2 text-sm leading-6 hidden sm:block text-gray-600">Optio cum necessitatibus dolor voluptatum
+                provident
                 commodi et.</p>
             </div>
           </article>
-          <p class="mt-2 text-sm leading-6 text-gray-600 block sm:hidden">Optio cum necessitatibus dolor voluptatum provident
+          <p class="mt-2 text-sm leading-6 text-gray-600 block sm:hidden">Optio cum necessitatibus dolor voluptatum
+            provident
             commodi et.</p>
         </div>
       </div>
-      <div class=" absolute bottom-0 w-full cities-shadow h-30">.</div>
+      <div x-show="openNav !== 0" class=" absolute bottom-0 w-full cities-shadow h-30">.</div>
 
     </div>
   </div>
@@ -568,13 +572,13 @@
 
       <!-- Doctor Card 1 -->
       <div class="doc-card bg-white lg:rounded-lg shadow-lg mb-8 p-5 lg:border-none" x-data="{openTab:1}">
-        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
-          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+        <div class="sm:flex gap-0 sm:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full  sm:w-1/4">
             <img src="./images/doctor.png" alt="" class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
           <div
-            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+            class="w-full  sm:w-3/4 sm:max-h-[15rem] sm:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 sm:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -612,7 +616,7 @@
                   </p>
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg xs:hidden">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg sm:hidden">
                   Call Now
                 </button>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
@@ -688,47 +692,46 @@
                 <!-- there is a flowbite script tag at end end of body  -->
                 <div class=" mx-auto">
 
-                  <div id="default-carousel" class="relative h-full" data-carousel="static">
+                  <div id="default-carousel" class="relative " data-carousel="static">
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden mx-auto relative w-full h-[13rem] rounded-lg ">
                       <!-- Item 1 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Maa Fertility Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
-
+                              Prime Health Center <br />
+                              <span class="font-normal text-sm sm:hidden">Belgaum, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
                                 <div class="text-left font-medium">
-                                  Kittur,<br /> Karnataka
+                                  Belgaum,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
                               <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Wed, Fri:</span>
+                                    <span>07:00PM - 09:00PM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>09:30PM - 11:00PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
+                                    <span>Tue, Thu:</span>
+                                    <span>05:00AM - 01:00PM</span>
                                   </div>
 
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>05:00PM - 07:00PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -736,86 +739,80 @@
                           </div>
                         </div>
                       </div>
+
                       <!-- Item 2 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out  bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Dharwad Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
-
+                              Oceanview Medical Center <br />
+                              <span class="font-normal text-sm sm:hidden">Mangalore, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
                                 <div class="text-left font-medium">
-                                  Dharwad,<br /> Karnataka
+                                  Mangalore,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
                               <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Wed, Fri:</span>
+                                    <span>08:00AM - 12:00PM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>02:00PM - 05:00PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
+                                    <span>Tue, Thu, Sat:</span>
+                                    <span>09:00AM - 01:00PM</span>
                                   </div>
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
-                                  </div>
+
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
+
                       <!-- Item 3 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out  bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Kittur Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
+                              Greenfield Health Institute <br />
+                              <span class="font-normal text-sm sm:hidden">Mysore, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
-                                <div class="text-left font-medium ">
-                                  Kittur,<br /> Karnataka
+                                <div class="text-left font-medium">
+                                  Mysore,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
-                              <div class="py-2 px-4  flex-1 text-sm">
+                              <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Tue, Wed:</span>
+                                    <span>10:00AM - 02:00PM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>03:00PM - 06:00PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Thu, Fri:</span>
+                                    <span>11:00AM - 03:00PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -823,6 +820,7 @@
                           </div>
                         </div>
                       </div>
+
                     </div>
 
 
@@ -849,7 +847,7 @@
 
         <!-- tab buttons -->
         <nav aria-label="Tabs">
-          <ul class="flex border-b border-gray-100 text-xs">
+          <ul class="flex border-b border-gray-100 text-sm">
             <li class="flex-1" @click="openTab = 1">
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-yellow-400"></span>
@@ -908,14 +906,14 @@
       <div class="doc-card bg-white lg:rounded-lg shadow-lg mb-8 p-5 lg:border-none" x-data="{
         openTab:1,
       }">
-        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
-          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+        <div class="sm:flex gap-0 sm:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full  sm:w-1/4">
             <img src="https://www.pregawish.com/uploads/doctor/thumbnail/179/dr-rashmi-sharma.jpg" alt=""
               class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
           <div
-            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+            class="w-full  sm:w-3/4 sm:max-h-[15rem] sm:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 sm:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -955,19 +953,19 @@
                   </p>
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg xs:hidden">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg sm:hidden">
                   Call Now
                 </button>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
 
                   <p class="flex gap-6 items-center justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Janakpuri</span><span class="gap-1">
-                      <i class="fa-rupee text-xs font-light"></i>
+                      <i class="fa-rupee text-sm font-light"></i>
                       500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Noida</span><span class="gap-1"> <i
-                        class="fa-rupee text-xs font-light"></i>
+                        class="fa-rupee text-sm font-light"></i>
                       300</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -1034,43 +1032,37 @@
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden mx-auto relative w-full h-[13rem] rounded-lg ">
                       <!-- Item 1 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Maa Fertility Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
-
+                              Riverside Wellness Center <br />
+                              <span class="font-normal text-sm sm:hidden">Hubli, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
                                 <div class="text-left font-medium">
-                                  Kittur,<br /> Karnataka
+                                  Hubli,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
                               <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Tue, Thu:</span>
+                                    <span>09:00AM - 01:00PM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>02:00PM - 06:00PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Wed, Fri:</span>
+                                    <span>10:00AM - 03:00PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -1078,15 +1070,15 @@
                           </div>
                         </div>
                       </div>
+
                       <!-- Item 2 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Dharwad Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
-
+                              Hilltop Medical Facility <br />
+                              <span class="font-normal text-sm sm:hidden">Dharwad, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
@@ -1100,21 +1092,17 @@
                               <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Wed, Sat:</span>
+                                    <span>08:00AM - 12:00PM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>01:00PM - 04:00PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Tue, Thu, Fri:</span>
+                                    <span>09:00AM - 02:00PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -1122,42 +1110,39 @@
                           </div>
                         </div>
                       </div>
+
                       <!-- Item 3 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Kittur Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
+                              Hilltop Medical Facility <br />
+                              <span class="font-normal text-sm sm:hidden">Dharwad, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
-                                <div class="text-left font-medium ">
-                                  Kittur,<br /> Karnataka
+                                <div class="text-left font-medium">
+                                  Dharwad,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
-                              <div class="py-2 px-4  flex-1 text-sm">
+                              <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Wed, Sat:</span>
+                                    <span>08:00AM - 12:00PM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>01:00PM - 04:00PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Tue, Thu, Fri:</span>
+                                    <span>09:00AM - 02:00PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -1165,6 +1150,7 @@
                           </div>
                         </div>
                       </div>
+
                     </div>
 
 
@@ -1191,7 +1177,7 @@
 
         <!-- tab buttons -->
         <nav aria-label="Tabs">
-          <ul class="flex border-b border-gray-100 text-xs">
+          <ul class="flex border-b border-gray-100 text-sm">
             <li class="flex-1" @click="openTab = 1">
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-yellow-400"></span>
@@ -1250,14 +1236,14 @@
       <div class="doc-card bg-white lg:rounded-lg shadow-lg mb-8 p-5 lg:border-none" x-data="{
         openTab:1,
       }">
-        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
-          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+        <div class="sm:flex gap-0 sm:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full  sm:w-1/4">
             <img src="https://www.pregawish.com/uploads/doctor/thumbnail/541/dr-prerna-gupta-ivf-doctor-delhi.jpeg"
               alt="" class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
           <div
-            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+            class="w-full  sm:w-3/4 sm:max-h-[15rem] sm:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 sm:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -1299,24 +1285,24 @@
                   </p>
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg xs:hidden">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg sm:hidden">
                   Call Now
                 </button>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
 
                   <p class="flex gap-6 items-center justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Delhi</span><span class="gap-1">
-                      <i class="fa-rupee text-xs font-light"></i>
+                      <i class="fa-rupee text-sm font-light"></i>
                       1500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Utamnagar</span><span class="gap-1"> <i
-                        class="fa-rupee text-xs font-light"></i>
+                        class="fa-rupee text-sm font-light"></i>
                       1000</span>
                   </p>
                   <p class="flex gap-6 justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Ahemdabad</span><span class="gap-1"> <i
-                        class="fa-rupee text-xs font-light"></i>
+                        class="fa-rupee text-sm font-light"></i>
                       800</span>
                   </p>
                   <p class="mt-2 info-texts fz-scale">First Consultancy Free</p>
@@ -1382,43 +1368,37 @@
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden mx-auto relative w-full h-[13rem] rounded-lg ">
                       <!-- Item 1 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Maa Fertility Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
-
+                              Harmony Health Hub <br />
+                              <span class="font-normal text-sm sm:hidden">Shimoga, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
                                 <div class="text-left font-medium">
-                                  Kittur,<br /> Karnataka
+                                  Shimoga,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
                               <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Thu, Sat:</span>
+                                    <span>08:30AM - 11:30AM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>01:30PM - 04:30PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Tue, Wed, Fri:</span>
+                                    <span>09:30AM - 01:30PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -1426,43 +1406,39 @@
                           </div>
                         </div>
                       </div>
+
                       <!-- Item 2 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Dharwad Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
-
+                              Serenity Medical Services <br />
+                              <span class="font-normal text-sm sm:hidden">Davangere, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
                                 <div class="text-left font-medium">
-                                  Dharwad,<br /> Karnataka
+                                  Davangere,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
                               <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Wed, Fri:</span>
+                                    <span>07:30AM - 11:30AM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>02:30PM - 05:30PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Tue, Thu:</span>
+                                    <span>08:30AM - 12:30PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -1470,42 +1446,39 @@
                           </div>
                         </div>
                       </div>
+
                       <!-- Item 3 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Kittur Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
+                              Healthwise Clinic <br />
+                              <span class="font-normal text-sm sm:hidden">Tumkur, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
-                                <div class="text-left font-medium ">
-                                  Kittur,<br /> Karnataka
+                                <div class="text-left font-medium">
+                                  Tumkur,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
-                              <div class="py-2 px-4  flex-1 text-sm">
+                              <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Tue, Thu:</span>
+                                    <span>09:00AM - 01:00PM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>03:00PM - 06:00PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Wed, Fri, Sat:</span>
+                                    <span>08:00AM - 12:00PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -1513,6 +1486,7 @@
                           </div>
                         </div>
                       </div>
+
                     </div>
 
 
@@ -1540,7 +1514,7 @@
 
         <!-- tab buttons -->
         <nav aria-label="Tabs">
-          <ul class="flex border-b border-gray-100 text-xs">
+          <ul class="flex border-b border-gray-100 text-sm">
             <li class="flex-1" @click="openTab = 1">
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-yellow-400"></span>
@@ -1598,14 +1572,14 @@
       <div class="doc-card bg-white lg:rounded-lg shadow-lg mb-8 p-5 lg:border-none" x-data="{
         openTab:1,
       }">
-        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
-          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+        <div class="sm:flex gap-0 sm:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full  sm:w-1/4">
             <img src="https://www.pregawish.com/uploads/doctor/thumbnail/489/dr-nandita-p-palshetkar.jpeg" alt=""
               class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
           <div
-            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+            class="w-full  sm:w-3/4 sm:max-h-[15rem] sm:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 sm:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -1645,14 +1619,14 @@
 
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg xs:hidden">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg sm:hidden">
                   Call Now
                 </button>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
 
                   <p class="flex gap-6 items-center justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Janakpuri</span><span class="gap-1">
-                      <i class="fa-rupee text-xs font-light"></i>
+                      <i class="fa-rupee text-sm font-light"></i>
                       2000</span>
                   </p>
 
@@ -1719,43 +1693,37 @@
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden mx-auto relative w-full h-[13rem] rounded-lg ">
                       <!-- Item 1 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Maa Fertility Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
-
+                              Lifeline Medical Complex <br />
+                              <span class="font-normal text-sm sm:hidden">Bidar, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
                                 <div class="text-left font-medium">
-                                  Kittur,<br /> Karnataka
+                                  Bidar,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
                               <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Thu, Sat:</span>
+                                    <span>08:00AM - 11:00AM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>02:00PM - 05:00PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Tue, Wed, Fri:</span>
+                                    <span>09:00AM - 02:00PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -1763,43 +1731,39 @@
                           </div>
                         </div>
                       </div>
+
                       <!-- Item 2 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Dharwad Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
-
+                              CareFirst Medical Center <br />
+                              <span class="font-normal text-sm sm:hidden">Raichur, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
                                 <div class="text-left font-medium">
-                                  Dharwad,<br /> Karnataka
+                                  Raichur,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
                               <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Wed, Fri:</span>
+                                    <span>07:30AM - 11:30AM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>03:00PM - 06:00PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Tue, Thu:</span>
+                                    <span>08:00AM - 12:00PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -1807,42 +1771,39 @@
                           </div>
                         </div>
                       </div>
+
                       <!-- Item 3 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Kittur Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
+                              HealthBridge Clinic <br />
+                              <span class="font-normal text-sm sm:hidden">Gulbarga, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
-                                <div class="text-left font-medium ">
-                                  Kittur,<br /> Karnataka
+                                <div class="text-left font-medium">
+                                  Gulbarga,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
-                              <div class="py-2 px-4  flex-1 text-sm">
+                              <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Tue, Thu:</span>
+                                    <span>09:30AM - 01:30PM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>03:30PM - 06:30PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Wed, Fri, Sat:</span>
+                                    <span>08:30AM - 12:30PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -1850,6 +1811,7 @@
                           </div>
                         </div>
                       </div>
+
                     </div>
 
 
@@ -1876,7 +1838,7 @@
 
         <!-- tab buttons -->
         <nav aria-label="Tabs">
-          <ul class="flex border-b border-gray-100 text-xs">
+          <ul class="flex border-b border-gray-100 text-sm">
             <li class="flex-1" @click="openTab = 1">
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-yellow-400"></span>
@@ -1935,14 +1897,14 @@
       <div class="doc-card bg-white lg:rounded-lg shadow-lg mb-8 p-5 lg:border-none" x-data="{
         openTab:1,
       }">
-        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
-          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+        <div class="sm:flex gap-0 sm:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full  sm:w-1/4">
             <img src="https://www.pregawish.com/uploads/doctor/thumbnail/459/dr-s-mayadevi-kurup.jpg" alt=""
               class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
           <div
-            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+            class="w-full  sm:w-3/4 sm:max-h-[15rem] sm:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 sm:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -1985,19 +1947,19 @@
                   </p>
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg xs:hidden">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg sm:hidden">
                   Call Now
                 </button>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
 
                   <p class="flex gap-6 items-center justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Dharwad</span><span class="gap-1">
-                      <i class="fa-rupee text-xs font-light"></i>
+                      <i class="fa-rupee text-sm font-light"></i>
                       500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Kittur</span><span class="gap-1"> <i
-                        class="fa-rupee text-xs font-light"></i>
+                        class="fa-rupee text-sm font-light"></i>
                       300</span>
                   </p>
                 </div>
@@ -2068,43 +2030,37 @@
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden mx-auto relative w-full h-[13rem] rounded-lg ">
                       <!-- Item 1 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Maa Fertility Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
-
+                              Mediville Health Center <br />
+                              <span class="font-normal text-sm sm:hidden">Bellary, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
                                 <div class="text-left font-medium">
-                                  Kittur,<br /> Karnataka
+                                  Bellary,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
                               <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Thu, Sat:</span>
+                                    <span>09:00AM - 12:00PM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>02:30PM - 05:30PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Tue, Wed, Fri:</span>
+                                    <span>08:30AM - 11:30AM</span>
                                   </div>
                                 </div>
                               </div>
@@ -2112,43 +2068,39 @@
                           </div>
                         </div>
                       </div>
+
                       <!-- Item 2 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Dharwad Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
-
+                              HealthPulse Medical Facility <br />
+                              <span class="font-normal text-sm sm:hidden">Chitradurga, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
                                 <div class="text-left font-medium">
-                                  Dharwad,<br /> Karnataka
+                                  Chitradurga,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
                               <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Wed, Fri:</span>
+                                    <span>07:00AM - 10:00AM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>03:00PM - 06:00PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Tue, Thu:</span>
+                                    <span>08:00AM - 12:00PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -2156,42 +2108,39 @@
                           </div>
                         </div>
                       </div>
+
                       <!-- Item 3 -->
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <div class="hidden h-[13rem] duration-700 ease-in-out bg-white" data-carousel-item>
                         <div class="container mx-auto bg-white border border-gray-300 rounded-lg ">
                           <div class="flex flex-col divide-y divide-gray-300">
                             <!-- First Row: Hospital Name -->
                             <div class="py-2 pr-4 text-base font-semibold text-left pl-4">
-                              Kittur Clinic <br />
-                              <span class="font-normal text-sm sm:hidden">Kittur, Karnataka</span>
+                              VitalCare Clinic <br />
+                              <span class="font-normal text-sm sm:hidden">Hassan, Karnataka</span>
                             </div>
                             <!-- Second Row: Location and Days/Time -->
                             <div class="flex">
                               <!-- Location -->
                               <div class="py-2 px-4 border-r border-gray-300 text-sm hidden sm:block">
-                                <div class="text-left font-medium ">
-                                  Kittur,<br /> Karnataka
+                                <div class="text-left font-medium">
+                                  Hassan,<br /> Karnataka
                                 </div>
                               </div>
                               <!-- Days and Time -->
-                              <div class="py-2 px-4  flex-1 text-sm">
+                              <div class="py-2 px-4 flex-1 text-sm">
                                 <div class="">
                                   <div class="flex justify-between">
-                                    <span>Mon, Tue, Wed, Thu:</span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Mon, Tue, Thu:</span>
+                                    <span>09:30AM - 01:30PM</span>
                                   </div>
                                   <div class="flex justify-between">
                                     <span></span>
-                                    <span>08:30PM - 10:00PM</span>
+                                    <span>03:30PM - 06:30PM</span>
                                   </div>
                                   <hr class="my-1">
                                   <div class="flex justify-between">
-                                    <span>Fri, Sat:</span>
-                                    <span>06:00AM - 02:00PM</span>
-                                  </div>
-                                  <div class="flex justify-between">
-                                    <span></span>
-                                    <span>06:00PM - 08:00PM</span>
+                                    <span>Wed, Fri, Sat:</span>
+                                    <span>08:30AM - 12:30PM</span>
                                   </div>
                                 </div>
                               </div>
@@ -2199,6 +2148,7 @@
                           </div>
                         </div>
                       </div>
+
                     </div>
 
 
@@ -2225,7 +2175,7 @@
 
         <!-- tab buttons -->
         <nav aria-label="Tabs">
-          <ul class="flex border-b border-gray-100 text-xs">
+          <ul class="flex border-b border-gray-100 text-sm">
             <li class="flex-1" @click="openTab = 1">
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-yellow-400"></span>
@@ -2284,14 +2234,14 @@
       <div class="doc-card bg-white lg:rounded-lg shadow-lg mb-8 p-5 lg:border-none" x-data="{
         openTab:1,
       }">
-        <div class="xs:flex gap-0 xs:gap-4 lg:gap-7 mb-5">
-          <div class="img grow-0 gap-3 w-full xs:w-[35%] sm:w-1/4">
+        <div class="sm:flex gap-0 sm:gap-4 lg:gap-7 mb-5">
+          <div class="img grow-0 gap-3 w-full  sm:w-1/4">
             <img src="https://www.pregawish.com/uploads/doctor/thumbnail/1280/dr.sharath-p-devdas.jpg" alt=""
               class="min-w-[100px] w-full md:min-w-[180px] rounded-lg " />
 
           </div>
           <div
-            class="w-full xs:w-[65%] sm:w-3/4 xs:max-h-[15rem] xs:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 xs:pt-0">
+            class="w-full  sm:w-3/4 sm:max-h-[15rem] sm:h-[15rem] max-h-[18rem] h-[18rem] relative mr-[15px] pt-4 sm:pt-0">
             <!-- tab content 1 -->
             <div class="information grow flex flex-col h-full " x-show="openTab === 1">
 
@@ -2335,24 +2285,24 @@
                   </p>
 
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg xs:hidden">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 my-3 px-2 rounded-lg sm:hidden">
                   Call Now
                 </button>
                 <div class=" mt-0 sm:flex flex-col w-full max-w-[250px] lg:w-1/2 hidden sm:visible">
 
                   <p class="flex gap-6 items-center justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Hubbali</span><span class="gap-1">
-                      <i class="fa-rupee text-xs font-light"></i>
+                      <i class="fa-rupee text-sm font-light"></i>
                       500</span>
                   </p>
                   <p class="flex gap-6 justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Noida</span><span class="gap-1"> <i
-                        class="fa-rupee text-xs font-light"></i>
+                        class="fa-rupee text-sm font-light"></i>
                       200</span>
                   </p>
                   <p class="flex gap-6 justify-between">
                     <span class="info-texts fz-scale"><i class="fa-location"></i>Kolkata</span><span class="gap-1"> <i
-                        class="fa-rupee text-xs font-light"></i>
+                        class="fa-rupee text-sm font-light"></i>
                       400</span>
                   </p>
                 </div>
@@ -2577,7 +2527,7 @@
 
         <!-- tab buttons -->
         <nav aria-label="Tabs">
-          <ul class="flex border-b border-gray-100 text-xs">
+          <ul class="flex border-b border-gray-100 text-sm">
             <li class="flex-1" @click="openTab = 1">
               <button class="relative block p-2 md:p-4 w-full" href="#">
                 <span x-show="openTab === 1" class="absolute inset-x-0 -bottom-px h-px w-full bg-yellow-400"></span>
@@ -2771,7 +2721,7 @@
   </div>
 
   <!-- footer section -->
-  <div class="px-5 md:px-20 pt-10 bg-[#f2f2f2]">
+  <div class="px-5  pt-10 bg-[#f2f2f2] max-w-[1536px] mx-auto">
 
 
 
@@ -2782,7 +2732,7 @@
           <div class="w-full pe-4 sm:w-2/3 lg:w-3/12">
             <div class="mb-10 w-full">
               <a href="/" class="mb-8 inline-block max-w-[160px]">
-                
+
                 <h1 class="text-3xl font-extrabold	tracking-[1px] text-gray-800">PregaWish</h1>
 
               </a>
