@@ -153,13 +153,14 @@
     <div class="bg-color py-3 max-w-[1536px] mx-auto">
       <div class=" flex mx-auto px-6 gap-5 lg:px-4">
         <button type="button"
-          class="inline-flex items-center gap-x-1 px-3 py-2 hover:bg-gray-100 rounded-lg text-base font-semibold leading-6 text-gray-900"
+          class="inline-flex items-center gap-x-1 px-3 py- rounded-lg text-base font-semibold leading-6 text-gray-600 hover:text-gray-900"
           aria-expanded="false">
           Home
 
         </button>
         <button type="button" @click="openNav===1?openNav = 0:openNav = 1"
-          class="px-3 py-2  rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
+        :class="openNav===1?'text-gray-950':'text-gray-600'"
+          class="px-3 py-2  rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-600 hover:text-gray-900"
           aria-expanded="false">
           Cities
           <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -170,7 +171,8 @@
         </button>
 
         <button type="button" @click="openNav===2?openNav = 0:openNav = 2"
-          class="px-3 py-2  rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
+          :class="openNav===2?'text-gray-950':'text-gray-600'"
+          class="px-3 py-2  rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-600 hover:text-gray-950"
           aria-expanded="false">
           Resources
           <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -186,7 +188,7 @@
     <div class="absolute inset-x-0 top-[64px] -z-10    ring-1 ring-gray-900/5">
       <!-- flyout 1 -->
       <div x-show="openNav === 1" @click.outside="openNav===1 ? openNav = 0:null"
-        class="relative max-h-[80vh] max-w-[1536px] bg-color mt-1 overflow-auto rounded-2xl mx-3 shadow-lg flex justify-center  border-t-2   gap-x-8 gap-y-10 px-6 py-10  lg:px-8">
+        class="relative max-h-[80vh] max-w-[1536px] bg-color overflow-auto shadow-lg flex justify-center  border-t-2   gap-x-8 gap-y-10 px-6 py-10  lg:px-8">
 
         <ul role="list" class="flex h-full gap-x-4 gap-y-8 flex-wrap xl:gap-x-8">
           <li class="relative w-[100px]">
@@ -375,7 +377,7 @@
 
       <!-- flyout 2 -->
       <div x-show="openNav === 2" @click.outside="openNav===2 ? openNav = 0: null"
-        class=" grid max-h-[80vh] max-w-[1536px] bg-color mt-1 overflow-auto rounded-2xl mx-3  border-t-2 grid-cols-1 gap-x-8 gap-y-6 px-6 py-3 lg:grid-cols-2 lg:px-8">
+        class=" grid max-h-[80vh] max-w-[1536px] bg-color overflow-auto  border-t-2 grid-cols-1 gap-x-8 gap-y-6 px-6 py-3 lg:grid-cols-2 lg:px-8">
         <div class="grid grid-cols-2 gap-x-6 sm:gap-x-8">
           <div>
             <h3 class="text-sm font-medium leading-6 text-gray-500">Engagement</h3>
