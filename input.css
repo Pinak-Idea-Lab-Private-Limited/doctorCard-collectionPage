@@ -58,7 +58,8 @@
     }
 
     .bg-color{
-        @apply bg-slate-300;
+        /* @apply bg-slate-300; */
+         background-image: linear-gradient(to right,  #fae862, #f18c70 );;
     }
     
 }
