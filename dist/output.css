@@ -1586,6 +1586,10 @@ input:checked + .toggle-bg {
   max-width: 100%;
 }
 
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -2779,6 +2783,10 @@ input:checked + .toggle-bg {
     max-width: 32rem;
   }
 
+  .sm\:max-w-full {
+    max-width: 100%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -2900,6 +2908,10 @@ input:checked + .toggle-bg {
 
   .md\:min-w-\[180px\] {
     min-width: 180px;
+  }
+
+  .md\:max-w-full {
+    max-width: 100%;
   }
 
   .md\:grid-cols-2 {
