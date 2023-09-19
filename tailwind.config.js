@@ -14,8 +14,8 @@ module.exports = {
     },
   },
   plugins: [
-    require('flowbite/plugin'),
-    require('@tailwindcss/aspect-ratio'),
+    require('flowbite/plugin'), //used for carousel in about tab
+    require('@tailwindcss/aspect-ratio'), //used for cities flyout cards
 
   ],
 }

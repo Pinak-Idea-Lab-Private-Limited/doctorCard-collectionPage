@@ -1159,13 +1159,9 @@ input:checked + .toggle-bg {
   background-image:  linear-gradient(90deg,rgba(255, 255, 255, 0),#fff 75%);
 }
 
-.cities-shadow{
-  background-image:  linear-gradient(180deg,rgba(255, 255, 255, 0),#f2f2f2 125%);
-}
-
-.bg-color{
-  /* @apply bg-slate-300; */
-  background-image: linear-gradient(to right,  #fae862, #f9a68f );
+.bg-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .sr-only {
@@ -1550,6 +1546,14 @@ input:checked + .toggle-bg {
   width: 100%;
 }
 
+.w-\[90px\] {
+  width: 90px;
+}
+
+.w-\[80px\] {
+  width: 80px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1584,10 +1588,6 @@ input:checked + .toggle-bg {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[200px\] {
-  max-width: 200px;
 }
 
 .flex-1 {
@@ -2115,6 +2115,11 @@ input:checked + .toggle-bg {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-4 {
@@ -2683,6 +2688,12 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 450px) {
+  .xs\:w-\[100px\] {
+    width: 100px;
+  }
+}
+
 @media (min-width: 544px) {
   .xsm\:mt-0 {
     margin-top: 0px;
@@ -2721,6 +2732,10 @@ input:checked + .toggle-bg {
 
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:grid {
+    display: grid;
   }
 
   .sm\:hidden {
@@ -2781,10 +2796,6 @@ input:checked + .toggle-bg {
 
   .sm\:max-w-lg {
     max-width: 32rem;
-  }
-
-  .sm\:max-w-full {
-    max-width: 100%;
   }
 
   .sm\:flex-row {
@@ -2908,10 +2919,6 @@ input:checked + .toggle-bg {
 
   .md\:min-w-\[180px\] {
     min-width: 180px;
-  }
-
-  .md\:max-w-full {
-    max-width: 100%;
   }
 
   .md\:grid-cols-2 {

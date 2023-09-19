@@ -6,14 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doctor Collection Page</title>
   <link rel="stylesheet" href="./dist/output.css" />
-  <link rel="stylesheet" href="./css/all.min.css" />
-  <link rel="stylesheet" href="./css/fontawesome.min.css" />
+
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
   <link rel="stylesheet" href="./icons.css" />
 </head>
 
 <body class="bg-[#f2f2f2]">
-  <!-- About section display modal  -->
+  <!-- Doctor card -  About section display modal  -->
   <div id="dc-modal" class="relative z-40 hidden " aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
     <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
@@ -152,12 +151,14 @@
   <div class="bg-color relative isolate z-30 " x-data="{openNav:0}">
     <div class=" py-3 max-w-[1536px] mx-auto">
       <div class=" flex mx-auto px-6 gap-5 lg:px-4">
+        <!-- btn 1 -->
         <button type="button"
           class="inline-flex items-center gap-x-1 px-3 py- rounded-lg text-base font-semibold leading-6 text-gray-600 hover:text-gray-900"
           aria-expanded="false">
           Home
 
         </button>
+        <!-- btn 2 -->
         <button type="button" @click="openNav===1?openNav = 0:openNav = 1"
           :class="openNav===1?'text-gray-950':'text-gray-600'"
           class="px-3 py-2  rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 hover:text-gray-900"
@@ -169,7 +170,7 @@
               clip-rule="evenodd" />
           </svg>
         </button>
-
+        <!-- btn 3 -->
         <button type="button" @click="openNav===2?openNav = 0:openNav = 2"
           :class="openNav===2?'text-gray-950':'text-gray-600'" x-on:hover=""
           class="px-3 py-2  rounded-lg inline-flex items-center gap-x-1 text-base font-semibold leading-6 hover:text-gray-950"
@@ -184,14 +185,15 @@
       </div>
     </div>
 
-
+    <!-- flyouts -->
     <div class="absolute inset-x-0 top-[64px] -z-10 ">
       <!-- flyout 1 -->
       <div x-show="openNav === 1" @click.outside="openNav===1 ? openNav = 0:null"
-        class="relative max-h-[80vh] max-w-[1536px] ul:mx-auto bg-color overflow-auto rounded-b-2xl shadow-lg flex justify-center  border-t-2   gap-x-8 gap-y-10 px-6 py-10  lg:px-8">
-
-        <ul role="list" class="flex h-full gap-x-4 gap-y-8 flex-wrap xl:gap-x-8">
-          <li class="relative w-[100px]">
+        class="relative  max-w-[1536px] ul:mx-auto bg-color rounded-b-2xl shadow-lg flex justify-center  border-t-2   gap-x-8 gap-y-10 px-6 py-10  lg:px-8">
+        
+      
+        <ul role="list" class="flex  h-full gap-x-4 gap-y-8 flex-wrap xl:gap-x-8">
+          <li class="relative w-[80px] xs:w-[100px]">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -204,7 +206,7 @@
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Delhi</p>
 
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -217,7 +219,7 @@
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Mumbai</p>
 
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -229,7 +231,7 @@
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Bangalore</p>
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -242,7 +244,7 @@
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Hyderabad</p>
 
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -255,7 +257,7 @@
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Kolkata</p>
 
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px] hidden sm:block">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -268,7 +270,7 @@
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Chennai</p>
 
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]  hidden sm:block">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
 
@@ -281,7 +283,7 @@
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Noida</p>
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]  hidden sm:block">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -294,7 +296,7 @@
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Greater Noida</p>
 
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]  hidden sm:block">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -307,7 +309,7 @@
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Jaipur</p>
 
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]  hidden sm:block">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -320,7 +322,7 @@
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Pune</p>
 
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]  hidden sm:block">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -332,7 +334,7 @@
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Lucknow</p>
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]  hidden sm:block">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -345,7 +347,7 @@
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Chandigarh</p>
 
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]  hidden sm:block">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -357,7 +359,7 @@
             </div>
             <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Ahemdabad</p>
           </li>
-          <li class="relative w-[100px]">
+          <li class="relative w-[80px] xs:w-[100px]">
             <div
               class="group  block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
@@ -372,14 +374,13 @@
           </li>
           <!-- More files... -->
         </ul>
-
       </div>
 
       <!-- flyout 2 -->
       <div x-show="openNav === 2" @click.outside="openNav===2 ? openNav = 0: null"
-        class=" grid max-h-[80vh] max-w-[1536px] bg-color ul:mx-auto overflow-auto rounded-b-2xl  border-t-2 grid-cols-1 gap-x-8 gap-y-6 px-6 py-3 lg:grid-cols-2 lg:px-8">
+        class=" grid max-w-[1536px] bg-color ul:mx-auto  rounded-b-2xl  border-t-2 grid-cols-1 gap-x-8 gap-y-6 px-6 py-5 lg:grid-cols-2 lg:px-8">
         <div class="grid grid-cols-2 gap-x-6 sm:gap-x-8">
-          <div>
+          <div class="hidden sm:block">
             <h3 class="text-sm font-medium leading-6 text-gray-500">Engagement</h3>
             <div class="mt-6 flow-root">
               <div class="-my-2">
@@ -466,7 +467,7 @@
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-1 gap-1  sm:gap-8 lg:grid-cols-2">
+        <div class="hidden grid-cols-1 sm:grid gap-1  sm:gap-8 lg:grid-cols-2">
           <h3 class="sr-only">Recent posts</h3>
           <article
             class="relative isolate flex max-w-2xl  gap-x-8 gap-y-6 flex-row items-start lg:flex-col lg:items-stretch">
@@ -526,7 +527,6 @@
             commodi et.</p>
         </div>
       </div>
-      <!-- <div x-show="openNav !== 0" class=" absolute bottom-0 w-full cities-shadow h-30">.</div> -->
 
     </div>
   </div>
