@@ -38,11 +38,7 @@ To create a README file for the code snippet you provided, you can follow these 
 
 ---
 
-# Doctor Card Component
-
-## Description
-
-The "Doctor Card" component is a visually appealing way to present information about a doctor, including their name, qualifications, contact details, experience, and other relevant information. It includes tabs for different sections of information, making it easy for users to navigate and access specific details.
+# 3.Doctor Card Component
 
 ## Structure
 
@@ -65,4 +61,22 @@ The "Doctor Card" component consists of the following main sections:
 - **Highlights Tab:** Lists key highlights and achievements of the doctor, such as the number of IVF cases performed and professional affiliations.
 
 - **Consult Tab:** Presents information about where and when users can consult with the doctor, including hospital names, locations, and hours of availability.
+
+
+# 4.Footer Design Explanation
+
+### 1. Footer Part 1
+
+- **Logo and Description**
+- **Social Media Links**
+### 2. Footer Part 2
+
+- **Resources**
+- **Quick Links**
+- **Subscribe Form**
+
+### 3. Footer Part 3
+
+- **Contact Information**
+- **Copyright and Links**
 
