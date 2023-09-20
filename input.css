@@ -12,7 +12,7 @@
     .info-h2 {
         @apply  lg:text-[1.7rem] sm:text-2xl text-[1.2rem] font-sans font-bold mb-1 text-stone-950;
     }
-    /* ot;her tabs h3 */
+    /* other tabs h3 */
     .tabs-h3{
         @apply lg:text-[23px]  xl:text-2xl text-xl font-sans font-bold mb-2 text-stone-950;
     }

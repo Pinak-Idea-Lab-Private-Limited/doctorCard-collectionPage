@@ -1054,7 +1054,7 @@ input:checked + .toggle-bg {
   }
 }
 
-/* ot;her tabs h3 */
+/* other tabs h3 */
 
 .tabs-h3 {
   margin-bottom: 0.5rem;
@@ -1494,10 +1494,6 @@ input:checked + .toggle-bg {
   max-height: 60vh;
 }
 
-.max-h-\[80vh\] {
-  max-height: 80vh;
-}
-
 .min-h-full {
   min-height: 100%;
 }
@@ -1534,8 +1530,8 @@ input:checked + .toggle-bg {
   width: 100%;
 }
 
-.w-\[100px\] {
-  width: 100px;
+.w-\[80px\] {
+  width: 80px;
 }
 
 .w-\[90\%\] {
@@ -1544,14 +1540,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[90px\] {
-  width: 90px;
-}
-
-.w-\[80px\] {
-  width: 80px;
 }
 
 .min-w-0 {
