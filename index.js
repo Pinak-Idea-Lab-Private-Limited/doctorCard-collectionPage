@@ -1,7 +1,7 @@
 // rating functionality
 // generate stars according to the rating
 function renderStarRating(rating, ratingCard) {
-  console.log(ratingCard)
+  console.log(rating)
   const starContainer = ratingCard.querySelector('.rating .stars');
   starContainer.innerHTML = "";
 
@@ -13,6 +13,7 @@ function renderStarRating(rating, ratingCard) {
   else if (rating >= 3) color = "#166534";
   else if (rating >= 2) color = "#15803D";
   else if (rating >= 1) color = "#16A34A";
+  else if (rating >= 0) color = "#22C55E";
   else color = "#78716C";
 
   for (let i = 1; i <= 5; i++) {
@@ -39,12 +40,12 @@ function renderStarRating(rating, ratingCard) {
   }
 }
 
-const ratingCards = document.querySelectorAll('[data-type="rating-star"]');
+const ratingCards = document.querySelectorAll('[data-star-rating]');
 document.addEventListener("DOMContentLoaded", getRatings);
 function getRatings() {
   ratingCards.forEach(card => {
     // Access the card or modify its properties
-    const numberRating = card.querySelector('.number-rating').textContent;
+    const numberRating = Number(card.getAttribute('data-star-rating'));
     // Call the star creating function
     renderStarRating(numberRating, card);
   });
