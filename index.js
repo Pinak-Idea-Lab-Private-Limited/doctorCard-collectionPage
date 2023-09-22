@@ -1,17 +1,8 @@
 // rating functionality
-
-const ratings = {
-  doc1: 3.1,
-  doc2: 4.7,
-  doc3: 2.5,
-  doc4: 1.9,
-  doc5: 0,
-  doc6: 0.6,
-};
-
 // generate stars according to the rating
 function renderStarRating(rating, ratingCard) {
-  const starContainer = document.querySelector(`.${ratingCard} .rating .stars`);
+  console.log(ratingCard)
+  const starContainer = ratingCard.querySelector('.rating .stars');
   starContainer.innerHTML = "";
 
   const colorPercentage = Math.round((rating % 1) * 100).toString();
@@ -22,7 +13,6 @@ function renderStarRating(rating, ratingCard) {
   else if (rating >= 3) color = "#166534";
   else if (rating >= 2) color = "#15803D";
   else if (rating >= 1) color = "#16A34A";
-  else if (rating > 0) color = "#22C55E";
   else color = "#78716C";
 
   for (let i = 1; i <= 5; i++) {
@@ -30,15 +20,18 @@ function renderStarRating(rating, ratingCard) {
 
     if (rating >= i) {
       // star with fill color
-      star.classList.add("fa-star", "star-box");
+      // star.classList.add("fa-star", "star-box");
+      star.classList.add("fa-star", "star-box", "w-6", "h-6", "flex", "items-center", "content-center");
       star.style.background = `${color}`;
     } else if (i === Math.ceil(rating)) {
       // half fill color star
-      star.classList.add("fa-star", "star-box");
+      // star.classList.add("fa-star", "star-box");
+      star.classList.add("fa-star", "star-box", "w-6", "h-6", "flex", "items-center", "content-center");
       star.style.backgroundImage = `linear-gradient(to right, ${color} 0% ${colorPercentage}%, #78716C ${grayPercentage}% 100%)`;
     } else {
       // star without fill color
-      star.classList.add("fa-star", "star-box");
+      star.classList.add("fa-star", "star-box", "w-6", "h-6", "flex", "items-center", "content-center");
+      // star.classList.add("fa-star", "star-box");
       star.style.background = `#78716C`;
     }
 
@@ -46,15 +39,15 @@ function renderStarRating(rating, ratingCard) {
   }
 }
 
-const starsTotal = 5;
+const ratingCards = document.querySelectorAll('[data-type="rating-star"]');
 document.addEventListener("DOMContentLoaded", getRatings);
 function getRatings() {
-  for (let rating in ratings) {
-    document.querySelector(
-      `.${rating} .number-rating`
-    ).innerHTML = `${ratings[rating]}`;
-    renderStarRating(ratings[rating], rating);
-  }
+  ratingCards.forEach(card => {
+    // Access the card or modify its properties
+    const numberRating = card.querySelector('.number-rating').textContent;
+    // Call the star creating function
+    renderStarRating(numberRating, card);
+  });
 }
 
 // ABOUT content - add three dots when overflowing
